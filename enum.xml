@@ -6,9 +6,15 @@
     ========================================
     -->
     <simpleType name="EDescFlags" kind="flags">
-        <enumeration value="Internal" label="Indicates that following frame is being heavily managed by SC2 internals. Mostly deprecated."/>
-        <enumeration value="Locked" label="Indicates that following FileDesc is locked and cannot be extended by another layout."/>
-        <enumeration value="CreationDeferred" label=""/>
+        <enumeration value="Internal">
+            <label>Indicates that following Desc shouldn't be automatically constructed. Instead it should serve as some sort of template for special frames that specify `CInternalField` for its sub-elements. It's mostly deprecated and used on old frame types.</label>
+        </enumeration>
+        <enumeration value="Locked">
+            <label>Indicates that following FileDesc is locked and cannot be extended by another layout.</label>
+        </enumeration>
+        <enumeration value="CreationDeferred">
+            <label>Can supress automatic creation of the frame</label>
+        </enumeration>
     </simpleType>
 
     <!-- dynamically populated -->
@@ -16,36 +22,84 @@
 
     <simpleType name="EAnimationEventNative" kind="enum">
         <!-- CFrame -->
-        <enumeration value="OnShown" label="When the target frame becomes `Visible`. This can occur by the frame itself becoming visible or a parent of this frame becoming visible as visibility is inherited."/>
-        <enumeration value="OnHidden" label="When the target frame becomes not visible. This can occur by the frame itself becoming not visible or a parent of this frame becoming not visible as visibility is inherited."/>
-        <enumeration value="OnEnabled" label="When the target frame becomes `Enabled`. This can occur by the frame itself becoming enabled or a parent of this frame becoming enabled as enabling/disabling is inherited."/>
-        <enumeration value="OnDisabled" label="When the target frame becomes `Disabled`. This can occur by the frame itself becoming disabled or a parent of this frame becoming disabled as enabling/disabling is inherited."/>
-        <enumeration value="OnMouseDown" label="When the user clicks down on the mouse on the target frame (fires immediately when they click, does not wait for release)."/>
-        <enumeration value="OnMouseUp" label="When the user releases the mouse button after clicking down on the target frame."/>
-        <enumeration value="OnMouseEnter" label="When the user's mouse enters the clickable area of the target frame (no clicking or releasing required, just hovering over)."/>
-        <enumeration value="OnMouseExit" label="When the user's mouse exits the clickable area of the target frame (no clicking or releasing required, just hovering)."/>
-        <enumeration value="OnMouseWheelIncrement" label="-"/>
-        <enumeration value="OnMouseWheelDecrement" label="-"/>
+        <enumeration value="OnShown">
+            <label>When the target frame becomes `Visible`. This can occur by the frame itself becoming visible or a parent of this frame becoming visible as visibility is inherited.</label>
+        </enumeration>
+        <enumeration value="OnHidden">
+            <label>When the target frame becomes not visible. This can occur by the frame itself becoming not visible or a parent of this frame becoming not visible as visibility is inherited.</label>
+        </enumeration>
+        <enumeration value="OnEnabled">
+            <label>When the target frame becomes `Enabled`. This can occur by the frame itself becoming enabled or a parent of this frame becoming enabled as enabling/disabling is inherited.</label>
+        </enumeration>
+        <enumeration value="OnDisabled">
+            <label>When the target frame becomes `Disabled`. This can occur by the frame itself becoming disabled or a parent of this frame becoming disabled as enabling/disabling is inherited.</label>
+        </enumeration>
+        <enumeration value="OnMouseDown">
+            <label>When the user clicks down on the mouse on the target frame (fires immediately when they click, does not wait for release).</label>
+        </enumeration>
+        <enumeration value="OnMouseUp">
+            <label>When the user releases the mouse button after clicking down on the target frame.</label>
+        </enumeration>
+        <enumeration value="OnMouseEnter">
+            <label>When the user's mouse enters the clickable area of the target frame (no clicking or releasing required, just hovering over).</label>
+        </enumeration>
+        <enumeration value="OnMouseExit">
+            <label>When the user's mouse exits the clickable area of the target frame (no clicking or releasing required, just hovering).</label>
+        </enumeration>
+        <enumeration value="OnMouseWheelIncrement">
+            <label>-</label>
+        </enumeration>
+        <enumeration value="OnMouseWheelDecrement">
+            <label>-</label>
+        </enumeration>
 
         <!-- CControl -->
-        <enumeration value="OnClick" label="When the user clicks the target frame. Can only target `Control` frames or subtypes such as `Button`."/>
-        <enumeration value="OnDoubleClick" label="When the user doubleclicks the target frame. Can only target `Control` frames or subtypes such as `Button`."/>
-        <enumeration value="OnDragStart" label="Fires off the first time the user moves the mouse while holding down a click on the target control frame. Can only target `Control` frames or subtypes such as `Button`."/>
-        <enumeration value="OnDrag" label="Fires off every time the user moves the mouse while holding down a click on the target control frame. Can only target `Control` frames or subtypes such as `Button`."/>
-        <enumeration value="OnDragEnd" label="Fires off once the user lets go of the mouse click after executing a drag on the target control frame. Can only target `Control` frames or subtypes such as `Button`."/>
-        <enumeration value="OnKeyDown" label="NMI. Can only target `Control` frames or subtypes such as `Button`."/>
-        <enumeration value="OnKeyUp" label="NMI. Can only target `Control` frames or subtypes such as `Button`."/>
-        <enumeration value="OnKeyRepeat" label="NMI. Can only target `Control` frames or subtypes such as `Button`."/>
-        <enumeration value="OnFocusGained" label="-"/>
-        <enumeration value="OnFocusLost" label="-"/>
+        <enumeration value="OnClick">
+            <label>When the user clicks the target frame. Can only target `Control` frames or subtypes such as `Button`.</label>
+        </enumeration>
+        <enumeration value="OnDoubleClick">
+            <label>When the user doubleclicks the target frame. Can only target `Control` frames or subtypes such as `Button`.</label>
+        </enumeration>
+        <enumeration value="OnDragStart">
+            <label>Fires off the first time the user moves the mouse while holding down a click on the target control frame. Can only target `Control` frames or subtypes such as `Button`.</label>
+        </enumeration>
+        <enumeration value="OnDrag">
+            <label>Fires off every time the user moves the mouse while holding down a click on the target control frame. Can only target `Control` frames or subtypes such as `Button`.</label>
+        </enumeration>
+        <enumeration value="OnDragEnd">
+            <label>Fires off once the user lets go of the mouse click after executing a drag on the target control frame. Can only target `Control` frames or subtypes such as `Button`.</label>
+        </enumeration>
+        <enumeration value="OnKeyDown">
+            <label>NMI. Can only target `Control` frames or subtypes such as `Button`.</label>
+        </enumeration>
+        <enumeration value="OnKeyUp">
+            <label>NMI. Can only target `Control` frames or subtypes such as `Button`.</label>
+        </enumeration>
+        <enumeration value="OnKeyRepeat">
+            <label>NMI. Can only target `Control` frames or subtypes such as `Button`.</label>
+        </enumeration>
+        <enumeration value="OnFocusGained">
+            <label>-</label>
+        </enumeration>
+        <enumeration value="OnFocusLost">
+            <label>-</label>
+        </enumeration>
 
         <!-- CButton -->
-        <enumeration value="Toggled" label="When the target frame's `Toggled` property enters the `True` state. Can only target frames with the `Toggled` property such as `Button`."/>
-        <enumeration value="Normal" label="When the target frame's `Toggled` property enters the `False` state. Can only target frames with the `Toggled` property such as `Button`."/>
-        <enumeration value="Pushed" label="When the target frame's `Pushed` property enters the `True` state. Can only target frames with the `Pushed` property such as `Button`."/>
+        <enumeration value="Toggled">
+            <label>When the target frame's `Toggled` property enters the `True` state. Can only target frames with the `Toggled` property such as `Button`.</label>
+        </enumeration>
+        <enumeration value="Normal">
+            <label>When the target frame's `Toggled` property enters the `False` state. Can only target frames with the `Toggled` property such as `Button`.</label>
+        </enumeration>
+        <enumeration value="Pushed">
+            <label>When the target frame's `Pushed` property enters the `True` state. Can only target frames with the `Pushed` property such as `Button`.</label>
+        </enumeration>
 
         <!-- CEditbox -->
-        <enumeration value="OnEnterPressed" label="`CEditBox` only"/>
+        <enumeration value="OnEnterPressed">
+            <label>`CEditBox` only</label>
+        </enumeration>
     </simpleType>
 
     <simpleType name="EAnimationControllerType" kind="enum">
@@ -82,33 +136,70 @@
     </simpleType>
 
     <simpleType name="EAnimationFlags" kind="flags">
-        <enumeration value="NoEventsWhileHidden" label="Animation won't respond to its events if it's being hosted on a frame that is hidden."/>
-        <!-- TODO: test these: -->
-        <enumeration value="Log"/>
+        <enumeration value="NoEventsWhileHidden">
+            <label>Animation won't respond to its events if it's being hosted on a frame that is hidden.</label>
+        </enumeration>
+        <enumeration value="Log">
+            <label>Enables debug logging.</label>
+        </enumeration>
         <enumeration value="Disabled"/>
     </simpleType>
 
     <simpleType name="EAnimationEventAction" kind="enum">
-        <enumeration value="Play"/>
-        <enumeration value="Stop"/>
-        <enumeration value="Pause"/>
-        <enumeration value="ToggleDirection"/>
-        <enumeration value="RefreshBaseValue"/>
-        <enumeration value="Reset"/>
-        <enumeration value="TogglePause"/>
-        <enumeration value="DirectionForward"/>
-        <enumeration value="DirectionReverse"/>
-        <enumeration value="Restart"/>
-        <enumeration value="Breakpoint"/>
+        <enumeration value="Play">
+            <label>Start playing the animation from its current position.</label>
+        </enumeration>
+        <enumeration value="Stop">
+            <label>Stop playing the animation and reset all values to the frame’s original values.</label>
+        </enumeration>
+        <enumeration value="Pause">
+            <label>Stop playing the animation and hold all values.</label>
+        </enumeration>
+        <enumeration value="ToggleDirection">
+            <label>Flip the direction the animation is playing.</label>
+        </enumeration>
+        <enumeration value="RefreshBaseValue">
+            <label>Resets the *starting value* of a controller. This is normally the original value that is reset to when an animation stops and the value used as the base for relative anchors.</label>
+        </enumeration>
+        <enumeration value="Reset">
+            <label>Set the animation’s time to 0 and direction to forward and sets the original value back onto the frame.</label>
+        </enumeration>
+        <enumeration value="TogglePause">
+            <label>Toggles the paused state of the animation.</label>
+        </enumeration>
+        <enumeration value="DirectionForward">
+            <label>Set the animation’s direction to forward.</label>
+        </enumeration>
+        <enumeration value="DirectionReverse">
+            <label>Set the animation’s direction to reverse.</label>
+        </enumeration>
+        <enumeration value="Restart">
+            <label>Sets the animation's time to 0 and direction to forward.</label>
+        </enumeration>
+        <enumeration value="Breakpoint">
+            <label>-</label>
+        </enumeration>
     </simpleType>
 
     <simpleType name="EAnimationEndAction" kind="enum">
-        <enumeration value="Stop"/>
-        <enumeration value="Pause"/>
-        <enumeration value="Clamp"/>
-        <enumeration value="Loop"/>
-        <enumeration value="PingPong"/>
-        <enumeration value="Reset"/>
+        <enumeration value="Stop">
+            <label>Stop the animation and reset to the original values.</label>
+        </enumeration>
+        <enumeration value="Pause">
+            <label>Stop the animation and hold the final value.</label>
+        </enumeration>
+        <enumeration value="Clamp">
+            <label>-</label>
+        </enumeration>
+        <enumeration value="Loop">
+            <label>Continue playing the animation from the beginning.</label>
+        </enumeration>
+        <enumeration value="PingPong">
+            <label>Reverse the direction and continue playing.</label>
+        </enumeration>
+        <enumeration value="Reset">
+            <label>Reset the animation's time and direction then pause.</label>
+        </enumeration>
     </simpleType>
 
     <simpleType name="EAnimationControllerKeyType" kind="enum">
@@ -148,14 +239,30 @@
     </simpleType>
 
     <simpleType name="ECutsceneAction" kind="enum">
-        <enumeration value="SetCutscene"/>
-        <enumeration value="Play"/>
-        <enumeration value="Pause"/>
-        <enumeration value="Stop"/>
-        <enumeration value="Bookmark"/>
-        <enumeration value="AddFilter"/>
-        <enumeration value="RemoveFilter"/>
-        <enumeration value="TimeScale"/>
+        <enumeration value="SetCutscene">
+            <label>Set the cutscene file path.</label>
+        </enumeration>
+        <enumeration value="Play">
+            <label>Play the cutscene.</label>
+        </enumeration>
+        <enumeration value="Pause">
+            <label>Pause the cutscene.</label>
+        </enumeration>
+        <enumeration value="Stop">
+            <label>Stop the cutscene. A stopped cutscene is no longer loaded and will need a new SetCutscene file to play again.</label>
+        </enumeration>
+        <enumeration value="Bookmark">
+            <label>Jump the cutscene's time to the specified bookmark.</label>
+        </enumeration>
+        <enumeration value="AddFilter">
+            <label>Add the filter to the cutscene.</label>
+        </enumeration>
+        <enumeration value="RemoveFilter">
+            <label>Remove the filter from the cutscene.</label>
+        </enumeration>
+        <enumeration value="TimeScale">
+            <label>Sets the playback speed of the cutscene where 1.0 is normal speed.</label>
+        </enumeration>
     </simpleType>
 
     <!--
