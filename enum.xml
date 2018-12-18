@@ -265,6 +265,24 @@
         </enumeration>
     </simpleType>
 
+    <simpleType name="EAnimationDriverType" kind="enum">
+        <enumeration value="Mouse">
+            <label>Mouse movement</label>
+        </enumeration>
+        <enumeration value="MousePos">
+            <label>Mouse position</label>
+        </enumeration>
+    </simpleType>
+
+    <simpleType name="EAnimationDriverMouseAxis" kind="enum">
+        <enumeration value="X">
+            <label>Horizontal</label>
+        </enumeration>
+        <enumeration value="Y">
+            <label>Vertical</label>
+        </enumeration>
+    </simpleType>
+
     <!--
     = STATE GROUP
     -->
