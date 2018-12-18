@@ -1960,7 +1960,7 @@
         <property name="Muted" valueType="Boolean" readonly="true"/>
         <property name="Pushed" valueType="Boolean" readonly="true"/>
         <property name="RejectsFocus" valueType="Boolean" readonly="true"/>
-        <property name="Shortcut" valueType="Hotkey" readonly="false"/>
+        <property name="Shortcut" elementType="Field:Shortcut" readonly="false"/>
     </frameClass>
 
     <!--
