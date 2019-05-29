@@ -1,0 +1,8 @@
+{
+    "xml.fileAssociations": [
+        {
+            "systemId": "dev/sc2layout-map.xsd",
+            "pattern": "**/*.xml"
+        }
+    ]
+}
