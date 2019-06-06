@@ -118,10 +118,6 @@
         <attribute name="val" type="String" use="required"/>
     </complexType>
 
-    <complexType name="Field:StringTable">
-        <attribute name="val" type="String" use="required"/>
-    </complexType>
-
     <complexType name="Field:LayerCount">
         <attribute name="val" type="Uint8" use="required"/>
     </complexType>

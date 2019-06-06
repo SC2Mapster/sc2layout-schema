@@ -3117,7 +3117,7 @@
     -->
     <frameClass name="CGraphFrame" parent="CFrame">
         <property name="DataColor" table="true" valueType="Color" readonly="false"/>
-        <property name="DataName" elementType="Field:StringTable" readonly="false"/>
+        <property name="DataName" table="true" valueType="String" readonly="false"/>
         <property name="Insets" elementType="Field:DesignRect" readonly="false"/>
         <property name="MaxXVisible" valueType="Real32" readonly="false"/>
         <property name="MaxYVisible" valueType="Real32" readonly="false"/>
@@ -5656,7 +5656,7 @@
     ========================================
     -->
     <frameClass name="CRadioButtonGroup" parent="CFrame">
-        <property name="ButtonFrame" elementType="Field:StringTable" readonly="false"/>
+        <property name="ButtonFrame" table="true" valueType="FrameReference" readonly="false"/>
     </frameClass>
 
     <!--
@@ -7016,9 +7016,9 @@
     ========================================
     -->
     <frameClass name="CTabControl" parent="CFrame">
-        <property name="PanelListItem" elementType="Field:StringTable" readonly="false"/>
+        <property name="PanelListItem" table="true" valueType="FrameReference" readonly="false"/>
         <property name="SelectedIndex" valueType="Uint32" readonly="true"/>
-        <property name="TabListItem" elementType="Field:StringTable" readonly="false"/>
+        <property name="TabListItem" table="true" valueType="FrameReference" readonly="false"/>
         <property name="Wrap" valueType="Boolean" readonly="true"/>
     </frameClass>
 
@@ -7346,7 +7346,7 @@
     ========================================
     -->
     <frameClass name="CToggleControl" parent="CControl">
-        <property name="LinkedModalFrame" elementType="Field:StringTable" readonly="false"/>
+        <property name="LinkedModalFrame" table="true" valueType="FrameReference" readonly="false"/>
         <property name="ShortcutEnabledForObservers" valueType="Boolean" readonly="false"/>
         <property name="ShortcutEnabledForParticipants" valueType="Boolean" readonly="false"/>
     </frameClass>
