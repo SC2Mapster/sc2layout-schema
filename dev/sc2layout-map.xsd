@@ -129,6 +129,10 @@
     </xs:element>
     <xs:element name="frameType">
         <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="label"/>
+                <xs:element minOccurs="0" ref="documentation"/>
+            </xs:sequence>
             <xs:attribute name="blizzOnly" use="required" type="xs:boolean"/>
             <xs:attribute name="classType" use="required" type="xs:NCName"/>
             <xs:attribute name="descType" use="required" type="xs:NCName"/>
