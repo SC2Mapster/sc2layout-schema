@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map version="2">
+    <include path="type.xml"/>
+    <include path="enum.xml"/>
+    <include path="field.xml"/>
+    <include path="frame_class.xml"/>
+    <include path="frame_type.xml"/>
+    <include path="stategroup.xml"/>
+    <include path="animation.xml"/>
+    <include path="struct.xml"/>
+</map>

@@ -2,16 +2,24 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
     <xs:element name="map">
         <xs:complexType>
-            <xs:choice>
-                <xs:choice maxOccurs="unbounded">
-                    <xs:element ref="complexType"/>
-                    <xs:element ref="simpleType"/>
-                </xs:choice>
-                <xs:element maxOccurs="unbounded" ref="frameClass"/>
-                <xs:element maxOccurs="unbounded" ref="frameType"/>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="include"/>
+                <xs:element ref="complexType"/>
+                <xs:element ref="simpleType"/>
+                <xs:element ref="element"/>
+                <xs:element ref="frameClass"/>
+                <xs:element ref="frameType"/>
             </xs:choice>
+            <xs:attribute name="version" use="optional" type="xs:string"/>
         </xs:complexType>
     </xs:element>
+
+    <xs:element name="include">
+        <xs:complexType>
+            <xs:attribute name="path" use="required" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
     <xs:element name="complexType">
         <xs:complexType>
             <xs:sequence>
@@ -59,11 +67,12 @@
                 <xs:element minOccurs="0" ref="documentation"/>
                 <xs:element minOccurs="0" maxOccurs="unbounded" ref="alternative"/>
             </xs:sequence>
-            <xs:attribute name="default"/>
-            <xs:attribute name="name" use="required" type="xs:NCName"/>
+            <xs:attribute name="ref" type="xs:NCName"/>
+            <xs:attribute name="name" type="xs:NCName"/>
             <xs:attribute name="simpleType" type="xs:NMTOKEN"/>
             <xs:attribute name="table" type="xs:boolean"/>
             <xs:attribute name="type" type="xs:NMTOKEN"/>
+            <xs:attribute name="default"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="alternative">
