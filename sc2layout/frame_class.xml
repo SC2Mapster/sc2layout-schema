@@ -4688,7 +4688,7 @@
         <property name="RenderBackground" valueType="Boolean" readonly="false"/>
         <property name="RenderBorder" valueType="Boolean" readonly="false"/>
         <property name="ScaleAlphaToTerrain" valueType="Boolean" readonly="false"/>
-        <property name="MinimapTexCoords" valueType="Field:Rect" readonly="true"/>
+        <property name="MinimapTexCoords" elementType="Field:Rect" readonly="true"/>
     </frameClass>
 
     <!--
