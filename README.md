@@ -5,16 +5,25 @@ XML Schema of SC2Layout document from StarCraft II.
 Used in:
 
 * [VSC SC2Layout Extension](https://marketplace.visualstudio.com/items?itemName=talv.sc2layouts)
-
-It will soon also be connected to documentation at https://mapster.talv.space/layouts/frame.
+* [Documentation of SC2Layout](https://mapster.talv.space/ui-layout) - statically generated
 
 ## Contribution guide
 
-Validate your changes before commiting using `xmllint`:
+Validate your changes before commiting by running `./validate.sh` (requires `xmllint` to work).
 
-```sh
-xmllint --noout --schema dev/sc2layout-map.xsd sc2layout/*.xml
-```
+If you've write-access to this repository feel free to push directly `master`. If not, fork the repository and submit pull request.
+
+If your changes are considerable (i.e. restructuring or renaming existing definitions), consider submitting PR for review.
+
+### Tagging releases
+
+This repo is meant to use `Major.Minor` versioning.
+
+VSC extension is setup to auto-download only tagged releases of matching `Major` number.
+
+There are no strict guidelines when to tag a new release - initial plan was to simply always pull recent `master`. But due to fact that schema model is not final, I've opted for tagged releases to avoid bricking VSC extension of users who may not be using most recent version.
+
+In short, contributors are welcome to increament `Minor` version and tag any commit they like. No changelogs required.
 
 ### Recommended tools
 
