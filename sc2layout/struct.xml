@@ -65,8 +65,6 @@
 
     <complexType name="CFrameDesc">
         <extend value="CDesc"/>
-        <element name="Animation" type="CFrameAnimationDesc"/>
-        <element name="StateGroup" type="CFrameStateGroupDesc"/>
     </complexType>
 
     <!--
@@ -74,7 +72,6 @@
     -->
 
     <complexType name="CGameResultDialogDesc">
-        <extend value="CFrameDesc"/>
         <element name="AutoDismissTime" simpleType="Int32"/>
         <element name="ShowOnDefeat" simpleType="Boolean"/>
         <element name="ShowOnVictory" simpleType="Boolean"/>
@@ -83,15 +80,12 @@
     </complexType>
 
     <complexType name="CGlueUIDesc">
-        <extend value="CFrameDesc"/>
     </complexType>
 
     <complexType name="CImageDesc">
-        <extend value="CFrameDesc"/>
     </complexType>
 
     <complexType name="CModelFrameDesc">
-        <extend value="CFrameDesc"/>
         <element name="Camera" type="Field:Camera"/>
         <element name="ClipCameraToViewport" simpleType="Boolean"/>
         <element name="Model" type="Field:Model"/>
@@ -102,7 +96,6 @@
     </complexType>
 
     <complexType name="CPortraitFrameDesc">
-        <extend value="CFrameDesc"/>
         <element name="MovieFrame" simpleType="DescInternal:CMovieFrame"/>
         <element name="ActorLink" simpleType="String"/>
         <element name="ModelLink" simpleType="String"/>
@@ -112,7 +105,6 @@
     </complexType>
 
     <complexType name="CSegmentedBarDesc">
-        <extend value="CFrameDesc"/>
         <element name="ColorStyle" simpleType="String" table="true"/>
         <element name="OwnerColor" simpleType="Color" table="true"/>
         <element name="AllyColor" simpleType="Color" table="true"/>
@@ -128,7 +120,6 @@
     </complexType>
 
     <complexType name="CUnitStatusElementDesc">
-        <extend value="CFrameDesc"/>
         <element name="DisplayPriority" type="Field:DisplayPriority"/>
     </complexType>
 
@@ -160,7 +151,6 @@
     </complexType>
 
     <complexType name="CUnitStatusFrameDesc">
-        <extend value="CFrameDesc"/>
         <element name="AllyRenderPriority" simpleType="Uint16"/>
         <element name="EnemyRenderPriority" simpleType="Uint16"/>
         <element name="OwnerRenderPriority" simpleType="Uint16"/>

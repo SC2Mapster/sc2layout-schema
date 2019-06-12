@@ -41,12 +41,13 @@
 
     <complexType name="Field:Anchor">
         <attribute name="side" type="AnchorSide">
-            <documentation>Side of the frame.</documentation>
+            <label>Side of the frame.</label>
         </attribute>
         <attribute name="relative" type="FrameReference" use="required">
-            <documentation>Path to an Frame where it will anchor.</documentation>
+            <label>Path to an Frame where it will anchor.</label>
         </attribute>
         <attribute name="pos" type="AnchorPos">
+            <label>The area of the target frame where it will anchor to.</label>
             <documentation>
                 <![CDATA[
                 The area of the target frame where it will anchor to.
@@ -58,7 +59,7 @@
             </documentation>
         </attribute>
         <attribute name="offset" type="Int32">
-            <documentation>Extra distance (expressed by number of *UI* pixels) that's applied to anchored position.</documentation>
+            <label>Extra distance (expressed by number of *UI* pixels) that's applied to anchored position.</label>
         </attribute>
     </complexType>
 

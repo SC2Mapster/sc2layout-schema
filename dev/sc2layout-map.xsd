@@ -25,13 +25,12 @@
             <xs:sequence>
                 <xs:choice minOccurs="0" maxOccurs="unbounded">
                     <xs:element ref="label"/>
-                    <xs:element ref="attribute"/>
+                    <xs:element ref="documentation"/>
                     <xs:element ref="extend"/>
-                </xs:choice>
-                <xs:choice>
                     <xs:element ref="flag"/>
+                    <xs:element ref="attribute"/>
                     <xs:element ref="indeterminateAttribute"/>
-                    <xs:element minOccurs="0" maxOccurs="unbounded" ref="element"/>
+                    <xs:element ref="element"/>
                 </xs:choice>
             </xs:sequence>
             <xs:attribute name="name" use="required" type="xs:NMTOKEN"/>
@@ -39,9 +38,9 @@
     </xs:element>
     <xs:element name="attribute">
         <xs:complexType>
-            <xs:choice minOccurs="0">
-                <xs:element ref="documentation"/>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
                 <xs:element ref="label"/>
+                <xs:element ref="documentation"/>
             </xs:choice>
             <xs:attribute name="default"/>
             <xs:attribute name="name" use="required" type="xs:NCName"/>
@@ -84,6 +83,7 @@
     <xs:element name="simpleType">
         <xs:complexType mixed="true">
             <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="label"/>
                 <xs:element ref="flag"/>
                 <xs:element ref="enumeration"/>
                 <xs:element ref="pattern"/>
@@ -144,8 +144,7 @@
             </xs:sequence>
             <xs:attribute name="blizzOnly" use="required" type="xs:boolean"/>
             <xs:attribute name="classType" use="required" type="xs:NCName"/>
-            <xs:attribute name="descType" use="required" type="xs:NCName"/>
-            <xs:attribute name="frameType" use="required" type="xs:NCName"/>
+            <xs:attribute name="descType" use="optional" type="xs:NCName"/>
             <xs:attribute name="name" use="required" type="xs:NMTOKEN"/>
         </xs:complexType>
     </xs:element>
