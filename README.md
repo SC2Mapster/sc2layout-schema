@@ -15,6 +15,17 @@ If you've write-access to this repository feel free to push directly `master`. I
 
 If your changes are considerable (i.e. restructuring or renaming existing definitions), consider submitting PR for review.
 
+### Testing in VSC
+
+In order to instruct VSC extension to load schema files from custom path, simply put this to your config file.
+
+```json
+{
+    "sc2layout.schema.localPath": "/home/kk/dev/sc2-layout-schema"
+}
+```
+> `/home/kk/dev/sc2-layout-schema` in this example points to local clone of this repository and should of course be replaced with your own path.
+
 ### Tagging releases
 
 This repo is meant to use `Major.Minor` versioning.
