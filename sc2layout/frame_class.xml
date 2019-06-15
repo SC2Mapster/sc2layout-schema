@@ -2577,77 +2577,53 @@
     ========================================
     -->
     <frameClass name="CFrame">
-        <property name="AcceptsMouse" valueType="Boolean" readonly="true">
-        </property>
-        <property name="AcceptsMouseDropTarget" valueType="Boolean" readonly="true">
-        </property>
+        <property name="AcceptsMouse" valueType="Boolean" readonly="true"/>
+        <property name="AcceptsMouseDropTarget" valueType="Boolean" readonly="true"/>
         <property name="AcceptsMouseTooltip" valueType="Boolean" readonly="true"/>
-        <property name="Alpha" valueType="Uint8" readonly="true">
-        </property>
+        <property name="Alpha" valueType="Uint8" readonly="true"/>
         <property name="AlphaMaskSiblings" valueType="Boolean" readonly="true"/>
         <property name="AlphaMaskTexture" valueType="Image" readonly="false"/>
-        <property name="Anchor" elementType="Field:Anchor" readonly="false">
-        </property>
+        <property name="Anchor" elementType="Field:Anchor" readonly="false"/>
         <property name="AnchorUseDeviceOffset" valueType="Boolean" readonly="true"/>
-        <property name="AnimLogging" valueType="Boolean" readonly="false">
-        </property>
+        <property name="AnimLogging" valueType="Boolean" readonly="false"/>
         <property name="AutoSizeClamps" elementType="Field:AutoSizeClamp" readonly="false"/>
         <property name="Batch" valueType="Boolean" readonly="true"/>
         <property name="BatchGroup" valueType="Boolean" readonly="true"/>
         <property name="BatchImages" valueType="Boolean" readonly="true"/>
         <property name="BatchText" valueType="Boolean" readonly="true"/>
-        <property name="Blur" valueType="Boolean" readonly="true">
-        </property>
-        <property name="BlurAmount" valueType="Real32" readonly="true">
-        </property>
-        <property name="BlurMode" valueType="EImageShaderBlendMode" readonly="true">
-        </property>
-        <property name="CollapseLayout" valueType="Boolean" readonly="false">
-        </property>
+        <property name="Blur" valueType="Boolean" readonly="true"/>
+        <property name="BlurAmount" valueType="Real32" readonly="true"/>
+        <property name="BlurMode" valueType="EImageShaderBlendMode" readonly="true"/>
+        <property name="CollapseLayout" valueType="Boolean" readonly="false"/>
         <property name="Color" valueType="Color" readonly="true"/>
         <property name="ContextMenu" valueType="ContextMenu" readonly="false"/>
         <property name="ContextMenuButtons" valueType="MouseButtons" readonly="true"/>
         <property name="Debugging" valueType="Boolean" readonly="true"/>
-        <property name="DisabledAlpha" valueType="Uint8" readonly="true">
-        </property>
+        <property name="DisabledAlpha" valueType="Uint8" readonly="true"/>
         <property name="DragHovered" valueType="Boolean" readonly="true"/>
-        <property name="Enabled" valueType="Boolean" readonly="true">
-        </property>
-        <property name="Handle" valueType="Handle" readonly="false">
-        </property>
-        <property name="Height" valueType="Real32" readonly="true">
-        </property>
+        <property name="Enabled" valueType="Boolean" readonly="true"/>
+        <property name="Handle" valueType="Handle" readonly="false"/>
+        <property name="Height" valueType="Real32" readonly="true"/>
         <property name="HitTestTexture" valueType="Image" readonly="false"/>
-        <property name="HookupAlias" elementType="Field:AliasTable" readonly="false">
-        </property>
-        <property name="IgnoreParentAlpha" valueType="Boolean" readonly="true">
-        </property>
-        <property name="IgnoreParentColor" valueType="Boolean" readonly="true">
-        </property>
+        <property name="HookupAlias" elementType="Field:AliasTable" readonly="false"/>
+        <property name="IgnoreParentAlpha" valueType="Boolean" readonly="true"/>
+        <property name="IgnoreParentColor" valueType="Boolean" readonly="true"/>
         <property name="Preload" valueType="Boolean" readonly="true"/>
-        <property name="PreserveAnchorOffset" valueType="Boolean" readonly="true">
-        </property>
-        <property name="RenderPriority" valueType="Uint16" readonly="true">
-        </property>
-        <property name="RenderType" valueType="ERenderType" readonly="true">
-        </property>
+        <property name="PreserveAnchorOffset" valueType="Boolean" readonly="true"/>
+        <property name="RenderPriority" valueType="Uint16" readonly="true"/>
+        <property name="RenderType" valueType="ERenderType" readonly="true"/>
         <property name="ReportsStats" valueType="Boolean" readonly="false"/>
         <property name="SnapToDevicePixels" valueType="Boolean" readonly="true"/>
         <property name="Tooltip" valueType="Text" readonly="true"/>
         <property name="TooltipAnchorPosition" valueType="TooltipAnchorPosition" readonly="true"/>
         <property name="TooltipDelayed" valueType="Boolean" readonly="true"/>
         <property name="TooltipFrame" valueType="Tooltip" readonly="false"/>
-        <property name="Unclipped" valueType="Boolean" readonly="true">
-        </property>
-        <property name="UseAlternateTime" valueType="Boolean" readonly="true">
-        </property>
+        <property name="Unclipped" valueType="Boolean" readonly="true"/>
+        <property name="UseAlternateTime" valueType="Boolean" readonly="true"/>
         <property name="UseTooltip" valueType="Boolean" readonly="true"/>
-        <property name="VisibilityOnFade" valueType="Boolean" readonly="true">
-        </property>
-        <property name="Visible" valueType="Boolean" readonly="true">
-        </property>
-        <property name="Width" valueType="Real32" readonly="true">
-        </property>
+        <property name="VisibilityOnFade" valueType="Boolean" readonly="true"/>
+        <property name="Visible" valueType="Boolean" readonly="true"/>
+        <property name="Width" valueType="Real32" readonly="true"/>
     </frameClass>
 
     <!--
@@ -4445,12 +4421,9 @@
     ========================================
     -->
     <frameClass name="CMathFrame" parent="CFrame">
-        <property name="A" valueType="Real32" readonly="true">
-        </property>
-        <property name="B" valueType="Real32" readonly="true">
-        </property>
-        <property name="Operator" valueType="EMathFrameOperator" readonly="true">
-        </property>
+        <property name="A" valueType="Real32" readonly="true"/>
+        <property name="B" valueType="Real32" readonly="true"/>
+        <property name="Operator" valueType="EMathFrameOperator" readonly="true"/>
         <property name="Result" valueType="Real32" readonly="true"/>
         <property name="ResultCeil" valueType="Int32" readonly="true"/>
         <property name="ResultInt" valueType="Int32" readonly="true"/>

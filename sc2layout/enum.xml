@@ -6,12 +6,9 @@
     ========================================
     -->
     <simpleType name="EDescFlags" kind="flags">
-        <enumeration value="Internal">
-        </enumeration>
-        <enumeration value="Locked">
-        </enumeration>
-        <enumeration value="CreationDeferred">
-        </enumeration>
+        <enumeration value="Internal"/>
+        <enumeration value="Locked"/>
+        <enumeration value="CreationDeferred"/>
     </simpleType>
 
     <!-- dynamically populated -->
@@ -19,60 +16,36 @@
 
     <simpleType name="EAnimationEventNative" kind="enum">
         <!-- CFrame -->
-        <enumeration value="OnShown">
-        </enumeration>
-        <enumeration value="OnHidden">
-        </enumeration>
-        <enumeration value="OnEnabled">
-        </enumeration>
-        <enumeration value="OnDisabled">
-        </enumeration>
-        <enumeration value="OnMouseDown">
-        </enumeration>
-        <enumeration value="OnMouseUp">
-        </enumeration>
-        <enumeration value="OnMouseEnter">
-        </enumeration>
-        <enumeration value="OnMouseExit">
-        </enumeration>
-        <enumeration value="OnMouseWheelIncrement">
-        </enumeration>
-        <enumeration value="OnMouseWheelDecrement">
-        </enumeration>
+        <enumeration value="OnShown"/>
+        <enumeration value="OnHidden"/>
+        <enumeration value="OnEnabled"/>
+        <enumeration value="OnDisabled"/>
+        <enumeration value="OnMouseDown"/>
+        <enumeration value="OnMouseUp"/>
+        <enumeration value="OnMouseEnter"/>
+        <enumeration value="OnMouseExit"/>
+        <enumeration value="OnMouseWheelIncrement"/>
+        <enumeration value="OnMouseWheelDecrement"/>
 
         <!-- CControl -->
-        <enumeration value="OnClick">
-        </enumeration>
-        <enumeration value="OnDoubleClick">
-        </enumeration>
-        <enumeration value="OnDragStart">
-        </enumeration>
-        <enumeration value="OnDrag">
-        </enumeration>
-        <enumeration value="OnDragEnd">
-        </enumeration>
-        <enumeration value="OnKeyDown">
-        </enumeration>
-        <enumeration value="OnKeyUp">
-        </enumeration>
-        <enumeration value="OnKeyRepeat">
-        </enumeration>
-        <enumeration value="OnFocusGained">
-        </enumeration>
-        <enumeration value="OnFocusLost">
-        </enumeration>
+        <enumeration value="OnClick"/>
+        <enumeration value="OnDoubleClick"/>
+        <enumeration value="OnDragStart"/>
+        <enumeration value="OnDrag"/>
+        <enumeration value="OnDragEnd"/>
+        <enumeration value="OnKeyDown"/>
+        <enumeration value="OnKeyUp"/>
+        <enumeration value="OnKeyRepeat"/>
+        <enumeration value="OnFocusGained"/>
+        <enumeration value="OnFocusLost"/>
 
         <!-- CButton -->
-        <enumeration value="Toggled">
-        </enumeration>
-        <enumeration value="Normal">
-        </enumeration>
-        <enumeration value="Pushed">
-        </enumeration>
+        <enumeration value="Toggled"/>
+        <enumeration value="Normal"/>
+        <enumeration value="Pushed"/>
 
         <!-- CEditbox -->
-        <enumeration value="OnEnterPressed">
-        </enumeration>
+        <enumeration value="OnEnterPressed"/>
     </simpleType>
 
     <simpleType name="EAnimationControllerType" kind="enum">
@@ -111,51 +84,32 @@
     </simpleType>
 
     <simpleType name="EAnimationFlags" kind="flags">
-        <enumeration value="NoEventsWhileHidden">
-        </enumeration>
-        <enumeration value="Log">
-        </enumeration>
+        <enumeration value="NoEventsWhileHidden"/>
+        <enumeration value="Log"/>
         <enumeration value="Disabled"/>
     </simpleType>
 
     <simpleType name="EAnimationEventAction" kind="enum">
-        <enumeration value="Play">
-        </enumeration>
-        <enumeration value="Stop">
-        </enumeration>
-        <enumeration value="Pause">
-        </enumeration>
-        <enumeration value="ToggleDirection">
-        </enumeration>
-        <enumeration value="RefreshBaseValue">
-        </enumeration>
-        <enumeration value="Reset">
-        </enumeration>
-        <enumeration value="TogglePause">
-        </enumeration>
-        <enumeration value="DirectionForward">
-        </enumeration>
-        <enumeration value="DirectionReverse">
-        </enumeration>
-        <enumeration value="Restart">
-        </enumeration>
-        <enumeration value="Breakpoint">
-        </enumeration>
+        <enumeration value="Play"/>
+        <enumeration value="Stop"/>
+        <enumeration value="Pause"/>
+        <enumeration value="ToggleDirection"/>
+        <enumeration value="RefreshBaseValue"/>
+        <enumeration value="Reset"/>
+        <enumeration value="TogglePause"/>
+        <enumeration value="DirectionForward"/>
+        <enumeration value="DirectionReverse"/>
+        <enumeration value="Restart"/>
+        <enumeration value="Breakpoint"/>
     </simpleType>
 
     <simpleType name="EAnimationEndAction" kind="enum">
-        <enumeration value="Stop">
-        </enumeration>
-        <enumeration value="Pause">
-        </enumeration>
-        <enumeration value="Clamp">
-        </enumeration>
-        <enumeration value="Loop">
-        </enumeration>
-        <enumeration value="PingPong">
-        </enumeration>
-        <enumeration value="Reset">
-        </enumeration>
+        <enumeration value="Stop"/>
+        <enumeration value="Pause"/>
+        <enumeration value="Clamp"/>
+        <enumeration value="Loop"/>
+        <enumeration value="PingPong"/>
+        <enumeration value="Reset"/>
     </simpleType>
 
     <simpleType name="EAnimationControllerKeyType" kind="enum">
@@ -195,36 +149,24 @@
     </simpleType>
 
     <simpleType name="ECutsceneAction" kind="enum">
-        <enumeration value="SetCutscene">
-        </enumeration>
-        <enumeration value="Play">
-        </enumeration>
-        <enumeration value="Pause">
-        </enumeration>
-        <enumeration value="Stop">
-        </enumeration>
-        <enumeration value="Bookmark">
-        </enumeration>
-        <enumeration value="AddFilter">
-        </enumeration>
-        <enumeration value="RemoveFilter">
-        </enumeration>
-        <enumeration value="TimeScale">
-        </enumeration>
+        <enumeration value="SetCutscene"/>
+        <enumeration value="Play"/>
+        <enumeration value="Pause"/>
+        <enumeration value="Stop"/>
+        <enumeration value="Bookmark"/>
+        <enumeration value="AddFilter"/>
+        <enumeration value="RemoveFilter"/>
+        <enumeration value="TimeScale"/>
     </simpleType>
 
     <simpleType name="EAnimationDriverType" kind="enum">
-        <enumeration value="Mouse">
-        </enumeration>
-        <enumeration value="MousePos">
-        </enumeration>
+        <enumeration value="Mouse"/>
+        <enumeration value="MousePos"/>
     </simpleType>
 
     <simpleType name="EAnimationDriverMouseAxis" kind="enum">
-        <enumeration value="X">
-        </enumeration>
-        <enumeration value="Y">
-        </enumeration>
+        <enumeration value="X"/>
+        <enumeration value="Y"/>
     </simpleType>
 
     <!--

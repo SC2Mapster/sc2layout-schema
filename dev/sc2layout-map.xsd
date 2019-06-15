@@ -24,8 +24,6 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:choice minOccurs="0" maxOccurs="unbounded">
-                    <xs:element ref="label"/>
-                    <xs:element ref="documentation"/>
                     <xs:element ref="extend"/>
                     <xs:element ref="flag"/>
                     <xs:element ref="attribute"/>
@@ -38,10 +36,6 @@
     </xs:element>
     <xs:element name="attribute">
         <xs:complexType>
-            <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:element ref="label"/>
-                <xs:element ref="documentation"/>
-            </xs:choice>
             <xs:attribute name="default"/>
             <xs:attribute name="name" use="required" type="xs:NCName"/>
             <xs:attribute name="type" use="required" type="xs:NCName"/>
@@ -62,8 +56,6 @@
     <xs:element name="element">
         <xs:complexType>
             <xs:sequence>
-                <xs:element minOccurs="0" ref="label"/>
-                <xs:element minOccurs="0" ref="documentation"/>
                 <xs:element minOccurs="0" maxOccurs="unbounded" ref="alternative"/>
             </xs:sequence>
             <xs:attribute name="ref" type="xs:NCName"/>
@@ -83,7 +75,6 @@
     <xs:element name="simpleType">
         <xs:complexType mixed="true">
             <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:element ref="label"/>
                 <xs:element ref="flag"/>
                 <xs:element ref="enumeration"/>
                 <xs:element ref="pattern"/>
@@ -97,9 +88,6 @@
     </xs:element>
     <xs:element name="enumeration">
         <xs:complexType>
-            <xs:sequence>
-                <xs:element minOccurs="0" ref="label"/>
-            </xs:sequence>
             <xs:attribute name="value" use="required" type="xs:NCName"/>
         </xs:complexType>
     </xs:element>
@@ -124,10 +112,6 @@
     </xs:element>
     <xs:element name="property">
         <xs:complexType>
-            <xs:sequence>
-                <xs:element minOccurs="0" ref="label"/>
-                <xs:element minOccurs="0" ref="documentation"/>
-            </xs:sequence>
             <xs:attribute name="elementType" type="xs:NMTOKEN"/>
             <xs:attribute name="name" use="required" type="xs:NCName"/>
             <xs:attribute name="readonly" use="required" type="xs:boolean"/>
@@ -138,18 +122,16 @@
     </xs:element>
     <xs:element name="frameType">
         <xs:complexType>
-            <xs:sequence>
-                <xs:element minOccurs="0" ref="label"/>
-                <xs:element minOccurs="0" ref="documentation"/>
-            </xs:sequence>
-            <xs:attribute name="blizzOnly" use="required" type="xs:boolean"/>
-            <xs:attribute name="classType" use="required" type="xs:NCName"/>
-            <xs:attribute name="descType" use="optional" type="xs:NCName"/>
-            <xs:attribute name="name" use="required" type="xs:NMTOKEN"/>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="blizzOnly" use="required" type="xs:boolean"/>
+                    <xs:attribute name="classType" use="required" type="xs:NCName"/>
+                    <xs:attribute name="descType" use="optional" type="xs:NCName"/>
+                    <xs:attribute name="name" use="required" type="xs:NMTOKEN"/>
+                </xs:extension>
+            </xs:simpleContent>
         </xs:complexType>
     </xs:element>
-    <xs:element name="label" type="xs:string"/>
-    <xs:element name="documentation" type="xs:string"/>
     <xs:element name="flag">
         <xs:complexType>
             <xs:attribute name="name" use="required" type="xs:NCName"/>

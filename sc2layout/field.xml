@@ -40,14 +40,10 @@
     <!--  -->
 
     <complexType name="Field:Anchor">
-        <attribute name="side" type="AnchorSide">
-        </attribute>
-        <attribute name="relative" type="FrameReference" use="required">
-        </attribute>
-        <attribute name="pos" type="AnchorPos">
-        </attribute>
-        <attribute name="offset" type="Int32">
-        </attribute>
+        <attribute name="side" type="AnchorSide"/>
+        <attribute name="relative" type="FrameReference" use="required"/>
+        <attribute name="pos" type="AnchorPos"/>
+        <attribute name="offset" type="Int32"/>
     </complexType>
 
     <complexType name="Field:AliasTable">

@@ -31,12 +31,9 @@
     -->
 
     <complexType name="AnimationEvent">
-        <attribute name="event" type="AnimationEventType" use="required">
-        </attribute>
-        <attribute name="action" type="AnimationEventAction" use="required" default="Reset,Play">
-        </attribute>
-        <attribute name="frame" type="FrameReference" default="$this">
-        </attribute>
+        <attribute name="event" type="AnimationEventType" use="required"/>
+        <attribute name="action" type="AnimationEventAction" use="required" default="Reset,Play"/>
+        <attribute name="frame" type="FrameReference" default="$this"/>
     </complexType>
 
     <!--
@@ -350,14 +347,11 @@
 
     <complexType name="CFrameControllerAnchor">
         <extend value="CFrameController"/>
-        <attribute name="side" type="AnchorSide" use="required">
-        </attribute>
-        <attribute name="relative" type="Boolean" default="True">
-        </attribute>
+        <attribute name="side" type="AnchorSide" use="required"/>
+        <attribute name="relative" type="Boolean" default="True"/>
         <attribute name="relativeFrame" type="FrameReference"/>
         <attribute name="pos" type="AnchorPosPreset"/>
-        <attribute name="unclip" type="Boolean">
-        </attribute>
+        <attribute name="unclip" type="Boolean"/>
         <element name="Key" type="CFrameControllerKeyCurveReal"/>
     </complexType>
 
@@ -384,8 +378,7 @@
         <attribute name="name" type="DescName" use="required" default="Animation"/>
         <attribute name="template" type="DescTemplateName"/>
         <attribute name="file" type="FileDescName"/>
-        <attribute name="speed" type="Real32">
-        </attribute>
+        <attribute name="speed" type="Real32"/>
         <attribute name="flags" type="EAnimationFlags"/>
         <element name="Event" type="AnimationEvent">
         </element>
