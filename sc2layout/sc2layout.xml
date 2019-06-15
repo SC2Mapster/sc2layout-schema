@@ -4,7 +4,6 @@
     <include path="enum.xml"/>
     <include path="field.xml"/>
     <include path="frame_class.xml"/>
-    <include path="frame/utility.xml"/>
     <include path="frame_type.xml"/>
     <include path="stategroup.xml"/>
     <include path="animation.xml"/>

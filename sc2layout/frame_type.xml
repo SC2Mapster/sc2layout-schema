@@ -2010,6 +2010,9 @@
     <frameType name="TextCrawlPanel" classType="CTextCrawlPanel" blizzOnly="false">
     </frameType>
 
+    <frameType name="TextFormatFrame" classType="CTextFormatFrame" blizzOnly="false">
+    </frameType>
+
     <frameType name="TextListBoxItem" classType="CTextListBoxItem" blizzOnly="false">
     </frameType>
 

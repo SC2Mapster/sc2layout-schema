@@ -6982,6 +6982,18 @@
     <frameClass name="CTextCrawlPanel" parent="CFrame">
     </frameClass>
 
+    <!--
+    ========================================
+    :: CTextFormatFrame
+    ========================================
+    -->
+    <frameClass name="CTextFormatFrame" parent="CFrame">
+        <property name="FormatText" valueType="Text" readonly="false"/>
+        <property name="ReplacedName" table="true" valueType="Text" readonly="false"/>
+        <property name="Replacement" table="true" valueType="Text" readonly="false"/>
+        <property name="RequiredReplacements" valueType="Uint32" readonly="false"/>
+        <property name="Text" valueType="String" readonly="true"/>
+    </frameClass>
 
     <!--
     ========================================
