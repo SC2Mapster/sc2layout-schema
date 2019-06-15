@@ -4,14 +4,14 @@ ___
 
 ## event
 
-TBD
+Name of the event. In-built or custom event name.
 
 ## action
 
-TBD
+List of actions to perform when event fires.
 
 ## frame
 
-TBD
+Target frame where event will be listened for.
 
 ___

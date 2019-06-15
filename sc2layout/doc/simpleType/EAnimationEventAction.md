@@ -4,44 +4,44 @@ ___
 
 ## Play
 
-TBD
+Start playing the animation from its current position.
 
 ## Stop
 
-TBD
+Stop playing the animation and reset all values to the frame’s original values.
 
 ## Pause
 
-TBD
+Stop playing the animation and hold all values.
 
 ## ToggleDirection
 
-TBD
+Flip the direction the animation is playing.
 
 ## RefreshBaseValue
 
-TBD
+Resets the *starting value* of a controller. This is normally the original value that is reset to when an animation stops and the value used as the base for relative anchors.
 
 ## Reset
 
-TBD
+Set the animation’s time to 0 and direction to forward and sets the original value back onto the frame.
 
 ## TogglePause
 
-TBD
+Toggles the paused state of the animation.
 
 ## DirectionForward
 
-TBD
+Set the animation’s direction to forward.
 
 ## DirectionReverse
 
-TBD
+Set the animation’s direction to reverse.
 
 ## Restart
 
-TBD
+Sets the animation's time to 0 and direction to forward.
 
 ## Breakpoint
 
-TBD
+-

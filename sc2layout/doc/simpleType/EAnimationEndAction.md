@@ -4,24 +4,24 @@ ___
 
 ## Stop
 
-TBD
+Stop the animation and reset to the original values.
 
 ## Pause
 
-TBD
+Stop the animation and hold the final value.
 
 ## Clamp
 
-TBD
+-
 
 ## Loop
 
-TBD
+Continue playing the animation from the beginning.
 
 ## PingPong
 
-TBD
+Reverse the direction and continue playing.
 
 ## Reset
 
-TBD
+Reset the animation's time and direction then pause.

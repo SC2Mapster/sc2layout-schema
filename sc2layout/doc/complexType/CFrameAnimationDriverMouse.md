@@ -1,4 +1,4 @@
-TBD
+Animation will be driven by movement of the user's mouse anywhere within viewport.
 
 ___
 

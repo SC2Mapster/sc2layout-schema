@@ -4,32 +4,32 @@ ___
 
 ## SetCutscene
 
-TBD
+Set the cutscene file path.
 
 ## Play
 
-TBD
+Play the cutscene.
 
 ## Pause
 
-TBD
+Pause the cutscene.
 
 ## Stop
 
-TBD
+Stop the cutscene. A stopped cutscene is no longer loaded and will need a new SetCutscene file to play again.
 
 ## Bookmark
 
-TBD
+Jump the cutscene's time to the specified bookmark.
 
 ## AddFilter
 
-TBD
+Add the filter to the cutscene.
 
 ## RemoveFilter
 
-TBD
+Remove the filter from the cutscene.
 
 ## TimeScale
 
-TBD
+Sets the playback speed of the cutscene where 1.0 is normal speed.

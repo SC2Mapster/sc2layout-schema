@@ -4,11 +4,11 @@ ___
 
 ## NoEventsWhileHidden
 
-TBD
+Animation won't respond to its events if it's being hosted on a frame that is hidden.
 
 ## Log
 
-TBD
+Enables debug logging.
 
 ## Disabled
 

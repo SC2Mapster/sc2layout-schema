@@ -4,8 +4,8 @@ ___
 
 ## X
 
-TBD
+Horizontal
 
 ## Y
 
-TBD
+Vertical
