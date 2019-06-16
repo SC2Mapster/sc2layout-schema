@@ -178,15 +178,9 @@ TBD
 
 ## TextureType
 
-If a texture is used as a border or filling of a progressbar for example, the texture is broken up into pieces (Edges, Corners and Middle section). This makes seamless scaling along the horizontal or veritcal direction possible. If the image should just show the texture as it is then this value does not need to be set.
+When a texture is used as a border or filling of a progressbar for example, then the texture is broken up into pieces (Edges, Corners and Middle section).
 
-            None: unknown
-            Normal: The image is not adjusted in any way for displaying.
-            Border: The image is chopped up and put together again as displayed here: Border Texture explained
-            HorizontalBorder: Another way the border is chopped up and put together again.
-            EndCap: Another way the border is chopped up and put together again.
-            NineSlice: Image is split into nine quadrants and put together with correct scaling. Corners wont scale only top, left, bottom, right and center
-            Circular: unknown
+This makes seamless scaling along the horizontal or veritcal direction possible. If the image should just show the texture as it is then this value does not need to be set.
             
 example:
 ```xml
