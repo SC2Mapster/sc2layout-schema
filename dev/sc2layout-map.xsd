@@ -122,14 +122,20 @@
     </xs:element>
     <xs:element name="frameType">
         <xs:complexType>
-            <xs:simpleContent>
-                <xs:extension base="xs:string">
-                    <xs:attribute name="blizzOnly" use="required" type="xs:boolean"/>
-                    <xs:attribute name="classType" use="required" type="xs:NCName"/>
-                    <xs:attribute name="descType" use="optional" type="xs:NCName"/>
-                    <xs:attribute name="name" use="required" type="xs:NMTOKEN"/>
-                </xs:extension>
-            </xs:simpleContent>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="hookup"/>
+            </xs:sequence>
+            <xs:attribute name="blizzOnly" use="required" type="xs:boolean"/>
+            <xs:attribute name="classType" use="required" type="xs:NCName"/>
+            <xs:attribute name="descType" use="optional" type="xs:NCName"/>
+            <xs:attribute name="name" use="required" type="xs:NMTOKEN"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="hookup">
+        <xs:complexType>
+            <xs:attribute name="path" use="required" type="xs:string"/>
+            <xs:attribute name="class" use="required" type="xs:NCName"/>
+            <xs:attribute name="required" use="required" type="xs:boolean"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="flag">
