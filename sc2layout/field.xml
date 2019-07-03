@@ -47,7 +47,7 @@
     </complexType>
 
     <complexType name="Field:AliasTable">
-        <attribute name="alias" type="String" use="required"/>
+        <attribute name="alias" type="FrameReference" use="required"/>
         <attribute name="original" type="String" use="required"/>
     </complexType>
 

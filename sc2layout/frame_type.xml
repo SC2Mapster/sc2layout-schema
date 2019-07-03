@@ -13,16 +13,16 @@
     </frameType>
 
     <frameType name="AIBuildPulldown" classType="CAIBuildPulldown" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="ArrowImage" class="CImage" required="true"/>
-        <hookup path="ArrowHoverImage" class="CImage" required="true"/>
-        <hookup path="ItemContainer" class="CFrame" required="true"/>
-        <hookup path="Menu" class="CListBox" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="ArrowImage" class="CImage" required="false"/>
+        <hookup path="ArrowHoverImage" class="CImage" required="false"/>
+        <hookup path="ItemContainer" class="CFrame" required="false"/>
+        <hookup path="Menu" class="CListBox" required="false"/>
     </frameType>
 
     <frameType name="AICommButton" classType="CAICommButton" blizzOnly="true">
-        <hookup path="HotkeyFrame" class="CCommandHotkeyFrame" required="true"/>
+        <hookup path="HotkeyFrame" class="CCommandHotkeyFrame" required="false"/>
     </frameType>
 
     <frameType name="AIGameButton" classType="CAIGameButton" blizzOnly="true">
@@ -31,8 +31,8 @@
         <hookup path="CooldownFinishedImage" class="CImage" required="true"/>
         <hookup path="ChargeLabel" class="CLabel" required="true"/>
         <hookup path="CooldownLabel" class="CLabel" required="true"/>
-        <hookup path="Hotkeyframe" class="CCommandHotkeyFrame" required="true"/>
-        <hookup path="ChargeCooldown" class="CProgressBar" required="true"/>
+        <hookup path="Hotkeyframe" class="CCommandHotkeyFrame" required="false"/>
+        <hookup path="ChargeCooldown" class="CProgressBar" required="false"/>
     </frameType>
 
     <frameType name="AbilIcon" classType="CAbilIcon" blizzOnly="false">
@@ -67,7 +67,7 @@
     </frameType>
 
     <frameType name="AchievementInfoFrame" classType="CAchievementInfoFrame" blizzOnly="true">
-        <hookup path="Icon" class="CImage" required="true"/>
+        <hookup path="Icon" class="CImage" required="false"/>
     </frameType>
 
     <frameType name="AchievementInfoTooltip" classType="CAchievementInfoTooltip" blizzOnly="true">
@@ -86,11 +86,11 @@
     </frameType>
 
     <frameType name="AchievementShowcaseTileListItem" classType="CAchievementShowcaseTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="AchievementTooltip" classType="CAchievementTooltip" blizzOnly="true">
@@ -106,17 +106,17 @@
     </frameType>
 
     <frameType name="ActivateCampaignScreenButton" classType="CActivateCampaignScreenButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ActivateCoopScreenButton" classType="CActivateCoopScreenButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ActiveQueuePanel" classType="CActiveQueuePanel" blizzOnly="false">
@@ -141,11 +141,11 @@
     </frameType>
 
     <frameType name="AlertPanel" classType="CAlertPanel" blizzOnly="false">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="AlliancePanel" classType="CAlliancePanel" blizzOnly="false">
@@ -155,10 +155,10 @@
     </frameType>
 
     <frameType name="AlliancePanelToggleButton" classType="CAlliancePanelToggleButton" blizzOnly="false">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="AllianceSlot" classType="CAllianceSlot" blizzOnly="false">
@@ -223,7 +223,7 @@
 
     <frameType name="BattleClubContextMenu" classType="CBattleClubContextMenu" blizzOnly="true">
         <hookup path="Menu" class="CListBox" required="true"/>
-        <hookup path="TitleLabel" class="CLabel" required="true"/>
+        <hookup path="TitleLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="BattleClubContextMenuListBoxItem" classType="CBattleClubContextMenuListBoxItem" blizzOnly="true">
@@ -236,12 +236,12 @@
 
     <frameType name="BattleLobbyContextMenu" classType="CBattleLobbyContextMenu" blizzOnly="true">
         <hookup path="Menu" class="CListBox" required="true"/>
-        <hookup path="TitleLabel" class="CLabel" required="true"/>
+        <hookup path="TitleLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="BattleMapContextMenu" classType="CBattleMapContextMenu" blizzOnly="true">
         <hookup path="Menu" class="CListBox" required="true"/>
-        <hookup path="TitleLabel" class="CLabel" required="true"/>
+        <hookup path="TitleLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="BattleMapFrame" classType="CBattleMapFrame" blizzOnly="true">
@@ -252,7 +252,7 @@
     </frameType>
 
     <frameType name="BattleMapHowToPlayScreenshotTileList" classType="CBattleMapHowToPlayScreenshotTileList" blizzOnly="true">
-        <hookup path="MapIcon" class="CBattleMapIcon" required="true"/>
+        <hookup path="MapIcon" class="CBattleMapIcon" required="false"/>
     </frameType>
 
     <frameType name="BattleMapIcon" classType="CBattleMapIcon" blizzOnly="true">
@@ -270,11 +270,11 @@
     </frameType>
 
     <frameType name="BattleMapProfileHowToPlayListBox" classType="CBattleMapProfileHowToPlayListBox" blizzOnly="true">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="BattleMapProfileHowToPlayPanel" classType="CBattleMapProfileHowToPlayPanel" blizzOnly="true">
@@ -287,11 +287,11 @@
     </frameType>
 
     <frameType name="BattleMapProfilePatchNotesListBox" classType="CBattleMapProfilePatchNotesListBox" blizzOnly="true">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="BattleMapProfilePatchNotesPanel" classType="CBattleMapProfilePatchNotesPanel" blizzOnly="true">
@@ -339,24 +339,24 @@
     </frameType>
 
     <frameType name="BattleMapVariantPulldown" classType="CBattleMapVariantPulldown" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="ArrowImage" class="CImage" required="true"/>
-        <hookup path="ArrowHoverImage" class="CImage" required="true"/>
-        <hookup path="ItemContainer" class="CFrame" required="true"/>
-        <hookup path="Menu" class="CListBox" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="ArrowImage" class="CImage" required="false"/>
+        <hookup path="ArrowHoverImage" class="CImage" required="false"/>
+        <hookup path="ItemContainer" class="CFrame" required="false"/>
+        <hookup path="Menu" class="CListBox" required="false"/>
     </frameType>
 
     <frameType name="BattleQueueFrame" classType="CBattleQueueFrame" blizzOnly="true">
     </frameType>
 
     <frameType name="BattleQueuePulldown" classType="CBattleQueuePulldown" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="ArrowImage" class="CImage" required="true"/>
-        <hookup path="ArrowHoverImage" class="CImage" required="true"/>
-        <hookup path="ItemContainer" class="CFrame" required="true"/>
-        <hookup path="Menu" class="CListBox" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="ArrowImage" class="CImage" required="false"/>
+        <hookup path="ArrowHoverImage" class="CImage" required="false"/>
+        <hookup path="ItemContainer" class="CFrame" required="false"/>
+        <hookup path="Menu" class="CListBox" required="false"/>
     </frameType>
 
     <frameType name="BattleReportDifficultyButton" classType="CBattleReportDifficultyButton" blizzOnly="false">
@@ -396,18 +396,17 @@
     </frameType>
 
     <frameType name="BattleSettingCheckBox" classType="CBattleSettingCheckBox" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="Button" class="CButton" required="true"/>
-        <hookup path="CheckImage" class="CImage" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="Button" class="CButton" required="false"/>
+        <hookup path="CheckImage" class="CImage" required="false"/>
     </frameType>
 
     <frameType name="BattleUI" classType="CBattleUI" blizzOnly="true">
-        <hookup path="Flash" class="CFlashFrame" required="true"/>
     </frameType>
 
     <frameType name="BattleUserContextMenu" classType="CBattleUserContextMenu" blizzOnly="true">
         <hookup path="Menu" class="CListBox" required="true"/>
-        <hookup path="TitleLabel" class="CLabel" required="true"/>
+        <hookup path="TitleLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="BattleUserContextMenuListBoxItem" classType="CBattleUserContextMenuListBoxItem" blizzOnly="true">
@@ -438,13 +437,13 @@
 
     <frameType name="BehaviorIcon" classType="CBehaviorIcon" blizzOnly="false">
         <hookup path="IconImage" class="CImage" required="true"/>
-        <hookup path="ImageMaskContainer/IconImage" class="CImage" required="true"/>
-        <hookup path="StackLabel" class="CLabel" required="true"/>
-        <hookup path="MaxStackDisplay" class="CFrame" required="true"/>
-        <hookup path="CooldownImage" class="CImage" required="true"/>
-        <hookup path="CooldownBar" class="CProgressBar" required="true"/>
-        <hookup path="StackProgressBar" class="CProgressBar" required="true"/>
-        <hookup path="CooldownLabel" class="CLabel" required="true"/>
+        <hookup path="ImageMaskContainer/IconImage" class="CImage" required="false"/>
+        <hookup path="StackLabel" class="CLabel" required="false"/>
+        <hookup path="MaxStackDisplay" class="CFrame" required="false"/>
+        <hookup path="CooldownImage" class="CImage" required="false"/>
+        <hookup path="CooldownBar" class="CProgressBar" required="false"/>
+        <hookup path="StackProgressBar" class="CProgressBar" required="false"/>
+        <hookup path="CooldownLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="BlockedPlayerItem" classType="CBlockedPlayerItem" blizzOnly="true">
@@ -452,7 +451,7 @@
     </frameType>
 
     <frameType name="BlurFrame" classType="CBlurFrame" blizzOnly="false">
-        <hookup path="LowImage" class="CImage" required="true"/>
+        <hookup path="LowImage" class="CImage" required="false"/>
     </frameType>
 
     <frameType name="Board" classType="CBoard" blizzOnly="true">
@@ -480,11 +479,11 @@
     </frameType>
 
     <frameType name="BookmarkSelectionTileListItem" classType="CBookmarkSelectionTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="BrowserDialog" classType="CBrowserDialog" blizzOnly="true">
@@ -499,32 +498,32 @@
     </frameType>
 
     <frameType name="BundleTileListItem" classType="CBundleTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="Button" classType="CButton" blizzOnly="false">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="BuyButton" classType="CBuyButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="CampaignBuyButton" classType="CCampaignBuyButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="CampaignCacheFrame" classType="CCampaignCacheFrame" blizzOnly="true">
@@ -560,7 +559,7 @@
 
     <frameType name="CampaignPulldownItem" classType="CCampaignPulldownItem" blizzOnly="true">
         <hookup path="ItemLabel" class="CLabel" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="CampaignPurchaseDialog" classType="CCampaignPurchaseDialog" blizzOnly="true">
@@ -666,7 +665,7 @@
 
     <frameType name="ChatDisplayListBoxContextMenu" classType="CChatDisplayListBoxContextMenu" blizzOnly="true">
         <hookup path="Menu" class="CListBox" required="true"/>
-        <hookup path="TitleLabel" class="CLabel" required="true"/>
+        <hookup path="TitleLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="ChatDisplayListBoxItem" classType="CChatDisplayListBoxItem" blizzOnly="true">
@@ -708,7 +707,7 @@
         <hookup path="ChatPanelUserContextMenu" class="CBattleUserContextMenu" required="true"/>
         <hookup path="ChatPanelChatContextMenu" class="CChatSessionContextMenu" required="true"/>
         <hookup path="ChatManagerPanel" class="CChatManagerPanel" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ChatRecipientListBoxItem" classType="CChatRecipientListBoxItem" blizzOnly="true">
@@ -725,7 +724,7 @@
 
     <frameType name="ChatSessionContextMenu" classType="CChatSessionContextMenu" blizzOnly="true">
         <hookup path="Menu" class="CListBox" required="true"/>
-        <hookup path="TitleLabel" class="CLabel" required="true"/>
+        <hookup path="TitleLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="ChatSessionContextMenuListBoxItem" classType="CChatSessionContextMenuListBoxItem" blizzOnly="true">
@@ -742,9 +741,9 @@
     </frameType>
 
     <frameType name="CheckBox" classType="CCheckBox" blizzOnly="false">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="Button" class="CButton" required="true"/>
-        <hookup path="CheckImage" class="CImage" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="Button" class="CButton" required="false"/>
+        <hookup path="CheckImage" class="CImage" required="false"/>
     </frameType>
 
     <frameType name="CinematicTextPanel" classType="CCinematicTextPanel" blizzOnly="false">
@@ -752,12 +751,12 @@
     </frameType>
 
     <frameType name="ClubCategoryPulldown" classType="CClubCategoryPulldown" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="ArrowImage" class="CImage" required="true"/>
-        <hookup path="ArrowHoverImage" class="CImage" required="true"/>
-        <hookup path="ItemContainer" class="CFrame" required="true"/>
-        <hookup path="Menu" class="CListBox" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="ArrowImage" class="CImage" required="false"/>
+        <hookup path="ArrowHoverImage" class="CImage" required="false"/>
+        <hookup path="ItemContainer" class="CFrame" required="false"/>
+        <hookup path="Menu" class="CListBox" required="false"/>
     </frameType>
 
     <frameType name="ClubEventListBoxItem" classType="CClubEventListBoxItem" blizzOnly="true">
@@ -775,7 +774,7 @@
     </frameType>
 
     <frameType name="ClubListBoxItem" classType="CClubListBoxItem" blizzOnly="true">
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ClubListPanel" classType="CClubListPanel" blizzOnly="true">
@@ -841,16 +840,16 @@
     </frameType>
 
     <frameType name="ClubProfileRosterTileListItem" classType="CClubProfileRosterTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ClubRosterContextMenu" classType="CClubRosterContextMenu" blizzOnly="true">
         <hookup path="Menu" class="CListBox" required="true"/>
-        <hookup path="TitleLabel" class="CLabel" required="true"/>
+        <hookup path="TitleLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="ClubSearchFrame" classType="CClubSearchFrame" blizzOnly="true">
@@ -859,11 +858,11 @@
     </frameType>
 
     <frameType name="ClubSearchTileListItem" classType="CClubSearchTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ColorOptionsPanel" classType="CColorOptionsPanel" blizzOnly="true">
@@ -872,7 +871,7 @@
 
     <frameType name="ColorOverrideListBoxItem" classType="CColorOverrideListBoxItem" blizzOnly="true">
         <hookup path="ItemLabel" class="CLabel" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="CommandButton" classType="CCommandButton" blizzOnly="false">
@@ -881,8 +880,8 @@
         <hookup path="CooldownFinishedImage" class="CImage" required="true"/>
         <hookup path="ChargeLabel" class="CLabel" required="true"/>
         <hookup path="CooldownLabel" class="CLabel" required="true"/>
-        <hookup path="Hotkeyframe" class="CCommandHotkeyFrame" required="true"/>
-        <hookup path="ChargeCooldown" class="CProgressBar" required="true"/>
+        <hookup path="Hotkeyframe" class="CCommandHotkeyFrame" required="false"/>
+        <hookup path="ChargeCooldown" class="CProgressBar" required="false"/>
     </frameType>
 
     <frameType name="CommandHotkeyFrame" classType="CCommandHotkeyFrame" blizzOnly="false">
@@ -932,18 +931,18 @@
     </frameType>
 
     <frameType name="CommanderBuyButton" classType="CCommanderBuyButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="CommanderCacheFrame" classType="CCommanderCacheFrame" blizzOnly="true">
     </frameType>
 
     <frameType name="CommanderDifficultyTileList" classType="CCommanderDifficultyTileList" blizzOnly="true">
-        <hookup path="PageSelector" class="CPageSelector" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="PageSelector" class="CPageSelector" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
     </frameType>
 
     <frameType name="CommanderDifficultyTileListItem" classType="CCommanderDifficultyTileListItem" blizzOnly="true">
@@ -968,8 +967,8 @@
     </frameType>
 
     <frameType name="CommanderMasteryTalentFrame" classType="CCommanderMasteryTalentFrame" blizzOnly="true">
-        <hookup path="IncrementButton" class="CButton" required="true"/>
-        <hookup path="DecrementButton" class="CButton" required="true"/>
+        <hookup path="IncrementButton" class="CButton" required="false"/>
+        <hookup path="DecrementButton" class="CButton" required="false"/>
     </frameType>
 
     <frameType name="CommanderPurchaseDialog" classType="CCommanderPurchaseDialog" blizzOnly="true">
@@ -994,17 +993,15 @@
 
     <frameType name="CommanderTalentTileListItem" classType="CCommanderTalentTileListItem" blizzOnly="true">
         <hookup path="Icon" class="CImage" required="true"/>
-        <hookup path="LevelLabel" class="CLabel" required="true"/>
-        <hookup path="NameLabel" class="CLabel" required="true"/>
-        <hookup path="DescriptionLabel" class="CLabel" required="true"/>
+        <hookup path="LevelLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="CommanderTileListItem" classType="CCommanderTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="CommanderUnitTileListItem" classType="CCommanderUnitTileListItem" blizzOnly="true">
@@ -1033,11 +1030,11 @@
     </frameType>
 
     <frameType name="ConsoleSkinTileListItem" classType="CConsoleSkinTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ContentFeedPanel" classType="CContentFeedPanel" blizzOnly="true">
@@ -1049,26 +1046,25 @@
     </frameType>
 
     <frameType name="ContentFeedTileList" classType="CContentFeedTileList" blizzOnly="true">
-        <hookup path="PageSelector" class="CPageSelector" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="PageSelector" class="CPageSelector" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
     </frameType>
 
     <frameType name="ContentFeedTileListItem" classType="CContentFeedTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ContextMenu" classType="CContextMenu" blizzOnly="false">
         <hookup path="Menu" class="CListBox" required="true"/>
-        <hookup path="TitleLabel" class="CLabel" required="true"/>
+        <hookup path="TitleLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="ContextMenuListBoxItem" classType="CContextMenuListBoxItem" blizzOnly="false">
         <hookup path="NameLabel" class="CLabel" required="true"/>
-        <hookup path="SizingFrame" class="CFrame" required="true"/>
     </frameType>
 
     <frameType name="Control" classType="CControl" blizzOnly="false">
@@ -1088,10 +1084,10 @@
     </frameType>
 
     <frameType name="ConvertToReplayButton" classType="CConvertToReplayButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="CooldownFrame" classType="CCooldownFrame" blizzOnly="false">
@@ -1169,10 +1165,10 @@
     </frameType>
 
     <frameType name="CopyClipboardButton" classType="CCopyClipboardButton" blizzOnly="false">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="CountdownLabel" classType="CCountdownLabel" blizzOnly="false">
@@ -1230,10 +1226,10 @@
     </frameType>
 
     <frameType name="CustomGamePlayButton" classType="CCustomGamePlayButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="CustomGameTileListItem" classType="CCustomGameTileListItem" blizzOnly="true">
@@ -1262,11 +1258,11 @@
     </frameType>
 
     <frameType name="DateSelectionTileListItem" classType="CDateSelectionTileListItem" blizzOnly="false">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="DescFrameCountFrame" classType="CDescFrameCountFrame" blizzOnly="true">
@@ -1283,18 +1279,18 @@
     </frameType>
 
     <frameType name="DescTreeView" classType="CDescTreeView" blizzOnly="true">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="DifficultyLevelButton" classType="CDifficultyLevelButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="DifficultyLevelFrame" classType="CDifficultyLevelFrame" blizzOnly="true">
@@ -1304,12 +1300,12 @@
     </frameType>
 
     <frameType name="DifficultyPulldown" classType="CDifficultyPulldown" blizzOnly="false">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="ArrowImage" class="CImage" required="true"/>
-        <hookup path="ArrowHoverImage" class="CImage" required="true"/>
-        <hookup path="ItemContainer" class="CFrame" required="true"/>
-        <hookup path="Menu" class="CListBox" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="ArrowImage" class="CImage" required="false"/>
+        <hookup path="ArrowHoverImage" class="CImage" required="false"/>
+        <hookup path="ItemContainer" class="CFrame" required="false"/>
+        <hookup path="Menu" class="CListBox" required="false"/>
     </frameType>
 
     <frameType name="DifficultySelectionDialog" classType="CDifficultySelectionDialog" blizzOnly="true">
@@ -1332,12 +1328,12 @@
     </frameType>
 
     <frameType name="EditBox" classType="CEditBox" blizzOnly="false">
-        <hookup path="Image" class="CImage" required="true"/>
-        <hookup path="LabelContainerFrame/Label" class="CLabel" required="true"/>
-        <hookup path="LabelContainerFrame" class="CFrame" required="true"/>
-        <hookup path="SearchTextLabel" class="CLabel" required="true"/>
-        <hookup path="ClearTextButton" class="CButton" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="Image" class="CImage" required="false"/>
+        <hookup path="LabelContainerFrame/Label" class="CLabel" required="false"/>
+        <hookup path="LabelContainerFrame" class="CFrame" required="false"/>
+        <hookup path="SearchTextLabel" class="CLabel" required="false"/>
+        <hookup path="ClearTextButton" class="CButton" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
     </frameType>
 
     <frameType name="EditBoxConfirmationDialog" classType="CEditBoxConfirmationDialog" blizzOnly="false">
@@ -1368,10 +1364,10 @@
     </frameType>
 
     <frameType name="EnterTournamentPortalButton" classType="CEnterTournamentPortalButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="EquipmentIcon" descType="CImageDesc" classType="CEquipmentIcon" blizzOnly="true">
@@ -1383,20 +1379,20 @@
     </frameType>
 
     <frameType name="ExpansionPulldown" classType="CExpansionPulldown" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="ArrowImage" class="CImage" required="true"/>
-        <hookup path="ArrowHoverImage" class="CImage" required="true"/>
-        <hookup path="ItemContainer" class="CFrame" required="true"/>
-        <hookup path="Menu" class="CListBox" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="ArrowImage" class="CImage" required="false"/>
+        <hookup path="ArrowHoverImage" class="CImage" required="false"/>
+        <hookup path="ItemContainer" class="CFrame" required="false"/>
+        <hookup path="Menu" class="CListBox" required="false"/>
     </frameType>
 
     <frameType name="FileListBox" classType="CFileListBox" blizzOnly="true">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="FilePanel" classType="CFilePanel" blizzOnly="true">
@@ -1439,18 +1435,18 @@
     </frameType>
 
     <frameType name="FrameTreeView" classType="CFrameTreeView" blizzOnly="true">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="FriendsButton" classType="CFriendsButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="GameButton" classType="CGameButton" blizzOnly="true">
@@ -1459,8 +1455,6 @@
         <hookup path="CooldownFinishedImage" class="CImage" required="true"/>
         <hookup path="ChargeLabel" class="CLabel" required="true"/>
         <hookup path="CooldownLabel" class="CLabel" required="true"/>
-        <hookup path="Hotkeyframe" class="CCommandHotkeyFrame" required="true"/>
-        <hookup path="ChargeCooldown" class="CProgressBar" required="true"/>
     </frameType>
 
     <frameType name="GameContentDialog" classType="CGameContentDialog" blizzOnly="true">
@@ -1471,22 +1465,22 @@
     </frameType>
 
     <frameType name="GameContentDialogButton" classType="CGameContentDialogButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="GameContentFrame" classType="CGameContentFrame" blizzOnly="true">
     </frameType>
 
     <frameType name="GameContentSortPulldown" classType="CGameContentSortPulldown" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="ArrowImage" class="CImage" required="true"/>
-        <hookup path="ArrowHoverImage" class="CImage" required="true"/>
-        <hookup path="ItemContainer" class="CFrame" required="true"/>
-        <hookup path="Menu" class="CListBox" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="ArrowImage" class="CImage" required="false"/>
+        <hookup path="ArrowHoverImage" class="CImage" required="false"/>
+        <hookup path="ItemContainer" class="CFrame" required="false"/>
+        <hookup path="Menu" class="CListBox" required="false"/>
     </frameType>
 
     <frameType name="GameListItem" classType="CGameListItem" blizzOnly="true">
@@ -1682,31 +1676,31 @@
     </frameType>
 
     <frameType name="GlueButton" classType="CGlueButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="GlueClock" classType="CGlueClock" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="GlueHyperlinkButton" classType="CGlueHyperlinkButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="GlueOptionsButton" classType="CGlueOptionsButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="GlueUI" descType="CGlueUIDesc" classType="CGlueUI" blizzOnly="true">
@@ -2016,7 +2010,7 @@
     <frameType name="IdleButton" classType="CIdleButton" blizzOnly="false">
         <hookup path="CountLabel" class="CLabel" required="true"/>
         <hookup path="HotkeyFrame" class="CCommandHotkeyFrame" required="true"/>
-        <hookup path="GlowImage" class="CImage" required="true"/>
+        <hookup path="GlowImage" class="CImage" required="false"/>
     </frameType>
 
     <frameType name="Image" descType="CImageDesc" classType="CImage" blizzOnly="false">
@@ -2138,10 +2132,10 @@
     </frameType>
 
     <frameType name="InventoryContainer" classType="CInventoryContainer" blizzOnly="true">
-        <hookup path="Button" class="CCommandButton" required="true"/>
-        <hookup path="Name" class="CLabel" required="true"/>
-        <hookup path="Close" class="CButton" required="true"/>
-        <hookup path="UnitModel" class="CModelFrame" required="true"/>
+        <hookup path="Button" class="CCommandButton" required="false"/>
+        <hookup path="Name" class="CLabel" required="false"/>
+        <hookup path="Close" class="CButton" required="false"/>
+        <hookup path="UnitModel" class="CModelFrame" required="false"/>
     </frameType>
 
     <frameType name="InventoryPanel" classType="CInventoryPanel" blizzOnly="true">
@@ -2168,10 +2162,10 @@
     </frameType>
 
     <frameType name="JoinTournamentMatchButton" classType="CJoinTournamentMatchButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="Label" classType="CLabel" blizzOnly="false">
@@ -2191,11 +2185,11 @@
     </frameType>
 
     <frameType name="LadderTeamTileListItem" classType="CLadderTeamTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="LanguageOptionsPanel" classType="CLanguageOptionsPanel" blizzOnly="true">
@@ -2207,10 +2201,10 @@
     </frameType>
 
     <frameType name="LaunchURLButton" classType="CLaunchURLButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="LeaderPanel" classType="CLeaderPanel" blizzOnly="false">
@@ -2285,25 +2279,25 @@
     </frameType>
 
     <frameType name="LeaveTournamentButton" classType="CLeaveTournamentButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="LeaveTournamentPortalButton" classType="CLeaveTournamentPortalButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ListBox" classType="CListBox" blizzOnly="false">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="LoadGameDialog" classType="CLoadGameDialog" blizzOnly="true">
@@ -2335,7 +2329,7 @@
         <hookup path="CommanderImage" class="CImage" required="true"/>
         <hookup path="CommanderNameLabel" class="CLabel" required="true"/>
         <hookup path="CommanderLevelLabel" class="CLabel" required="true"/>
-        <hookup path="PlayerNameLabel" class="CLabel" required="true"/>
+        <hookup path="PlayerNameLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="LobbyAttributeEntryListBoxItem" classType="CLobbyAttributeEntryListBoxItem" blizzOnly="true">
@@ -2343,12 +2337,12 @@
     </frameType>
 
     <frameType name="LobbyAttributePulldown" classType="CLobbyAttributePulldown" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="ArrowImage" class="CImage" required="true"/>
-        <hookup path="ArrowHoverImage" class="CImage" required="true"/>
-        <hookup path="ItemContainer" class="CFrame" required="true"/>
-        <hookup path="Menu" class="CListBox" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="ArrowImage" class="CImage" required="false"/>
+        <hookup path="ArrowHoverImage" class="CImage" required="false"/>
+        <hookup path="ItemContainer" class="CFrame" required="false"/>
+        <hookup path="Menu" class="CListBox" required="false"/>
     </frameType>
 
     <frameType name="LobbyCountdownPanel" classType="CLobbyCountdownPanel" blizzOnly="true">
@@ -2392,7 +2386,7 @@
     </frameType>
 
     <frameType name="LobbyPlayerSlotsTeamFrame" classType="CLobbyPlayerSlotsTeamFrame" blizzOnly="true">
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="LobbyPreviewFrame" classType="CLobbyPreviewFrame" blizzOnly="true">
@@ -2400,11 +2394,11 @@
     </frameType>
 
     <frameType name="LobbyPreviewSlotTileListItem" classType="CLobbyPreviewSlotTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="LobbyPreviewTeamTileListItem" classType="CLobbyPreviewTeamTileListItem" blizzOnly="true">
@@ -2416,11 +2410,11 @@
     </frameType>
 
     <frameType name="LobbyReplayInfoTileListItem" classType="CLobbyReplayInfoTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="LobbyResumeReplayFrame" classType="CLobbyResumeReplayFrame" blizzOnly="true">
@@ -2429,11 +2423,11 @@
     </frameType>
 
     <frameType name="LobbyResumeReplayTileListItem" classType="CLobbyResumeReplayTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="LobbySlot" classType="CLobbySlot" blizzOnly="true">
@@ -2450,7 +2444,7 @@
 
     <frameType name="LobbySlotContextMenu" classType="CLobbySlotContextMenu" blizzOnly="true">
         <hookup path="Menu" class="CListBox" required="true"/>
-        <hookup path="TitleLabel" class="CLabel" required="true"/>
+        <hookup path="TitleLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="LobbySlotSetup" classType="CLobbySlotSetup" blizzOnly="true">
@@ -2463,19 +2457,19 @@
 
     <frameType name="LobbyTandemContextMenu" classType="CLobbyTandemContextMenu" blizzOnly="true">
         <hookup path="Menu" class="CListBox" required="true"/>
-        <hookup path="TitleLabel" class="CLabel" required="true"/>
+        <hookup path="TitleLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="LobbyTileListItem" classType="CLobbyTileListItem" blizzOnly="true">
     </frameType>
 
     <frameType name="LocalePulldown" classType="CLocalePulldown" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="ArrowImage" class="CImage" required="true"/>
-        <hookup path="ArrowHoverImage" class="CImage" required="true"/>
-        <hookup path="ItemContainer" class="CFrame" required="true"/>
-        <hookup path="Menu" class="CListBox" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="ArrowImage" class="CImage" required="false"/>
+        <hookup path="ArrowHoverImage" class="CImage" required="false"/>
+        <hookup path="ItemContainer" class="CFrame" required="false"/>
+        <hookup path="Menu" class="CListBox" required="false"/>
     </frameType>
 
     <frameType name="LogMessageListBoxItem" classType="CLogMessageListBoxItem" blizzOnly="true">
@@ -2525,12 +2519,12 @@
     </frameType>
 
     <frameType name="MatchmakingActivityFilterPulldown" classType="CMatchmakingActivityFilterPulldown" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="ArrowImage" class="CImage" required="true"/>
-        <hookup path="ArrowHoverImage" class="CImage" required="true"/>
-        <hookup path="ItemContainer" class="CFrame" required="true"/>
-        <hookup path="Menu" class="CListBox" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="ArrowImage" class="CImage" required="false"/>
+        <hookup path="ArrowHoverImage" class="CImage" required="false"/>
+        <hookup path="ItemContainer" class="CFrame" required="false"/>
+        <hookup path="Menu" class="CListBox" required="false"/>
     </frameType>
 
     <frameType name="MatchmakingActivityFrame" classType="CMatchmakingActivityFrame" blizzOnly="true">
@@ -2578,28 +2572,28 @@
     </frameType>
 
     <frameType name="MatchmakingPlayButton" classType="CMatchmakingPlayButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="MatchmakingQueueTileList" classType="CMatchmakingQueueTileList" blizzOnly="true">
-        <hookup path="PageSelector" class="CPageSelector" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="PageSelector" class="CPageSelector" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
     </frameType>
 
     <frameType name="MatchmakingQueueTileListItem" classType="CMatchmakingQueueTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="MatchmakingRaceTileList" classType="CMatchmakingRaceTileList" blizzOnly="true">
-        <hookup path="PageSelector" class="CPageSelector" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="PageSelector" class="CPageSelector" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
     </frameType>
 
     <frameType name="MatchmakingSearchPanel" classType="CMatchmakingSearchPanel" blizzOnly="true">
@@ -2670,11 +2664,11 @@
     </frameType>
 
     <frameType name="Minimap" classType="CMinimap" blizzOnly="true">
-        <hookup path="CameraViewFrustumFrame" class="CMinimapCameraViewFrustumFrame" required="true"/>
-        <hookup path="ViewFrustumImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="PingFrame" class="CModelFrame" required="true"/>
-        <hookup path="MinimapUnitStatusPanel" class="CMinimapUnitStatusPanel" required="true"/>
+        <hookup path="CameraViewFrustumFrame" class="CMinimapCameraViewFrustumFrame" required="false"/>
+        <hookup path="ViewFrustumImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="PingFrame" class="CModelFrame" required="false"/>
+        <hookup path="MinimapUnitStatusPanel" class="CMinimapUnitStatusPanel" required="false"/>
     </frameType>
 
     <frameType name="MinimapCameraViewFrustumFrame" classType="CMinimapCameraViewFrustumFrame" blizzOnly="true">
@@ -2755,11 +2749,11 @@
     </frameType>
 
     <frameType name="MultipleDirectoryFileListBox" classType="CMultipleDirectoryFileListBox" blizzOnly="false">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="NetworkGameListItem" classType="CNetworkGameListItem" blizzOnly="true">
@@ -2768,10 +2762,10 @@
     </frameType>
 
     <frameType name="NydusLinkButton" classType="CNydusLinkButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ObjectivePanel" classType="CObjectivePanel" blizzOnly="false">
@@ -2825,10 +2819,10 @@
     </frameType>
 
     <frameType name="OptionButton" classType="COptionButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="OptionsDialog" classType="COptionsDialog" blizzOnly="true">
@@ -2868,24 +2862,24 @@
     <frameType name="PageSelectorAdvanced" classType="CPageSelectorAdvanced" blizzOnly="false">
         <hookup path="HomeButton" class="CButton" required="true"/>
         <hookup path="EndButton" class="CButton" required="true"/>
-        <hookup path="IncrementButton" class="CButton" required="true"/>
-        <hookup path="DecrementButton" class="CButton" required="true"/>
+        <hookup path="IncrementButton" class="CButton" required="false"/>
+        <hookup path="DecrementButton" class="CButton" required="false"/>
         <hookup path="Pulldown" class="CPulldown" required="true"/>
     </frameType>
 
     <frameType name="PageSelectorButtonList" classType="CPageSelectorButtonList" blizzOnly="false">
-        <hookup path="IncrementButton" class="CButton" required="true"/>
-        <hookup path="DecrementButton" class="CButton" required="true"/>
+        <hookup path="IncrementButton" class="CButton" required="false"/>
+        <hookup path="DecrementButton" class="CButton" required="false"/>
     </frameType>
 
     <frameType name="ParentCenteredFrame" classType="CParentCenteredFrame" blizzOnly="false">
     </frameType>
 
     <frameType name="PartyInviteButton" classType="CPartyInviteButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="PartyInvitePanel" classType="CPartyInvitePanel" blizzOnly="true">
@@ -3174,11 +3168,11 @@
     </frameType>
 
     <frameType name="ProgressBar" classType="CProgressBar" blizzOnly="false">
-        <hookup path="FillImageContainer" class="CFrame" required="true"/>
-        <hookup path="FillImageContainer/FillImage" class="CImage" required="true"/>
-        <hookup path="BorderImage" class="CImage" required="true"/>
-        <hookup path="EndCapImage" class="CImage" required="true"/>
-        <hookup path="StartCapImage" class="CImage" required="true"/>
+        <hookup path="FillImageContainer" class="CFrame" required="false"/>
+        <hookup path="FillImageContainer/FillImage" class="CImage" required="false"/>
+        <hookup path="BorderImage" class="CImage" required="false"/>
+        <hookup path="EndCapImage" class="CImage" required="false"/>
+        <hookup path="StartCapImage" class="CImage" required="false"/>
     </frameType>
 
     <frameType name="ProgressBarDialog" classType="CProgressBarDialog" blizzOnly="true">
@@ -3187,27 +3181,27 @@
     </frameType>
 
     <frameType name="ProgressButton" classType="CProgressButton" blizzOnly="false">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="PropertyListBox" classType="CPropertyListBox" blizzOnly="true">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="Pulldown" classType="CPulldown" blizzOnly="false">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="ArrowImage" class="CImage" required="true"/>
-        <hookup path="ArrowHoverImage" class="CImage" required="true"/>
-        <hookup path="ItemContainer" class="CFrame" required="true"/>
-        <hookup path="Menu" class="CListBox" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="ArrowImage" class="CImage" required="false"/>
+        <hookup path="ArrowHoverImage" class="CImage" required="false"/>
+        <hookup path="ItemContainer" class="CFrame" required="false"/>
+        <hookup path="Menu" class="CListBox" required="false"/>
     </frameType>
 
     <frameType name="PurchaseCategoryFrame" classType="CPurchaseCategoryFrame" blizzOnly="false">
@@ -3267,10 +3261,10 @@
     </frameType>
 
     <frameType name="QueueButton" classType="CQueueButton" blizzOnly="false">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="RaceCacheFrame" classType="CRaceCacheFrame" blizzOnly="false">
@@ -3280,24 +3274,23 @@
     </frameType>
 
     <frameType name="RacePulldown" classType="CRacePulldown" blizzOnly="false">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="ArrowImage" class="CImage" required="true"/>
-        <hookup path="ArrowHoverImage" class="CImage" required="true"/>
-        <hookup path="ItemContainer" class="CFrame" required="true"/>
-        <hookup path="Menu" class="CListBox" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="ArrowImage" class="CImage" required="false"/>
+        <hookup path="ArrowHoverImage" class="CImage" required="false"/>
+        <hookup path="ItemContainer" class="CFrame" required="false"/>
+        <hookup path="Menu" class="CListBox" required="false"/>
     </frameType>
 
     <frameType name="RaceTabControl" classType="CRaceTabControl" blizzOnly="false">
-        <hookup path="Selector" class="CFrame" required="true"/>
     </frameType>
 
     <frameType name="RaceTileListItem" classType="CRaceTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="RadioButtonGroup" classType="CRadioButtonGroup" blizzOnly="false">
@@ -3423,11 +3416,11 @@
     </frameType>
 
     <frameType name="ResourceRequestAlertPanel" classType="CResourceRequestAlertPanel" blizzOnly="false">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ResumeReplayDialog" classType="CResumeReplayDialog" blizzOnly="true">
@@ -3445,11 +3438,11 @@
     </frameType>
 
     <frameType name="RewardItemTileListItem" classType="CRewardItemTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="RewardLockIcon" classType="CRewardLockIcon" blizzOnly="true">
@@ -3498,11 +3491,11 @@
     </frameType>
 
     <frameType name="ScoreScreenBuildOrderTileListItem" classType="CScoreScreenBuildOrderTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ScoreScreenExperienceFrame" classType="CScoreScreenExperienceFrame" blizzOnly="true">
@@ -3516,16 +3509,16 @@
     </frameType>
 
     <frameType name="ScoreScreenGraphsPlayerTileList" classType="CScoreScreenGraphsPlayerTileList" blizzOnly="true">
-        <hookup path="PageSelector" class="CPageSelector" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="PageSelector" class="CPageSelector" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
     </frameType>
 
     <frameType name="ScoreScreenGraphsPlayerTileListItem" classType="CScoreScreenGraphsPlayerTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ScoreScreenLadderFrame" classType="CScoreScreenLadderFrame" blizzOnly="true">
@@ -3560,7 +3553,7 @@
         <hookup path="LevelLabel" class="CLabel" required="true"/>
         <hookup path="ProgressBar" class="CProgressBar" required="true"/>
         <hookup path="BoostProgressBar" class="CProgressBar" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ScoreScreenStatsFrame" classType="CScoreScreenStatsFrame" blizzOnly="true">
@@ -3795,8 +3788,8 @@
     </frameType>
 
     <frameType name="ScrollBar" classType="CScrollBar" blizzOnly="false">
-        <hookup path="IncrementButton" class="CButton" required="true"/>
-        <hookup path="DecrementButton" class="CButton" required="true"/>
+        <hookup path="IncrementButton" class="CButton" required="false"/>
+        <hookup path="DecrementButton" class="CButton" required="false"/>
     </frameType>
 
     <frameType name="ScrollableFrame" classType="CScrollableFrame" blizzOnly="false">
@@ -3820,10 +3813,10 @@
     </frameType>
 
     <frameType name="SelectUnlockableButton" classType="CSelectUnlockableButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="SelectedBundleFrame" classType="CSelectedBundleFrame" blizzOnly="true">
@@ -3831,11 +3824,11 @@
     </frameType>
 
     <frameType name="SelectedBundleItemTileListItem" classType="CSelectedBundleItemTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="SelectedDecalPackFrame" classType="CSelectedDecalPackFrame" blizzOnly="true">
@@ -3873,19 +3866,19 @@
     </frameType>
 
     <frameType name="SkinCacheTileListItem" classType="CSkinCacheTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="SkinPackLargeFormatTileListItem" classType="CSkinPackLargeFormatTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="SkinPackLargeFormatUnitSelectionFrame" classType="CSkinPackLargeFormatUnitSelectionFrame" blizzOnly="true">
@@ -3894,11 +3887,11 @@
     </frameType>
 
     <frameType name="SkinPackUnitCacheTileListItem" classType="CSkinPackUnitCacheTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="SkinPackUnitSelectionFrame" classType="CSkinPackUnitSelectionFrame" blizzOnly="true">
@@ -3906,9 +3899,9 @@
     </frameType>
 
     <frameType name="Slider" classType="CSlider" blizzOnly="false">
-        <hookup path="Button" class="CButton" required="true"/>
-        <hookup path="FillContainer" class="CFrame" required="true"/>
-        <hookup path="Image" class="CImage" required="true"/>
+        <hookup path="Button" class="CButton" required="false"/>
+        <hookup path="FillContainer" class="CFrame" required="false"/>
+        <hookup path="Image" class="CImage" required="false"/>
     </frameType>
 
     <frameType name="SocialButton" classType="CSocialButton" blizzOnly="true">
@@ -3973,10 +3966,10 @@
     </frameType>
 
     <frameType name="SoundButton" classType="CSoundButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="SoundOptionsPanel" classType="CSoundOptionsPanel" blizzOnly="true">
@@ -4049,7 +4042,7 @@
 
     <frameType name="StatusListBoxItem" classType="CStatusListBoxItem" blizzOnly="true">
         <hookup path="ItemLabel" class="CLabel" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="StereoscopicOptionsPanel" classType="CStereoscopicOptionsPanel" blizzOnly="true">
@@ -4128,7 +4121,6 @@
     </frameType>
 
     <frameType name="TabControl" classType="CTabControl" blizzOnly="false">
-        <hookup path="Selector" class="CFrame" required="true"/>
     </frameType>
 
     <frameType name="TalentTooltip" classType="CTalentTooltip" blizzOnly="false">
@@ -4164,10 +4156,10 @@
     </frameType>
 
     <frameType name="TeamResourcePanelToggleButton" classType="CTeamResourcePanelToggleButton" blizzOnly="false">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="TeamResourceRequestFrame" classType="CTeamResourceRequestFrame" blizzOnly="false">
@@ -4203,9 +4195,9 @@
         <hookup path="BuildingIconBackgroundImage" class="CImage" required="true"/>
         <hookup path="BuildingIconImage" class="CImage" required="true"/>
         <hookup path="BuildingNameLabel" class="CLabel" required="true"/>
-        <hookup path="UnlocksLabel" class="CLabel" required="true"/>
-        <hookup path="UnlocksColonLabel" class="CLabel" required="true"/>
-        <hookup path="UnitListContainerFrame" class="CFrame" required="true"/>
+        <hookup path="UnlocksLabel" class="CLabel" required="false"/>
+        <hookup path="UnlocksColonLabel" class="CLabel" required="false"/>
+        <hookup path="UnitListContainerFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="TechTreeUnitFrame" classType="CTechTreeUnitFrame" blizzOnly="false">
@@ -4222,7 +4214,7 @@
 
     <frameType name="TextListBoxItem" classType="CTextListBoxItem" blizzOnly="false">
         <hookup path="ItemLabel" class="CLabel" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="TextTileListItem" classType="CTextTileListItem" blizzOnly="false">
@@ -4231,7 +4223,7 @@
 
     <frameType name="TextTooltipListBoxItem" classType="CTextTooltipListBoxItem" blizzOnly="false">
         <hookup path="ItemLabel" class="CLabel" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="TextTreeViewItem" classType="CTextTreeViewItem" blizzOnly="false">
@@ -4243,16 +4235,16 @@
     </frameType>
 
     <frameType name="TileList" classType="CTileList" blizzOnly="false">
-        <hookup path="PageSelector" class="CPageSelector" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="PageSelector" class="CPageSelector" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
     </frameType>
 
     <frameType name="TileListItem" classType="CTileListItem" blizzOnly="false">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="TimeFormatFrame" classType="CTimeFormatFrame" blizzOnly="false">
@@ -4291,11 +4283,11 @@
     </frameType>
 
     <frameType name="TipAlertPanel" classType="CTipAlertPanel" blizzOnly="false">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ToastNotificationPanel" classType="CToastNotificationPanel" blizzOnly="true">
@@ -4350,10 +4342,10 @@
     </frameType>
 
     <frameType name="TournamentMapVetoButton" classType="CTournamentMapVetoButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="TournamentMapVetoListFrame" classType="CTournamentMapVetoListFrame" blizzOnly="true">
@@ -4409,8 +4401,8 @@
     </frameType>
 
     <frameType name="TournamentRaceTileList" classType="CTournamentRaceTileList" blizzOnly="true">
-        <hookup path="PageSelector" class="CPageSelector" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="PageSelector" class="CPageSelector" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
     </frameType>
 
     <frameType name="TournamentResultDialog" classType="CTournamentResultDialog" blizzOnly="true">
@@ -4441,19 +4433,19 @@
     </frameType>
 
     <frameType name="TreeView" classType="CTreeView" blizzOnly="true">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="TriggerControlPropertyListBox" classType="CTriggerControlPropertyListBox" blizzOnly="true">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="TriggerDialogFrame" classType="CTriggerDialogFrame" blizzOnly="true">
@@ -4499,11 +4491,11 @@
     </frameType>
 
     <frameType name="UnitCacheTileListItem" classType="CUnitCacheTileListItem" blizzOnly="false">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="UnitCountFrame" classType="CUnitCountFrame" blizzOnly="false">
@@ -4528,11 +4520,11 @@
     </frameType>
 
     <frameType name="UnitSkinSelectionTileListItem" classType="CUnitSkinSelectionTileListItem" blizzOnly="false">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="UnitStatusAbilCharge" descType="CUnitStatusBehaviorDesc" classType="CUnitStatusAbilCharge" blizzOnly="false">
@@ -4573,8 +4565,8 @@
     </frameType>
 
     <frameType name="UnitStatusBehaviorLabel" descType="CUnitStatusBehaviorLabelDesc" classType="CUnitStatusBehaviorLabel" blizzOnly="false">
-        <hookup path="StackLabel" class="CLabel" required="true"/>
-        <hookup path="DurationLabel" class="CLabel" required="true"/>
+        <hookup path="StackLabel" class="CLabel" required="false"/>
+        <hookup path="DurationLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="UnitStatusBuffDebuffElement" descType="CUnitStatusValidatorAnimElementDesc" classType="CUnitStatusBuffDebuffElement" blizzOnly="false">
@@ -4742,11 +4734,11 @@
     <frameType name="UnitTypeButton" classType="CUnitTypeButton" blizzOnly="true">
         <hookup path="GameButtonBorderImage" class="CImage" required="true"/>
         <hookup path="AutoCastImage" class="CImage" required="true"/>
-        <hookup path="CooldownFinishedImage" class="CImage" required="true"/>
-        <hookup path="ChargeLabel" class="CLabel" required="true"/>
-        <hookup path="CooldownLabel" class="CLabel" required="true"/>
-        <hookup path="Hotkeyframe" class="CCommandHotkeyFrame" required="true"/>
-        <hookup path="ChargeCooldown" class="CProgressBar" required="true"/>
+        <hookup path="CooldownFinishedImage" class="CImage" required="false"/>
+        <hookup path="ChargeLabel" class="CLabel" required="false"/>
+        <hookup path="CooldownLabel" class="CLabel" required="false"/>
+        <hookup path="Hotkeyframe" class="CCommandHotkeyFrame" required="false"/>
+        <hookup path="ChargeCooldown" class="CProgressBar" required="false"/>
     </frameType>
 
     <frameType name="UnitWireframe" classType="CUnitWireframe" blizzOnly="false">
@@ -4797,11 +4789,11 @@
     </frameType>
 
     <frameType name="UserProfileLadderCareerTileListItem" classType="CUserProfileLadderCareerTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="UserProfileLadderDivisionFrame" classType="CUserProfileLadderDivisionFrame" blizzOnly="true">
@@ -4815,11 +4807,11 @@
     </frameType>
 
     <frameType name="UserProfileLadderDivisionTileListItem" classType="CUserProfileLadderDivisionTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="UserProfileLadderFriendsFrame" classType="CUserProfileLadderFriendsFrame" blizzOnly="true">
@@ -4839,11 +4831,11 @@
     </frameType>
 
     <frameType name="UserProfileMapStatsTileListItem" classType="CUserProfileMapStatsTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="UserProfileMatchHistoryFrame" classType="CUserProfileMatchHistoryFrame" blizzOnly="true">
@@ -4860,11 +4852,11 @@
     </frameType>
 
     <frameType name="UserProfileRecentAchievementsListBox" classType="CUserProfileRecentAchievementsListBox" blizzOnly="true">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="UserProfileSummaryCareerFrame" classType="CUserProfileSummaryCareerFrame" blizzOnly="true">
@@ -4907,11 +4899,11 @@
     </frameType>
 
     <frameType name="VictoryPanelStatisticListBox" classType="CVictoryPanelStatisticListBox" blizzOnly="false">
-        <hookup path="BackgroundImage" class="CImage" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="BackgroundImage" class="CImage" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="VictoryPanelStatisticListBoxItem" classType="CVictoryPanelStatisticListBoxItem" blizzOnly="false">
@@ -4930,17 +4922,17 @@
     </frameType>
 
     <frameType name="ViewMapProfileButton" classType="CViewMapProfileButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="ViewTournamentScheduleButton" classType="CViewTournamentScheduleButton" blizzOnly="true">
-        <hookup path="Label" class="CLabel" required="true"/>
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="VoiceOptionsPanel" classType="CVoiceOptionsPanel" blizzOnly="true">
@@ -4987,11 +4979,11 @@
     </frameType>
 
     <frameType name="VoicePackTileListItem" classType="CVoicePackTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="WaitingForPlayersDialog" classType="CWaitingForPlayersDialog" blizzOnly="true">
@@ -5031,8 +5023,8 @@
     </frameType>
 
     <frameType name="WarChestPurchaseTileList" classType="CWarChestPurchaseTileList" blizzOnly="true">
-        <hookup path="PageSelector" class="CPageSelector" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="PageSelector" class="CPageSelector" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
     </frameType>
 
     <frameType name="WarChestPurchaseTileListItem" classType="CWarChestPurchaseTileListItem" blizzOnly="true">
@@ -5044,16 +5036,16 @@
     </frameType>
 
     <frameType name="WarChestRewardTileList" classType="CWarChestRewardTileList" blizzOnly="true">
-        <hookup path="PageSelector" class="CPageSelector" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="PageSelector" class="CPageSelector" required="false"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="false"/>
     </frameType>
 
     <frameType name="WarChestRewardTileListItem" classType="CWarChestRewardTileListItem" blizzOnly="true">
-        <hookup path="NormalImage" class="CImage" required="true"/>
-        <hookup path="SelectedImage" class="CImage" required="true"/>
-        <hookup path="HoverImage" class="CImage" required="true"/>
-        <hookup path="EmptyImage" class="CImage" required="true"/>
-        <hookup path="HitTestFrame" class="CFrame" required="true"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="SelectedImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="EmptyImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="WarChestTierFrame" classType="CWarChestTierFrame" blizzOnly="true">
