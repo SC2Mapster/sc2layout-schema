@@ -219,6 +219,7 @@
     <complexType name="CFrameControllerState">
         <extend value="CFrameController"/>
         <attribute name="stateGroup" type="StateGroupName" use="required"/>
+        <attribute name="forceSet" type="Boolean"/>
         <element name="Key" type="CFrameControllerKeyIdentifierState"/>
     </complexType>
 
