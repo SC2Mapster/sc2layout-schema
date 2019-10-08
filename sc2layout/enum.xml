@@ -210,9 +210,34 @@
     -->
 
     <simpleType name="BattlenetBattlePayCurrencyEnum" kind="enum">
+        <enumeration value="EUR"/>
+        <enumeration value="GBP"/>
+        <enumeration value="RUB"/>
+        <enumeration value="NT"/>
+        <enumeration value="BRL"/>
+        <enumeration value="EUR"/>
+        <enumeration value="RUB"/>
+        <enumeration value="GBP"/>
+        <enumeration value="ARS"/>
+        <enumeration value="CLP"/>
+        <enumeration value="MXN"/>
+        <enumeration value="USD"/>
+        <enumeration value="BRL"/>
     </simpleType>
 
     <simpleType name="BattlenetClubClubCategoryEnum" kind="enum">
+        <enumeration value="Unspecified"/>
+        <enumeration value="Community"/>
+        <enumeration value="Barcraft"/>
+        <enumeration value="Esports_Teams"/>
+        <enumeration value="Coaching"/>
+        <enumeration value="Company"/>
+        <enumeration value="Region"/>
+        <enumeration value="School"/>
+        <enumeration value="Shoutcast"/>
+        <enumeration value="Other"/>
+        <enumeration value="Esports_Leagues"/>
+        <enumeration value="Arcade"/>
     </simpleType>
 
     <simpleType name="BattlenetS2GamePlayerResultCodeEnum" kind="enum">
@@ -346,6 +371,13 @@
     </simpleType>
 
     <simpleType name="EGameContentType" kind="enum">
+        <enumeration value="SkinPack"/>
+        <enumeration value="DecalPack"/>
+        <enumeration value="PortraitPack"/>
+        <enumeration value="SprayPack"/>
+        <enumeration value="EmoticonPack"/>
+        <enumeration value="ConsoleSkin"/>
+        <enumeration value="RaceBannerPack"/>
     </simpleType>
 
     <simpleType name="EHotkey" kind="enum">
@@ -420,6 +452,7 @@
         <enumeration value="Modulo"/>
         <enumeration value="Absolute"/>
         <enumeration value="Random"/>
+        <enumeration value="RandomStl"/>
     </simpleType>
 
     <simpleType name="EMessageArea" kind="enum">
@@ -436,6 +469,39 @@
     </simpleType>
 
     <simpleType name="ENydusLink" kind="enum">
+        <enumeration value="BreakingNews"/>
+        <enumeration value="PTRAvailable"/>
+        <enumeration value="AccountManagement"/>
+        <enumeration value="AccountPurchase"/>
+        <enumeration value="AccountTrialUpgrade"/>
+        <enumeration value="AccountNew"/>
+        <enumeration value="AccountTrial"/>
+        <enumeration value="SecurityPassword"/>
+        <enumeration value="Forum"/>
+        <enumeration value="Community"/>
+        <enumeration value="FeedHomepage"/>
+        <enumeration value="FeedHomepageBackground"/>
+        <enumeration value="FeedCommunity"/>
+        <enumeration value="FeedFeaturedMaps"/>
+        <enumeration value="FeedLiveEvent"/>
+        <enumeration value="Store"/>
+        <enumeration value="SecurityHelp"/>
+        <enumeration value="Support"/>
+        <enumeration value="OnlineGuide"/>
+        <enumeration value="Copyright"/>
+        <enumeration value="ParentalControls"/>
+        <enumeration value="Regions"/>
+        <enumeration value="CacheList"/>
+        <enumeration value="RefundPolicy"/>
+        <enumeration value="TermsOfService"/>
+        <enumeration value="TermsOfSale"/>
+        <enumeration value="RecruitFriend"/>
+        <enumeration value="LowVirtualMemory"/>
+        <enumeration value="StarterEdition"/>
+        <enumeration value="PremiumMap"/>
+        <enumeration value="StimpackInfo"/>
+        <enumeration value="MaintenanceInfo"/>
+        <enumeration value="ExternalLink"/>
     </simpleType>
 
     <simpleType name="EOptionPanel" kind="enum">
@@ -524,6 +590,7 @@
         <enumeration value="Terran"/>
         <enumeration value="Protoss"/>
         <enumeration value="Zerg"/>
+        <enumeration value="Free"/>
     </simpleType>
 
     <simpleType name="NI18NEFormatDateStyle" kind="enum">
@@ -551,6 +618,15 @@
         <enumeration value="Medium"/>
         <enumeration value="Long"/>
         <enumeration value="Full"/>
+    </simpleType>
+
+    <simpleType name="EClicksOn" kind="flags">
+        <enumeration value="MouseDown"/>
+        <enumeration value="MouseUp"/>
+        <enumeration value="MouseEnter"/>
+        <enumeration value="MouseExit"/>
+        <enumeration value="FocusGained"/>
+        <enumeration value="FocusLost"/>
     </simpleType>
 
     <simpleType name="MouseButtons" kind="flags">
@@ -732,7 +808,9 @@
         <enumeration value="Ping"/>
         <enumeration value="PortraitPack"/>
         <enumeration value="Preload"/>
+        <enumeration value="PremiumMap"/>
         <enumeration value="Race"/>
+        <enumeration value="RaceBannerPack"/>
         <enumeration value="Requirement"/>
         <enumeration value="RequirementNode"/>
         <enumeration value="Reverb"/>
@@ -771,6 +849,7 @@
         <enumeration value="WarChestSeason"/>
         <enumeration value="Water"/>
         <enumeration value="Weapon"/>
+        <enumeration value="StimPack"/>
     </simpleType>
 
     <simpleType name="EDataRefType" kind="enum">

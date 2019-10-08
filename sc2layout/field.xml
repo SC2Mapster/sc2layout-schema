@@ -92,16 +92,6 @@
         <attribute name="val" type="String"/>
     </complexType>
 
-    <complexType name="Table:Field:Rect">
-        <attribute name="index" type="Uint8"/>
-        <extend value="Field:Rect"/>
-    </complexType>
-
-    <complexType name="Field:ScoreValue">
-        <attribute name="index" type="Uint8"/>
-        <attribute name="val" type="String" use="required"/>
-    </complexType>
-
     <complexType name="Field:LayerCount">
         <attribute name="val" type="Uint8" use="required"/>
     </complexType>

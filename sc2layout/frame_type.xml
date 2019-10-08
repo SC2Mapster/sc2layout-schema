@@ -638,6 +638,9 @@
         <hookup path="BackButton" class="CGlueButton" required="true"/>
     </frameType>
 
+    <frameType name="ChangeToonNameDialog" classType="CChangeToonNameDialog" blizzOnly="true">
+    </frameType>
+
     <frameType name="ChatBar" classType="CChatBar" blizzOnly="true">
         <hookup path="BackgroundImage" class="CImage" required="true"/>
         <hookup path="RecipientImage" class="CImage" required="true"/>
@@ -800,6 +803,7 @@
     </frameType>
 
     <frameType name="ClubProfileEventsFrame" classType="CClubProfileEventsFrame" blizzOnly="true">
+        <hookup path="ListBox" class="CListBox" required="true"/>
     </frameType>
 
     <frameType name="ClubProfileEventsListBoxItem" classType="CClubProfileEventsListBoxItem" blizzOnly="true">
@@ -823,6 +827,7 @@
     </frameType>
 
     <frameType name="ClubProfileNewsFrame" classType="CClubProfileNewsFrame" blizzOnly="true">
+        <hookup path="ListBox" class="CListBox" required="true"/>
     </frameType>
 
     <frameType name="ClubProfileNewsListBoxItem" classType="CClubProfileNewsListBoxItem" blizzOnly="true">
@@ -1035,6 +1040,9 @@
         <hookup path="HoverImage" class="CImage" required="false"/>
         <hookup path="EmptyImage" class="CImage" required="false"/>
         <hookup path="HitTestFrame" class="CFrame" required="false"/>
+    </frameType>
+
+    <frameType name="ContentFeedCustomFeaturedPanel" classType="CContentFeedCustomFeaturedPanel" blizzOnly="true">
     </frameType>
 
     <frameType name="ContentFeedPanel" classType="CContentFeedPanel" blizzOnly="true">
@@ -1385,6 +1393,13 @@
         <hookup path="ArrowHoverImage" class="CImage" required="false"/>
         <hookup path="ItemContainer" class="CFrame" required="false"/>
         <hookup path="Menu" class="CListBox" required="false"/>
+    </frameType>
+
+    <frameType name="ExternalBuyButton" classType="CExternalBuyButton" blizzOnly="true">
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
     </frameType>
 
     <frameType name="FileListBox" classType="CFileListBox" blizzOnly="true">
@@ -2194,6 +2209,7 @@
 
     <frameType name="LanguageOptionsPanel" classType="CLanguageOptionsPanel" blizzOnly="true">
         <hookup path="RestoreButton" class="CButton" required="true"/>
+        <hookup path="RegionPanel/ResetLatencyDataButton" class="CButton" required="false"/>
     </frameType>
 
     <frameType name="LatencyIndicatorFrame" classType="CLatencyIndicatorFrame" blizzOnly="true">
@@ -2554,6 +2570,8 @@
         <hookup path="LeagueContainer/SeasonEndLabel" class="CLabel" required="true"/>
         <hookup path="LeagueContainer/ViewLadderButton" class="CButton" required="true"/>
         <hookup path="TeamMembersLabel" class="CLabel" required="true"/>
+        <hookup path="AgentOptInPromptContainer/AgentOptInPrompt/OptIn" class="CButton" required="false"/>
+        <hookup path="AgentOptInPromptContainer/AgentOptInPrompt/OptOut" class="CButton" required="false"/>
     </frameType>
 
     <frameType name="MatchmakingMapVetoFrame" classType="CMatchmakingMapVetoFrame" blizzOnly="true">
@@ -2669,6 +2687,7 @@
         <hookup path="HoverImage" class="CImage" required="false"/>
         <hookup path="PingFrame" class="CModelFrame" required="false"/>
         <hookup path="MinimapUnitStatusPanel" class="CMinimapUnitStatusPanel" required="false"/>
+        <hookup path="MinimapImage" class="CImage" required="false"/>
     </frameType>
 
     <frameType name="MinimapCameraViewFrustumFrame" classType="CMinimapCameraViewFrustumFrame" blizzOnly="true">
@@ -2706,10 +2725,9 @@
     <frameType name="MultiplayerLoadingPanel" classType="CMultiplayerLoadingPanel" blizzOnly="true">
         <hookup path="MapNameLabel" class="CLabel" required="true"/>
         <hookup path="Minimap" class="CMinimap" required="true"/>
-        <hookup path="LeftBackgroundRaceImage" class="CImage" required="true"/>
-        <hookup path="RightBackgroundRaceImage" class="CImage" required="true"/>
         <hookup path="TournamentNameLabel" class="CLabel" required="true"/>
         <hookup path="TournamentRoundLabel" class="CLabel" required="true"/>
+        <hookup path="TeamTileList" class="CTileList" required="false"/>
     </frameType>
 
     <frameType name="MultiplayerLoadingPanelGameUserFrame" classType="CMultiplayerLoadingPanelGameUserFrame" blizzOnly="true">
@@ -2742,6 +2760,17 @@
         <hookup path="RaceLabel" class="CLabel" required="true"/>
         <hookup path="TopColorImage" class="CImage" required="true"/>
         <hookup path="RaceImage" class="CImage" required="true"/>
+    </frameType>
+
+    <frameType name="MultiplayerLoadingPlayerTileListItem" classType="CMultiplayerLoadingPlayerTileListItem" blizzOnly="true">
+        <hookup path="TandemPlayerTileList" class="CTileList" required="false"/>
+    </frameType>
+
+    <frameType name="MultiplayerLoadingTandemPlayerTileListItem" classType="CMultiplayerLoadingTandemPlayerTileListItem" blizzOnly="true">
+    </frameType>
+
+    <frameType name="MultiplayerLoadingTeamTileListItem" classType="CMultiplayerLoadingTeamTileListItem" blizzOnly="true">
+        <hookup path="PlayerTileList" class="CTileList" required="false"/>
     </frameType>
 
     <frameType name="MultiplayerTournamentFrame" classType="CMultiplayerTournamentFrame" blizzOnly="true">
@@ -3118,6 +3147,9 @@
         <hookup path="Portrait" class="CPortraitFrame" required="true"/>
     </frameType>
 
+    <frameType name="PremiumMapCacheFrame" classType="CPremiumMapCacheFrame" blizzOnly="true">
+    </frameType>
+
     <frameType name="ProductDiscountFrame" classType="CProductDiscountFrame" blizzOnly="true">
         <hookup path="DiscountLabel" class="CLabel" required="true"/>
         <hookup path="RetailPriceLabel" class="CLabel" required="true"/>
@@ -3265,6 +3297,9 @@
         <hookup path="NormalImage" class="CImage" required="false"/>
         <hookup path="HoverImage" class="CImage" required="false"/>
         <hookup path="HitTestFrame" class="CFrame" required="false"/>
+    </frameType>
+
+    <frameType name="RaceBannerCacheFrame" classType="CRaceBannerCacheFrame" blizzOnly="true">
     </frameType>
 
     <frameType name="RaceCacheFrame" classType="CRaceCacheFrame" blizzOnly="false">
@@ -3635,9 +3670,13 @@
         <hookup path="SwarmButton" class="CButton" required="true"/>
         <hookup path="VoidButton" class="CButton" required="true"/>
         <hookup path="NovaButton" class="CButton" required="true"/>
+        <hookup path="SC2Button" class="CButton" required="false"/>
     </frameType>
 
     <frameType name="ScreenCustom" classType="CScreenCustom" blizzOnly="true">
+    </frameType>
+
+    <frameType name="ScreenCustomFeatured" classType="CScreenCustomFeatured" blizzOnly="true">
     </frameType>
 
     <frameType name="ScreenForegroundSC2" classType="CScreenForegroundSC2" blizzOnly="true">
@@ -3682,18 +3721,18 @@
         <hookup path="MapTagLabel" class="CLabel" required="true"/>
     </frameType>
 
-    <frameType name="ScreenLoginSC2" classType="CScreenLoginSC2" blizzOnly="true">
+    <frameType name="ScreenLoginUnified" classType="CScreenLoginUnified" blizzOnly="true">
         <hookup path="RegionLabel" class="CLabel" required="true"/>
-        <hookup path="RegionPulldown" class="CPulldown" required="true"/>
-        <hookup path="RegionEditBox" class="CEditBox" required="true"/>
-        <hookup path="AccountEditBox" class="CEditBox" required="true"/>
-        <hookup path="RememberAccountCheckBox" class="CCheckBox" required="true"/>
-        <hookup path="PasswordEditBox" class="CEditBox" required="true"/>
-        <hookup path="LoginButton" class="CButton" required="true"/>
-        <hookup path="QuitButton" class="CButton" required="true"/>
+        <hookup path="LegalLabel" class="CLabel" required="true"/>
         <hookup path="ModLabel" class="CLabel" required="true"/>
         <hookup path="VersionLabel" class="CLabel" required="true"/>
-        <hookup path="LegalLabel" class="CLabel" required="true"/>
+        <hookup path="RegionPulldown" class="CPulldown" required="true"/>
+        <hookup path="RegionEditBox" class="CEditBox" required="true"/>
+        <hookup path="OptionsButton" class="CButton" required="true"/>
+        <hookup path="QuitButton" class="CButton" required="true"/>
+        <hookup path="BattleBoxAccountEditBox" class="CEditBox" required="true"/>
+        <hookup path="BattleBoxLoginButton" class="CButton" required="true"/>
+        <hookup path="Browser" class="CBrowser" required="true"/>
     </frameType>
 
     <frameType name="ScreenMovie" classType="CScreenMovie" blizzOnly="true">
@@ -3714,7 +3753,7 @@
         <hookup path="MultiBackground/JoinPanel/JoinButton" class="CButton" required="true"/>
         <hookup path="MultiBackground/JoinPanel/BackButton" class="CButton" required="true"/>
         <hookup path="MultiBackground/CreatePanel" class="CFrame" required="true"/>
-        <hookup path="MultiBackground/CreatePanel/MapListBox" class="CFileListBox" required="true"/>
+        <hookup path="MultiBackground/CreatePanel/MapListBox" class="CMultipleDirectoryFileListBox" required="true"/>
         <hookup path="MultiBackground/CreatePanel/GameSpeedSlider" class="CSlider" required="true"/>
         <hookup path="MultiBackground/CreatePanel/GameSpeedValue" class="CLabel" required="true"/>
         <hookup path="MultiBackground/CreatePanel/MapInfoPanel" class="CMapInfoPanel" required="true"/>
@@ -3800,6 +3839,13 @@
     <frameType name="SegmentedBar" descType="CSegmentedBarDesc" classType="CSegmentedBar" blizzOnly="false">
     </frameType>
 
+    <frameType name="SelectAllUnlockableButton" classType="CSelectAllUnlockableButton" blizzOnly="true">
+        <hookup path="Label" class="CLabel" required="false"/>
+        <hookup path="NormalImage" class="CImage" required="false"/>
+        <hookup path="HoverImage" class="CImage" required="false"/>
+        <hookup path="HitTestFrame" class="CFrame" required="false"/>
+    </frameType>
+
     <frameType name="SelectGameAccountDialog" classType="CSelectGameAccountDialog" blizzOnly="true">
         <hookup path="Pulldown" class="CPulldown" required="true"/>
     </frameType>
@@ -3839,6 +3885,9 @@
     </frameType>
 
     <frameType name="SelectedPortraitPackFrame" classType="CSelectedPortraitPackFrame" blizzOnly="true">
+    </frameType>
+
+    <frameType name="SelectedRaceBannerPackFrame" classType="CSelectedRaceBannerPackFrame" blizzOnly="true">
     </frameType>
 
     <frameType name="SelectedSkinPropertyTooltip" classType="CSelectedSkinPropertyTooltip" blizzOnly="true">
@@ -4051,6 +4100,9 @@
         <hookup path="StereoscopicPanel" class="CFrame" required="true"/>
     </frameType>
 
+    <frameType name="StimpackCacheFrame" classType="CStimpackCacheFrame" blizzOnly="true">
+    </frameType>
+
     <frameType name="StoreCacheFrame" classType="CStoreCacheFrame" blizzOnly="true">
     </frameType>
 
@@ -4129,6 +4181,9 @@
         <hookup path="DescriptionLabel" class="CLabel" required="true"/>
         <hookup path="AnchorFrame" class="CFrame" required="true"/>
         <hookup path="VitalAnchorFrame" class="CFrame" required="true"/>
+    </frameType>
+
+    <frameType name="TalkerFrame" classType="CTalkerFrame" blizzOnly="true">
     </frameType>
 
     <frameType name="TalkerItem" classType="CTalkerItem" blizzOnly="true">
@@ -4821,6 +4876,9 @@
         <hookup path="TileList" class="CTileList" required="true"/>
     </frameType>
 
+    <frameType name="UserProfileMapFavoritesSelectionFrame" classType="CUserProfileMapFavoritesSelectionFrame" blizzOnly="true">
+    </frameType>
+
     <frameType name="UserProfileMapReviewsFrame" classType="CUserProfileMapReviewsFrame" blizzOnly="true">
         <hookup path="ListBox" class="CListBox" required="true"/>
         <hookup path="ListBox/ScrollBar" class="CScrollBar" required="true"/>
@@ -5077,6 +5135,12 @@
     </frameType>
 
     <frameType name="Browser" classType="CBrowser" blizzOnly="true">
+        <hookup path="BrowserImage" class="CImage" required="true"/>
+        <hookup path="ForwardButton" class="CButton" required="true"/>
+        <hookup path="BackButton" class="CButton" required="true"/>
+        <hookup path="GoButton" class="CButton" required="true"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="AddressEditBox" class="CEditBox" required="true"/>
     </frameType>
 
 </map>

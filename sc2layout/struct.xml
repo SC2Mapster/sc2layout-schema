@@ -97,8 +97,8 @@
 
     <complexType name="CPortraitFrameDesc">
         <element name="MovieFrame" simpleType="DescInternal:CMovieFrame"/>
-        <element name="ActorLink" simpleType="String"/>
-        <element name="ModelLink" simpleType="String"/>
+        <element name="ActorLink" simpleType="DataLink.Actor"/>
+        <element name="ModelLink" simpleType="DataLink.Model"/>
         <element name="BackgroundImage" simpleType="DescInternal:CImage"/>
         <element name="BorderImage" simpleType="DescInternal:CImage"/>
         <element name="UseTransition" simpleType="Boolean"/>
@@ -142,7 +142,7 @@
 
     <complexType name="CUnitStatusBehaviorDesc">
         <extend value="CUnitStatusElementDesc"/>
-        <element name="Behavior" simpleType="String"/>
+        <element name="Behavior" simpleType="DataLink.Behavior"/>
     </complexType>
 
     <complexType name="CUnitStatusBehaviorLabelDesc">
@@ -179,6 +179,6 @@
 
     <complexType name="CUnitStatusValidatorAnimElementDesc">
         <extend value="CUnitStatusElementDesc"/>
-        <element name="Validator" simpleType="GameDataLink.EGameCatalog.Validator"/>
+        <element name="Validator" simpleType="DataLink.Validator"/>
     </complexType>
 </map>

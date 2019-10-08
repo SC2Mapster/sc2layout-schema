@@ -455,6 +455,8 @@
     ========================================
     -->
     <frameClass name="CBattleGameTileListItem" parent="CTileListItem">
+        <property name="FullPremiumContent" valueType="Boolean"/>
+        <property name="HasPremiumContent" valueType="Boolean"/>
         <property name="MapHandle" valueType="Uint32Pair" readonly="true"/>
     </frameClass>
 
@@ -487,21 +489,26 @@
     ========================================
     -->
     <frameClass name="CBattleMapFrame" parent="CFrame">
-        <property name="AuthorPresenceId" valueType="Uint32" readonly="true"/>
-        <property name="Description" valueType="String" readonly="true"/>
-        <property name="ExpansionLevel" valueType="Uint32" readonly="true"/>
-        <property name="Genre" valueType="String" readonly="true"/>
-        <property name="IsArcade" valueType="Boolean" readonly="true"/>
-        <property name="IsBlizzardMap" valueType="Boolean" readonly="true"/>
-        <property name="IsBookmarked" valueType="Boolean" readonly="true"/>
-        <property name="IsDescriptionMod" valueType="Boolean" readonly="true"/>
-        <property name="IsExtensionMod" valueType="Boolean" readonly="true"/>
-        <property name="IsPrivatePublished" valueType="Boolean" readonly="true"/>
-        <property name="MajorVersionNum" valueType="Uint32" readonly="true"/>
-        <property name="MapHandle" valueType="Uint32Pair" readonly="true"/>
-        <property name="MinorVersionNum" valueType="Uint32" readonly="true"/>
-        <property name="Name" valueType="String" readonly="true"/>
-        <property name="NameWithVersion" valueType="String" readonly="true"/>
+        <property name="AuthorName" valueType="String"/>
+        <property name="AuthorPresenceId" valueType="Uint32"/>
+        <property name="Categories" valueType="String"/>
+        <property name="Description" valueType="String"/>
+        <property name="ExpansionLevel" valueType="Uint32"/>
+        <property name="FullPremiumContent" valueType="Boolean"/>
+        <property name="Genre" valueType="String"/>
+        <property name="HasPremiumContent" valueType="Boolean"/>
+        <property name="IsArcade" valueType="Boolean"/>
+        <property name="IsBlizzardMap" valueType="Boolean"/>
+        <property name="IsBookmarked" valueType="Boolean"/>
+        <property name="IsDescriptionMod" valueType="Boolean"/>
+        <property name="IsExtensionMod" valueType="Boolean"/>
+        <property name="IsPrivatePublished" valueType="Boolean"/>
+        <property name="MajorVersionNum" valueType="Uint32"/>
+        <property name="MapHandle" valueType="Uint32Pair"/>
+        <property name="MaxPlayerCount" valueType="Uint32"/>
+        <property name="MinorVersionNum" valueType="Uint32"/>
+        <property name="Name" valueType="String"/>
+        <property name="NameWithVersion" valueType="String"/>
     </frameClass>
 
     <!--
@@ -702,6 +709,7 @@
     <frameClass name="CBattleMapVariantPulldown" parent="CPulldown">
         <property name="MapHandle" valueType="Uint32Pair" readonly="true"/>
         <property name="VariantIndex" valueType="Uint8" readonly="true"/>
+        <property name="VariantIsPremium" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -800,6 +808,7 @@
         <property name="PresenceId" valueType="Uint32" readonly="false"/>
         <property name="ScoreScreenEnemy" valueType="Boolean" readonly="false"/>
         <property name="ShowChangePortrait" valueType="Boolean" readonly="false"/>
+        <property name="ShowChangeToonName" valueType="Boolean"/>
         <property name="UseExactName" valueType="Boolean" readonly="false"/>
     </frameClass>
 
@@ -935,6 +944,7 @@
     ========================================
     -->
     <frameClass name="CBookmarkSelectionTileListItem" parent="CTileListItem">
+        <property name="AllowOpenOnClick" valueType="Boolean"/>
         <property name="MapHandle" valueType="Uint32Pair" readonly="true"/>
     </frameClass>
 
@@ -952,15 +962,18 @@
     ========================================
     -->
     <frameClass name="CBundleCacheFrame" parent="CFrame">
-        <property name="Bundle" valueType="Identifier" readonly="true"/>
-        <property name="DescriptionText" valueType="Text" readonly="true"/>
-        <property name="GameContent" valueType="GameContent" readonly="true"/>
-        <property name="IconFilePath" valueType="Image" readonly="true"/>
-        <property name="LargeIconFilePath" valueType="Image" readonly="true"/>
-        <property name="MediumIconFilePath" valueType="Image" readonly="true"/>
-        <property name="NameText" valueType="Text" readonly="true"/>
-        <property name="ProductCount" valueType="Int32" readonly="true"/>
-        <property name="ShowDynamicBundle" valueType="Boolean" readonly="true"/>
+        <property name="Bundle" valueType="Identifier"/>
+        <property name="DescriptionText" valueType="Text"/>
+        <property name="GameContent" valueType="GameContent"/>
+        <property name="IconFilePath" valueType="Image"/>
+        <property name="IsConsoleSkinInBundle" valueType="Boolean"/>
+        <property name="IsSkinPackInBundle" valueType="Boolean"/>
+        <property name="LargeIconFilePath" valueType="Image"/>
+        <property name="MediumIconFilePath" valueType="Image"/>
+        <property name="NameText" valueType="Text"/>
+        <property name="ProductCount" valueType="Int32"/>
+        <property name="ShowDynamicBundle" valueType="Boolean"/>
+        <property name="SuppressDiscount" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -1037,7 +1050,7 @@
     ========================================
     -->
     <frameClass name="CCampaignCacheFrame" parent="CFrame">
-        <property name="Campaign" valueType="GameDataLink.EGameCatalog.Achievement" readonly="true"/>
+        <property name="Campaign" valueType="DataLink.Campaign"/>
         <property name="FeaturedDescription" valueType="String" readonly="true"/>
         <property name="FeaturedImagePath" valueType="String" readonly="true"/>
         <property name="Name" valueType="String" readonly="true"/>
@@ -1050,9 +1063,9 @@
     ========================================
     -->
     <frameClass name="CCampaignInfoDialog" parent="CDialog">
-        <property name="IsBundle" valueType="Boolean" readonly="true"/>
-        <property name="SelectedBundle" valueType="GameDataLink.EGameCatalog.Achievement" readonly="true"/>
-        <property name="SelectedCampaign" valueType="GameDataLink.EGameCatalog.Achievement" readonly="true"/>
+        <property name="IsBundle" valueType="Boolean"/>
+        <property name="SelectedBundle" valueType="DataLink.Bundle"/>
+        <property name="SelectedCampaign" valueType="DataLink.Campaign"/>
     </frameClass>
 
     <!--
@@ -1149,6 +1162,17 @@
     ========================================
     -->
     <frameClass name="CChallengePanel" parent="CFrame">
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CChangeToonNameDialog
+    ========================================
+    -->
+    <frameClass name="CChangeToonNameDialog" parent="CEditBoxConfirmationDialog">
+        <property name="CanChangeToonName" valueType="Boolean"/>
+        <property name="IsLoading" valueType="Boolean"/>
+        <property name="IsNameValid" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -1648,10 +1672,10 @@
     ========================================
     -->
     <frameClass name="CCommandPanel" parent="CFrame">
-        <property name="DisplayCancelCommandCard" valueType="Boolean" readonly="false"/>
-        <property name="HideUnusedButtons" valueType="Boolean" readonly="false"/>
-        <property name="SuggestedButton" valueType="GameDataLink.EGameCatalog.Achievement" readonly="true"/>
-        <property name="UseGridHotkeys" valueType="Boolean" readonly="false"/>
+        <property name="DisplayCancelCommandCard" valueType="Boolean"/>
+        <property name="HideUnusedButtons" valueType="Boolean"/>
+        <property name="SuggestedButton" valueType="DataLink.Button"/>
+        <property name="UseGridHotkeys" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -1692,10 +1716,10 @@
     ========================================
     -->
     <frameClass name="CCommanderCacheFrame" parent="CFrame">
-        <property name="Commander" valueType="GameDataLink.EGameCatalog.AchievementTerm" readonly="true"/>
-        <property name="FeaturedDescription" valueType="String" readonly="true"/>
-        <property name="FeaturedImagePath" valueType="String" readonly="true"/>
-        <property name="Name" valueType="String" readonly="true"/>
+        <property name="Commander" valueType="DataLink.Commander"/>
+        <property name="FeaturedDescription" valueType="String"/>
+        <property name="FeaturedImagePath" valueType="String"/>
+        <property name="Name" valueType="String"/>
     </frameClass>
 
     <!--
@@ -1720,7 +1744,7 @@
     ========================================
     -->
     <frameClass name="CCommanderInfoDialog" parent="CDialog">
-        <property name="SelectedCommander" valueType="GameDataLink.EGameCatalog.AchievementTerm" readonly="true"/>
+        <property name="SelectedCommander" valueType="DataLink.Commander"/>
     </frameClass>
 
     <!--
@@ -1739,11 +1763,11 @@
     ========================================
     -->
     <frameClass name="CCommanderMasterySelectionPanel" parent="CFrame">
-        <property name="Commander" valueType="GameDataLink.EGameCatalog.AchievementTerm" readonly="true"/>
-        <property name="CurrentXP" valueType="Real32" readonly="true"/>
-        <property name="IsMaxLevel" valueType="Boolean" readonly="true"/>
-        <property name="MaxRank" valueType="Uint32" readonly="true"/>
-        <property name="TotalXP" valueType="Real32" readonly="true"/>
+        <property name="Commander" valueType="DataLink.Commander"/>
+        <property name="CurrentXP" valueType="Real32"/>
+        <property name="IsMaxLevel" valueType="Boolean"/>
+        <property name="MaxRank" valueType="Uint32"/>
+        <property name="TotalXP" valueType="Real32"/>
     </frameClass>
 
     <!--
@@ -1752,11 +1776,11 @@
     ========================================
     -->
     <frameClass name="CCommanderMasteryTalentFrame" parent="CFrame">
-        <property name="BatchRankAmount" valueType="Uint32" readonly="false"/>
-        <property name="ButtonId" valueType="GameDataLink.EGameCatalog.Achievement" readonly="true"/>
-        <property name="MaxRank" valueType="Uint32" readonly="true"/>
-        <property name="Rank" valueType="Uint32" readonly="true"/>
-        <property name="ValueText" valueType="String" readonly="true"/>
+        <property name="BatchRankAmount" valueType="Uint32"/>
+        <property name="ButtonId" valueType="DataLink.Button"/>
+        <property name="MaxRank" valueType="Uint32"/>
+        <property name="Rank" valueType="Uint32"/>
+        <property name="ValueText" valueType="String"/>
     </frameClass>
 
     <!--
@@ -1781,18 +1805,18 @@
     ========================================
     -->
     <frameClass name="CCommanderSelectionPanel" parent="CFrame">
-        <property name="Commander" valueType="GameDataLink.EGameCatalog.AchievementTerm" readonly="true"/>
-        <property name="CurrentXP" valueType="Real32" readonly="true"/>
-        <property name="DifficultyBonus" valueType="Uint32" readonly="true"/>
-        <property name="IsPartyCommanderRandom" valueType="Boolean" readonly="true"/>
-        <property name="IsRandomCommanderSelected" valueType="Boolean" readonly="true"/>
-        <property name="Level" valueType="Uint32" readonly="true"/>
-        <property name="PartyCommander" valueType="GameDataLink.EGameCatalog.AchievementTerm" readonly="true"/>
-        <property name="PartyLevel" valueType="Uint32" readonly="true"/>
-        <property name="PartyPlayerName" valueType="String" readonly="true"/>
-        <property name="PlayerName" valueType="String" readonly="true"/>
-        <property name="SelectedCommanderIsTrial" valueType="Boolean" readonly="true"/>
-        <property name="TotalXP" valueType="Real32" readonly="true"/>
+        <property name="Commander" valueType="DataLink.Commander"/>
+        <property name="CurrentXP" valueType="Real32"/>
+        <property name="DifficultyBonus" valueType="Uint32"/>
+        <property name="IsPartyCommanderRandom" valueType="Boolean"/>
+        <property name="IsRandomCommanderSelected" valueType="Boolean"/>
+        <property name="Level" valueType="Uint32"/>
+        <property name="PartyCommander" valueType="DataLink.Commander"/>
+        <property name="PartyLevel" valueType="Uint32"/>
+        <property name="PartyPlayerName" valueType="String"/>
+        <property name="PlayerName" valueType="String"/>
+        <property name="SelectedCommanderIsTrial" valueType="Boolean"/>
+        <property name="TotalXP" valueType="Real32"/>
     </frameClass>
 
     <!--
@@ -1839,13 +1863,17 @@
     ========================================
     -->
     <frameClass name="CConsolePanel" parent="CFrame">
-        <property name="MinimapPanelImage" valueType="String" readonly="true"/>
-        <property name="InfoPanelImage" valueType="String" readonly="true"/>
-        <property name="CommandPanelImage" valueType="String" readonly="true"/>
-        <property name="UsesPanelImages" valueType="Boolean" readonly="true"/>
-        <property name="CurrentConsoleSkin" valueType="Identifier" readonly="true"/>
-        <property name="UseApm" valueType="Boolean" readonly="false"/>
-        <property name="CurrentApm" valueType="Uint32" readonly="true"/>
+        <property name="CameraAngleDelay" valueType="Int32"/>
+        <property name="CameraMoveAngle" valueType="Int32"/>
+        <property name="CameraMoving" valueType="Boolean"/>
+        <property name="CommandPanelImage" valueType="Image"/>
+        <property name="CurrentApm" valueType="Int32"/>
+        <property name="CurrentConsoleSkin" valueType="DataLink.ConsoleSkin"/>
+        <property name="InfoPanelImage" valueType="Image"/>
+        <property name="MinimapPanelImage" valueType="Image"/>
+        <property name="UseAngleCalculation" valueType="Boolean"/>
+        <property name="UseApm" valueType="Boolean"/>
+        <property name="UsesPanelImages" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -1854,12 +1882,14 @@
     ========================================
     -->
     <frameClass name="CConsoleSkinCacheFrame" parent="CFrame">
-        <property name="ConsoleSkin" valueType="Identifier" readonly="true"/>
-        <property name="Default" valueType="Boolean" readonly="true"/>
-        <property name="GameContent" valueType="GameContent" readonly="true"/>
-        <property name="NameText" valueType="Text" readonly="true"/>
-        <property name="RequiredReward" valueType="Identifier" readonly="true"/>
-        <property name="Valid" valueType="Boolean" readonly="true"/>
+        <property name="ConsoleSkin" valueType="DataLink.ConsoleSkin"/>
+        <property name="Default" valueType="Boolean"/>
+        <property name="FeaturedImage" valueType="String"/>
+        <property name="GameContent" valueType="GameContent"/>
+        <property name="NameText" valueType="Text"/>
+        <property name="RequiredReward" valueType="Identifier"/>
+        <property name="ThumbnailImage" valueType="String"/>
+        <property name="Valid" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -1881,6 +1911,31 @@
     -->
     <frameClass name="CConsoleSkinTileListItem" parent="CTileListItem">
         <property name="ConsoleSkin" valueType="Identifier" readonly="true"/>
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CContentFeedCustomFeaturedPanel
+    ========================================
+    -->
+    <frameClass name="CContentFeedCustomFeaturedPanel" parent="CContentFeedPanel">
+        <property name="AdvertTitle" valueType="String"/>
+        <property name="BonusImage" valueType="String"/>
+        <property name="BonusText0" valueType="String"/>
+        <property name="BonusText1" valueType="String"/>
+        <property name="ButtonText" valueType="String"/>
+        <property name="Description0" valueType="String"/>
+        <property name="Description1" valueType="String"/>
+        <property name="FeaturedImage" valueType="String"/>
+        <property name="FeaturedType" valueType="String"/>
+        <property name="NydusLink" valueType="String"/>
+        <property name="Shuffle" valueType="Boolean"/>
+        <property name="SubTitle" valueType="String"/>
+        <property name="Title" valueType="String"/>
+        <property name="ToonEmail" valueType="String"/>
+        <property name="Url" valueType="String"/>
+        <property name="UseCached" valueType="Boolean"/>
+        <property name="VersionId" valueType="String"/>
     </frameClass>
 
     <!--
@@ -1952,9 +2007,11 @@
         <property name="BlocksShortcuts" valueType="Boolean" readonly="true"/>
         <property name="ClickOnContextMenu" valueType="Boolean" readonly="true"/>
         <property name="ClickOnDown" valueType="Boolean" readonly="true"/>
+        <property name="ClicksOn" valueType="EClicksOn"/>
         <property name="DragConstraintFrame" valueType="String" readonly="true"/>
         <property name="DragCursor" valueType="Cursor" readonly="true"/>
         <property name="DragHoverCursor" valueType="Cursor" readonly="true"/>
+        <property name="DragMoveSlop" valueType="Uint32"/>
         <property name="Draggable" valueType="Boolean" readonly="true"/>
         <property name="Dragging" valueType="Boolean" readonly="true"/>
         <property name="FocusNext" valueType="String" readonly="true"/>
@@ -2055,8 +2112,8 @@
     ========================================
     -->
     <frameClass name="CCoopCampaignPlayerScoreResultFrame" parent="CFrame">
-        <property name="Commander" valueType="GameDataLink.EGameCatalog.AchievementTerm" readonly="true"/>
-        <property name="PresenceId" valueType="Uint32" readonly="true"/>
+        <property name="Commander" valueType="DataLink.Commander"/>
+        <property name="PresenceId" valueType="Uint32"/>
     </frameClass>
 
     <!--
@@ -2084,10 +2141,10 @@
     ========================================
     -->
     <frameClass name="CCoopCampaignScoreSummaryPanel" parent="CFrame">
-        <property name="CommanderId" valueType="GameDataLink.EGameCatalog.AchievementTerm" readonly="true"/>
-        <property name="CurrentLevel" valueType="Uint32" readonly="true"/>
-        <property name="MaxLevelMastery" valueType="Uint32" readonly="false"/>
-        <property name="StartingLevel" valueType="Uint32" readonly="true"/>
+        <property name="CommanderId" valueType="DataLink.Commander"/>
+        <property name="CurrentLevel" valueType="Uint32"/>
+        <property name="MaxLevelMastery" valueType="Uint32"/>
+        <property name="StartingLevel" valueType="Uint32"/>
     </frameClass>
 
     <!--
@@ -2532,6 +2589,19 @@
 
     <!--
     ========================================
+    :: CExternalBuyButton
+    ========================================
+    -->
+    <frameClass name="CExternalBuyButton" parent="CButton">
+        <property name="BypassDialog" valueType="Boolean"/>
+        <property name="ContentIsExternal" valueType="Boolean"/>
+        <property name="GameContent" valueType="GameContent"/>
+        <property name="LinkId" valueType="Uint32"/>
+        <property name="NydusLink" valueType="String"/>
+    </frameClass>
+
+    <!--
+    ========================================
     :: CFileListBox
     ========================================
     -->
@@ -2836,7 +2906,7 @@
         <property name="FlipVersusModeSides" valueType="Boolean" readonly="true"/>
         <property name="SuppressEnemyConnectionEvents" valueType="Boolean" readonly="false"/>
         <property name="TradeShow" valueType="Boolean" readonly="true"/>
-        <property name="SelectedConsoleSkin" valueType="String" readonly="true"/>
+        <property name="SelectedConsoleSkin" valueType="Identifier" readonly="true"/>
     </frameClass>
 
     <!--
@@ -3933,7 +4003,19 @@
     ========================================
     -->
     <frameClass name="CLoadingCoopCampaignPlayerFrame" parent="CFrame">
-        <property name="MasteryLevel" valueType="Uint32" readonly="true"/>
+        <property name="ClanId" valueType="Uint32"/>
+        <property name="ClanTag" valueType="String"/>
+        <property name="CommanderData" valueType="DataLink.Commander"/>
+        <property name="IsOffline" valueType="Boolean"/>
+        <property name="MasteryLevel" valueType="Uint32"/>
+        <property name="PlayerAvatar" valueType="String"/>
+        <property name="PlayerAvatarPortrait" valueType="String"/>
+        <property name="PlayerAvatarTexCoords" elementType="Field:Rect"/>
+        <property name="PlayerCommanderLevel" valueType="Uint32"/>
+        <property name="PlayerLoadingProgress" valueType="Int32"/>
+        <property name="PlayerName" valueType="String"/>
+        <property name="PresenceId" valueType="Uint32"/>
+        <property name="RaceBanner" valueType="DataLink.Reward"/>
     </frameClass>
 
     <!--
@@ -3978,6 +4060,7 @@
         <property name="FilterText" valueType="String" readonly="false"/>
         <property name="SelectedAccountId" valueType="Uint32" readonly="true"/>
         <property name="SelectedAdvertHandle" valueType="String" readonly="true"/>
+        <property name="SelectedIsPremium" valueType="Boolean"/>
         <property name="SelectedLobbyName" valueType="Identifier" readonly="true"/>
         <property name="SelectedMapHandle" valueType="Uint32Pair" readonly="true"/>
         <property name="SelectedMapVariantIndex" valueType="Uint8" readonly="true"/>
@@ -4003,6 +4086,7 @@
         <property name="CategoryId" valueType="Uint8" readonly="true"/>
         <property name="IsChangeable" valueType="Boolean" readonly="true"/>
         <property name="OptionType" valueType="ELobbyMatchOptionType" readonly="true"/>
+        <property name="VariantIsPremium" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -4086,6 +4170,7 @@
     ========================================
     -->
     <frameClass name="CLobbyPreviewSlotTileListItem" parent="CTileListItem">
+        <property name="LobbyHost" valueType="Boolean"/>
         <property name="LobbySlotPreviewState" valueType="BattlenetS2MasterLobbySlotPreviewStateEnum" readonly="true"/>
         <property name="PlayerName" valueType="Identifier" readonly="true"/>
     </frameClass>
@@ -4199,6 +4284,7 @@
         <property name="MultiModHandle" valueType="Uint32Pair" readonly="true"/>
         <property name="PlayerCapacity" valueType="Uint32" readonly="true"/>
         <property name="PlayerCount" valueType="Uint32" readonly="true"/>
+        <property name="Premium" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -4317,10 +4403,12 @@
     ========================================
     -->
     <frameClass name="CMatchmakingLeaguePanel" parent="CFrame">
-        <property name="HideLeagueTier" valueType="Boolean" readonly="false"/>
-        <property name="ProvisionalGames" valueType="Uint32" readonly="false"/>
-        <property name="QueueHandle" valueType="Uint32Pair" readonly="true"/>
-        <property name="Race" valueType="Uint32" readonly="true"/>
+        <property name="AgentMatchPromptActive" valueType="Boolean"/>
+        <property name="HideLeagueTier" valueType="Boolean"/>
+        <property name="PreventAgentMatch" valueType="Boolean"/>
+        <property name="ProvisionalGames" valueType="Uint32"/>
+        <property name="QueueHandle" valueType="Uint32Pair"/>
+        <property name="Race" valueType="Uint32"/>
     </frameClass>
 
     <!--
@@ -4591,6 +4679,11 @@
     ========================================
     -->
     <frameClass name="CMultiplayerLoadingPanel" parent="CFrame">
+        <property name="HasTandemPlayers" valueType="Boolean"/>
+        <property name="IsOffline" valueType="Boolean"/>
+        <property name="LoadingPanelMode" valueType="Int32"/>
+        <property name="PlayerCount" valueType="Int32"/>
+        <property name="TeamCount" valueType="Int32"/>
     </frameClass>
 
     <!--
@@ -4598,6 +4691,7 @@
     :: CMultiplayerLoadingPanelGameUserFrame
     ========================================
     -->
+    <!-- removed from SC2 -->
     <frameClass name="CMultiplayerLoadingPanelGameUserFrame" parent="CFrame">
     </frameClass>
 
@@ -4606,6 +4700,7 @@
     :: CMultiplayerLoadingPanelPlayerFrame
     ========================================
     -->
+    <!-- removed from SC2 -->
     <frameClass name="CMultiplayerLoadingPanelPlayerFrame" parent="CFrame">
     </frameClass>
 
@@ -4615,6 +4710,47 @@
     ========================================
     -->
     <frameClass name="CMultiplayerLoadingPanelTandemPlayerFrame" parent="CFrame">
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CMultiplayerLoadingPlayerTileListItem
+    ========================================
+    -->
+    <frameClass name="CMultiplayerLoadingPlayerTileListItem" parent="CTileListItem">
+        <property name="ClanId" valueType="Uint32"/>
+        <property name="ClanTag" valueType="String"/>
+        <property name="IsAI" valueType="Boolean"/>
+        <property name="IsTandem" valueType="Boolean"/>
+        <property name="PlayerAvatar" valueType="String"/>
+        <property name="PlayerAvatarPortrait" valueType="String"/>
+        <property name="PlayerAvatarTexCoords" elementType="Field:Rect"/>
+        <property name="PlayerColor" valueType="Color"/>
+        <property name="PlayerLoadingProgress" valueType="Int32"/>
+        <property name="PlayerName" valueType="String"/>
+        <property name="PlayerRace" valueType="String"/>
+        <property name="PlayerRaceBanner" valueType="String"/>
+        <property name="PlayerRaceBannerTexCoords" elementType="Field:Rect"/>
+        <property name="PresenceId" valueType="Int32"/>
+        <property name="RewardRaceBanner" valueType="DataLink.Reward"/>
+        <property name="TeamID" valueType="Int32"/>
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CMultiplayerLoadingTandemPlayerTileListItem
+    ========================================
+    -->
+    <frameClass name="CMultiplayerLoadingTandemPlayerTileListItem" parent="CMultiplayerLoadingPlayerTileListItem">
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CMultiplayerLoadingTeamTileListItem
+    ========================================
+    -->
+    <frameClass name="CMultiplayerLoadingTeamTileListItem" parent="CTileListItem">
+        <property name="TeamId" valueType="Int32"/>
     </frameClass>
 
     <!--
@@ -4647,6 +4783,7 @@
     ========================================
     -->
     <frameClass name="CNydusLinkButton" parent="CButton">
+        <property name="BrowserPurpose" valueType="Identifier"/>
         <property name="NydusLink" valueType="ENydusLink" readonly="true"/>
         <property name="UseBrowser" valueType="Boolean" readonly="false"/>
     </frameClass>
@@ -4816,6 +4953,7 @@
     ========================================
     -->
     <frameClass name="CPartyMemberTileListItem" parent="CTileListItem">
+        <property name="PresenceId" valueType="Uint32"/>
     </frameClass>
 
     <!--
@@ -5194,6 +5332,32 @@
 
     <!--
     ========================================
+    :: CPremiumMapCacheFrame
+    ========================================
+    -->
+    <frameClass name="CPremiumMapCacheFrame" parent="CFrame">
+        <property name="CustomFeaturedDescription" valueType="String"/>
+        <property name="Description" valueType="String"/>
+        <property name="GameContent" valueType="GameContent"/>
+        <property name="HasPremium" valueType="Boolean"/>
+        <property name="LanguageWarning" valueType="String"/>
+        <property name="MapHandle" valueType="Uint32Pair"/>
+        <property name="MovieDescription" valueType="String"/>
+        <property name="MovieImageThumbnail" valueType="Identifier"/>
+        <property name="MoviePath" valueType="String"/>
+        <property name="MoviePreviewImage" valueType="Identifier"/>
+        <property name="Owned" valueType="Boolean"/>
+        <property name="PayToPlay" valueType="Boolean"/>
+        <property name="Price" valueType="String"/>
+        <property name="ScreenShotDescription" table="true" valueType="String"/>
+        <property name="ScreenShotImage" table="true" valueType="Identifier"/>
+        <property name="ScreenShotImageThumbnail" table="true" valueType="Identifier"/>
+        <property name="ShortDescription" valueType="String"/>
+        <property name="Title" valueType="String"/>
+    </frameClass>
+
+    <!--
+    ========================================
     :: CProductDiscountFrame
     ========================================
     -->
@@ -5223,13 +5387,15 @@
     ========================================
     -->
     <frameClass name="CProductPurchasePanel" parent="CFrame">
-        <property name="AccountCountry" valueType="String" readonly="true"/>
-        <property name="DoesProductExpire" valueType="Boolean" readonly="true"/>
-        <property name="GameContent" valueType="GameContent" readonly="true"/>
-        <property name="IsProductBundle" valueType="Boolean" readonly="true"/>
-        <property name="IsRealCurrency" valueType="Boolean" readonly="true"/>
-        <property name="PurchaseStep" valueType="EPurchaseStep" readonly="true"/>
-        <property name="SelectedCurrency" valueType="BattlenetBattlePayCurrencyEnum" readonly="true"/>
+        <property name="AccountCountry" valueType="String"/>
+        <property name="DoesProductExpire" valueType="Boolean"/>
+        <property name="GameContent" valueType="GameContent"/>
+        <property name="IsConsoleSkinInBundle" valueType="Boolean"/>
+        <property name="IsProductBundle" valueType="Boolean"/>
+        <property name="IsRealCurrency" valueType="Boolean"/>
+        <property name="IsSkinPackInBundle" valueType="Boolean"/>
+        <property name="PurchaseStep" valueType="EPurchaseStep"/>
+        <property name="SelectedCurrency" valueType="BattlenetBattlePayCurrencyEnum"/>
     </frameClass>
 
     <!--
@@ -5402,6 +5568,15 @@
     ========================================
     -->
     <frameClass name="CQueueButton" parent="CButton">
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CRaceBannerCacheFrame
+    ========================================
+    -->
+    <frameClass name="CRaceBannerCacheFrame" parent="CFrame">
+        <property name="RaceBanner" valueType="DataLink.RaceBannerPack"/>
     </frameClass>
 
     <!--
@@ -5681,8 +5856,9 @@
         <property name="Prerequisite" valueType="Identifier" readonly="true"/>
         <property name="PrerequisiteContent" valueType="GameContent" readonly="true"/>
         <property name="PresenceId" valueType="Uint32" readonly="true"/>
-        <property name="Reward" valueType="GameDataLink.EGameCatalog.ArmyCategory" readonly="true"/>
-        <property name="Skin" valueType="GameDataLink.EGameCatalog.ArmyUnit" readonly="true"/>
+        <property name="Race" valueType="Identifier"/>
+        <property name="Reward" valueType="DataLink.Reward"/>
+        <property name="Skin" valueType="DataLink.Skin"/>
         <property name="Texture" valueType="Image" readonly="true"/>
         <property name="TextureCoords" elementType="Field:Rect" readonly="true"/>
         <property name="TypeName" valueType="String" readonly="true"/>
@@ -5700,6 +5876,7 @@
     ========================================
     -->
     <frameClass name="CRewardItemTileListItem" parent="CTileListItem">
+        <property name="RewardData" valueType="DataLink.Reward"/>
         <property name="RewardIdentifier" valueType="Identifier" readonly="true"/>
     </frameClass>
 
@@ -5763,6 +5940,8 @@
     ========================================
     -->
     <frameClass name="CScoreRewardItem" parent="CFrame">
+        <!-- TODO: EScoreRewardSource -->
+        <property name="ScoreRewardSource" valueType="String"/>
     </frameClass>
 
     <!--
@@ -5971,7 +6150,7 @@
         <property name="BestValueGrouping" valueType="CScoreValueFrameEBestValueGrouping" readonly="false"/>
         <property name="HideZero" valueType="Boolean" readonly="false"/>
         <property name="ScoreValue" valueType="EScoreValue" readonly="false"/>
-        <property name="ScoreValueLink" elementType="Field:ScoreValue" readonly="false"/>
+        <property name="ScoreValueLink" table="true" valueType="DataLink.ScoreValue"/>
     </frameClass>
 
     <!--
@@ -6043,8 +6222,10 @@
     ========================================
     -->
     <frameClass name="CScreenBattleMapProfile" parent="CGlueScreen">
-        <property name="MapHandle" valueType="Uint32Pair" readonly="true"/>
-        <property name="TutorialHandle" valueType="Uint32Pair" readonly="true"/>
+        <property name="MapHandle" valueType="Uint32Pair"/>
+        <property name="SelectedTabIndex" valueType="Uint32"/>
+        <property name="TutorialHandle" valueType="Uint32Pair"/>
+        <property name="TutorialVariantIndex" valueType="Uint8"/>
     </frameClass>
 
     <!--
@@ -6092,6 +6273,14 @@
 
     <!--
     ========================================
+    :: CScreenCustomFeatured
+    ========================================
+    -->
+    <frameClass name="CScreenCustomFeatured" parent="CGlueScreen">
+    </frameClass>
+
+    <!--
+    ========================================
     :: CScreenForegroundSC2
     ========================================
     -->
@@ -6126,10 +6315,14 @@
 
     <!--
     ========================================
-    :: CScreenLoginSC2
+    :: CScreenLoginUnified
     ========================================
     -->
-    <frameClass name="CScreenLoginSC2" parent="CGlueScreen">
+    <frameClass name="CScreenLoginUnified" parent="CGlueScreen">
+        <property name="BattleBoxMode" valueType="Boolean"/>
+        <property name="MyAddress" valueType="Identifier"/>
+        <property name="Region" valueType="Identifier"/>
+        <property name="SuppressBrowserErrors" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -6295,6 +6488,17 @@
 
     <!--
     ========================================
+    :: CSelectAllUnlockableButton
+    ========================================
+    -->
+    <frameClass name="CSelectAllUnlockableButton" parent="CButton">
+        <property name="PresenceId" valueType="Uint32"/>
+        <property name="Reward" valueType="Identifier"/>
+        <property name="SelectedCollectionId" valueType="Identifier"/>
+    </frameClass>
+
+    <!--
+    ========================================
     :: CSelectGameAccountDialog
     ========================================
     -->
@@ -6341,24 +6545,27 @@
     ========================================
     -->
     <frameClass name="CSelectedBundleFrame" parent="CFrame">
-        <property name="Bundle" valueType="Identifier" readonly="true"/>
-        <property name="Campaign" valueType="Identifier" readonly="true"/>
-        <property name="Commander" valueType="Identifier" readonly="true"/>
-        <property name="DecalPack" valueType="Identifier" readonly="true"/>
-        <property name="DynamicBundleItemCountStr" valueType="String" readonly="true"/>
-        <property name="EmoticonPack" valueType="Identifier" readonly="true"/>
-        <property name="GameContent" valueType="GameContent" readonly="true"/>
-        <property name="ItemCountStr" valueType="String" readonly="true"/>
-        <property name="PortraitPack" valueType="Identifier" readonly="true"/>
-        <property name="SelectedType" valueType="String" readonly="true"/>
-        <property name="Skin" valueType="Identifier" readonly="true"/>
-        <property name="SkinAlternate" valueType="Identifier" readonly="true"/>
-        <property name="SkinPack" valueType="Identifier" readonly="true"/>
-        <property name="SkinReward" valueType="Identifier" readonly="true"/>
-        <property name="SprayPack" valueType="Identifier" readonly="true"/>
-        <property name="Unit" valueType="Identifier" readonly="true"/>
-        <property name="UnitAlternate" valueType="Identifier" readonly="true"/>
-        <property name="VoicePack" valueType="Identifier" readonly="true"/>
+        <property name="Bundle" valueType="Identifier"/>
+        <property name="Campaign" valueType="Identifier"/>
+        <property name="Commander" valueType="Identifier"/>
+        <property name="ConsoleSkin" valueType="Identifier"/>
+        <property name="DecalPack" valueType="Identifier"/>
+        <property name="DynamicBundleItemCountStr" valueType="String"/>
+        <property name="EmoticonPack" valueType="Identifier"/>
+        <property name="GameContent" valueType="GameContent"/>
+        <property name="ItemCountStr" valueType="String"/>
+        <property name="PortraitPack" valueType="Identifier"/>
+        <property name="RaceBannerPack" valueType="Identifier"/>
+        <property name="SelectedType" valueType="String"/>
+        <property name="Skin" valueType="Identifier"/>
+        <property name="SkinAlternate" valueType="Identifier"/>
+        <property name="SkinPack" valueType="Identifier"/>
+        <property name="SkinReward" valueType="Identifier"/>
+        <property name="SprayPack" valueType="Identifier"/>
+        <property name="StimPack" valueType="Identifier"/>
+        <property name="Unit" valueType="Identifier"/>
+        <property name="UnitAlternate" valueType="Identifier"/>
+        <property name="VoicePack" valueType="Identifier"/>
     </frameClass>
 
     <!--
@@ -6401,6 +6608,14 @@
     ========================================
     -->
     <frameClass name="CSelectedPortraitPackFrame" parent="CRewardListFrame">
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CSelectedRaceBannerPackFrame
+    ========================================
+    -->
+    <frameClass name="CSelectedRaceBannerPackFrame" parent="CRewardListFrame">
     </frameClass>
 
     <!--
@@ -6457,17 +6672,17 @@
     ========================================
     -->
     <frameClass name="CSkinCacheFrame" parent="CFrame">
-        <property name="Camera" valueType="String" readonly="true"/>
-        <property name="CollectionDisplayModel" valueType="String" readonly="true"/>
-        <property name="CollectionDisplayModelAlternate" valueType="String" readonly="true"/>
-        <property name="CollectionDisplayUnit" valueType="String" readonly="true"/>
-        <property name="CollectionDisplayUnitAlternate" valueType="String" readonly="true"/>
-        <property name="DisplayModel" valueType="Identifier" readonly="true"/>
-        <property name="InfoText" valueType="Text" readonly="true"/>
-        <property name="NameText" valueType="Text" readonly="true"/>
-        <property name="Rotation" valueType="Int32" readonly="true"/>
-        <property name="Skin" valueType="GameDataLink.EGameCatalog.ArmyUnit" readonly="true"/>
-        <property name="WarChestUILight" valueType="String" readonly="true"/>
+        <property name="Camera" valueType="String"/>
+        <property name="CollectionDisplayModel" valueType="String"/>
+        <property name="CollectionDisplayModelAlternate" valueType="String"/>
+        <property name="CollectionDisplayUnit" valueType="String"/>
+        <property name="CollectionDisplayUnitAlternate" valueType="String"/>
+        <property name="DisplayModel" valueType="Identifier"/>
+        <property name="InfoText" valueType="Text"/>
+        <property name="NameText" valueType="Text"/>
+        <property name="Rotation" valueType="Int32"/>
+        <property name="Skin" valueType="DataLink.Skin"/>
+        <property name="WarChestUILight" valueType="String"/>
     </frameClass>
 
     <!--
@@ -6485,8 +6700,8 @@
     ========================================
     -->
     <frameClass name="CSkinPackLargeFormatTileListItem" parent="CUnitCacheTileListItem">
-        <property name="Equipped" valueType="Boolean" readonly="true"/>
-        <property name="Reward" valueType="GameDataLink.EGameCatalog.ArmyCategory" readonly="true"/>
+        <property name="Equipped" valueType="Boolean"/>
+        <property name="Reward" valueType="DataLink.Reward"/>
     </frameClass>
 
     <!--
@@ -6706,21 +6921,36 @@
 
     <!--
     ========================================
+    :: CStimpackCacheFrame
+    ========================================
+    -->
+    <frameClass name="CStimpackCacheFrame" parent="CFrame">
+        <property name="IsAvailable" valueType="Boolean"/>
+        <property name="Stimpack" valueType="DataLink.StimPack"/>
+        <property name="TimeRemaining" valueType="Uint32"/>
+        <property name="XpBoostMultiplier" valueType="Real32"/>
+    </frameClass>
+
+    <!--
+    ========================================
     :: CStoreCacheFrame
     ========================================
     -->
     <frameClass name="CStoreCacheFrame" parent="CFrame">
-        <property name="CanPurchase" valueType="Boolean" readonly="true"/>
-        <property name="CostText" valueType="String" readonly="true"/>
-        <property name="CurrencyText" valueType="String" readonly="true"/>
-        <property name="DiscountPercent" valueType="Uint32" readonly="true"/>
-        <property name="GameContent" valueType="GameContent" readonly="true"/>
-        <property name="IsBundle" valueType="Boolean" readonly="true"/>
-        <property name="IsPurchased" valueType="Boolean" readonly="true"/>
-        <property name="IsStoreAvailable" valueType="Boolean" readonly="true"/>
-        <property name="RetailCostText" valueType="String" readonly="true"/>
-        <property name="StoreTypeName" valueType="String" readonly="true"/>
-        <property name="UseRawCost" valueType="Boolean" readonly="false"/>
+        <property name="CanPurchase" valueType="Boolean"/>
+        <property name="CatalogCostText" valueType="String"/>
+        <property name="CatalogDiscountPercent" valueType="Uint32"/>
+        <property name="CatalogRetailCostText" valueType="String"/>
+        <property name="CostText" valueType="String"/>
+        <property name="CurrencyText" valueType="String"/>
+        <property name="DiscountPercent" valueType="Uint32"/>
+        <property name="GameContent" valueType="GameContent"/>
+        <property name="IsBundle" valueType="Boolean"/>
+        <property name="IsPurchased" valueType="Boolean"/>
+        <property name="IsStoreAvailable" valueType="Boolean"/>
+        <property name="RetailCostText" valueType="String"/>
+        <property name="StoreTypeName" valueType="String"/>
+        <property name="UseRawCost" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -6833,10 +7063,13 @@
     ========================================
     -->
     <frameClass name="CTabControl" parent="CFrame">
-        <property name="PanelListItem" table="true" valueType="FrameReference" readonly="false"/>
-        <property name="SelectedIndex" valueType="Uint32" readonly="true"/>
-        <property name="TabListItem" table="true" valueType="FrameReference" readonly="false"/>
-        <property name="Wrap" valueType="Boolean" readonly="true"/>
+        <property name="IncrementValue" valueType="Uint32"/>
+        <property name="NextIndex" valueType="Uint32"/>
+        <property name="PanelListItem" table="true" valueType="FrameReference"/>
+        <property name="PreviousIndex" valueType="Uint32"/>
+        <property name="SelectedIndex" valueType="Uint32"/>
+        <property name="TabListItem" table="true" valueType="FrameReference"/>
+        <property name="Wrap" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -6845,6 +7078,17 @@
     ========================================
     -->
     <frameClass name="CTalentTooltip" parent="CTooltip">
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CTalkerFrame
+    ========================================
+    -->
+    <frameClass name="CTalkerFrame" parent="CFrame">
+        <property name="IsMuted" valueType="Boolean"/>
+        <property name="IsTalking" valueType="Boolean"/>
+        <property name="PresenceId" valueType="Uint32"/>
     </frameClass>
 
     <!--
@@ -6921,7 +7165,7 @@
     -->
     <frameClass name="CTeamScoreValueFrame" parent="CTeamFrame">
         <property name="ScoreValue" valueType="EScoreValue" readonly="true"/>
-        <property name="ScoreValueLink" elementType="Field:ScoreValue" readonly="true"/>
+        <property name="ScoreValueLink" table="true" valueType="DataLink.ScoreValue"/>
     </frameClass>
 
     <!--
@@ -7001,6 +7245,7 @@
     ========================================
     -->
     <frameClass name="CTextListBoxItem" parent="CListBoxItem">
+        <property name="VariantIsPremium" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -7041,14 +7286,16 @@
     ========================================
     -->
     <frameClass name="CTileList" parent="CFrame">
-        <property name="ClearSelectionIfNotVisible" valueType="Boolean" readonly="true"/>
-        <property name="DataCount" valueType="Uint32" readonly="true"/>
-        <property name="HasSelectedData" valueType="Boolean" readonly="true"/>
-        <property name="HoveredIndex" valueType="Uint32" readonly="true"/>
-        <property name="MaxItemPerPage" valueType="Uint32" readonly="true"/>
-        <property name="RequireSelection" valueType="Boolean" readonly="true"/>
-        <property name="ScrollStepValue" valueType="Uint32" readonly="true"/>
-        <property name="SelectedIndex" valueType="Uint32" readonly="true"/>
+        <property name="CanScroll" valueType="Boolean"/>
+        <property name="ClearSelectionIfNotVisible" valueType="Boolean"/>
+        <property name="DataCount" valueType="Uint32"/>
+        <property name="HasSelectedData" valueType="Boolean"/>
+        <property name="HoveredIndex" valueType="Uint32"/>
+        <property name="MaxItemPerPage" valueType="Uint32"/>
+        <property name="RequireSelection" valueType="Boolean"/>
+        <property name="ScrollStepValue" valueType="Uint32"/>
+        <property name="SelectedIndex" valueType="Uint32"/>
+        <property name="ShowScrollBarManually" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -7350,6 +7597,8 @@
     ========================================
     -->
     <frameClass name="CTournamentPortalFrame" parent="CFrame">
+        <property name="FirstPlaceTrophyDefinitionId" valueType="Int32"/>
+        <property name="SecondPlaceTrophyDefinitionId" valueType="Int32"/>
     </frameClass>
 
     <!--
@@ -7518,7 +7767,7 @@
     <frameClass name="CUnitCacheFrame" parent="CFrame">
         <property name="Icon" valueType="Image" readonly="true"/>
         <property name="NameText" valueType="Text" readonly="true"/>
-        <property name="Unit" valueType="GameDataLink.EGameCatalog.Unit" readonly="true"/>
+        <property name="Unit" valueType="DataLink.Unit" readonly="true"/>
         <property name="Valid" valueType="Boolean" readonly="true"/>
     </frameClass>
 
@@ -7528,7 +7777,7 @@
     ========================================
     -->
     <frameClass name="CUnitCacheTileListItem" parent="CTileListItem">
-        <property name="Unit" valueType="GameDataLink.EGameCatalog.Unit" readonly="true"/>
+        <property name="Unit" valueType="DataLink.Unit" readonly="true"/>
     </frameClass>
 
     <!--
@@ -7557,7 +7806,7 @@
     ========================================
     -->
     <frameClass name="CUnitFrame" parent="CFrame">
-        <property name="ActorUnitLink" valueType="GameDataLink.EGameCatalog.Actor" readonly="true"/>
+        <property name="ActorUnitLink" valueType="DataLink.Actor" readonly="true"/>
         <property name="CurrentEnergy" valueType="Real32" readonly="true"/>
         <property name="CurrentHealth" valueType="Real32" readonly="true"/>
         <property name="CurrentShields" valueType="Real32" readonly="true"/>
@@ -7567,8 +7816,9 @@
         <property name="StartEnergy" valueType="Real32" readonly="true"/>
         <property name="StartHealth" valueType="Real32" readonly="true"/>
         <property name="StartShields" valueType="Real32" readonly="true"/>
-        <property name="UnitLink" valueType="GameDataLink.EGameCatalog.Unit" readonly="true"/>
+        <property name="UnitLink" valueType="DataLink.Unit" readonly="true"/>
         <property name="UnitTag" valueType="UnitTag" readonly="true"/>
+        <property name="UseSelectionLeader" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -7862,7 +8112,7 @@
     <frameClass name="CUnitStatusFrame" parent="CFrame">
         <property name="ControlPlayerId" valueType="Uint8" readonly="true"/>
         <property name="PlayerRelationship" valueType="EPlayerRelationship" readonly="true"/>
-        <property name="Unit" valueType="GameDataLink.EGameCatalog.Unit" readonly="true"/>
+        <property name="Unit" valueType="DataLink.Unit" readonly="true"/>
         <property name="UnitTag" valueType="UnitTag" readonly="false"/>
     </frameClass>
 
@@ -8154,6 +8404,7 @@
     ========================================
     -->
     <frameClass name="CUnlockableFrame" parent="CFrame">
+        <property name="RewardData" valueType="DataLink.Reward"/>
     </frameClass>
 
     <!--
@@ -8175,6 +8426,7 @@
     ========================================
     -->
     <frameClass name="CUnlockableTileListItem" parent="CTileListItem">
+        <property name="UnlockableTagId" valueType="String"/>
     </frameClass>
 
     <!--
@@ -8340,6 +8592,22 @@
 
     <!--
     ========================================
+    :: CUserProfileMapFavoritesSelectionFrame
+    ========================================
+    -->
+    <frameClass name="CUserProfileMapFavoritesSelectionFrame" parent="CBookmarkSelectionFrame">
+        <property name="Arcade" valueType="Boolean"/>
+        <property name="BookmarkCount" valueType="Uint32"/>
+        <property name="BookmarkTotal" valueType="Uint32"/>
+        <property name="ListResolved" valueType="Boolean"/>
+        <property name="Mod" valueType="Boolean"/>
+        <property name="RandomizeContent" valueType="Boolean"/>
+        <property name="SelectedMapHandle" valueType="Uint32Pair"/>
+        <property name="ToonEmail" valueType="String"/>
+    </frameClass>
+
+    <!--
+    ========================================
     :: CUserProfileMapReviewsFrame
     ========================================
     -->
@@ -8415,6 +8683,7 @@
         <property name="FilterSeason" valueType="Uint16" readonly="true"/>
         <property name="FilterTheirRace" valueType="String" readonly="true"/>
         <property name="GamesPlayed" valueType="Uint32" readonly="true"/>
+        <property name="IncludeUnranked" valueType="Boolean"/>
         <property name="IsResolved" valueType="Boolean" readonly="true"/>
         <property name="Losses" valueType="Uint32" readonly="true"/>
         <property name="PresenceId" valueType="Uint32" readonly="true"/>
@@ -8451,9 +8720,9 @@
     ========================================
     -->
     <frameClass name="CUserProfileSummaryCoopCommanderFrame" parent="CFrame">
-        <property name="Commander" valueType="GameDataLink.EGameCatalog.AchievementTerm" readonly="true"/>
-        <property name="Level" valueType="Uint32" readonly="true"/>
-        <property name="PresenceId" valueType="Uint32" readonly="false"/>
+        <property name="Commander" valueType="DataLink.Commander"/>
+        <property name="Level" valueType="Uint32"/>
+        <property name="PresenceId" valueType="Uint32"/>
     </frameClass>
 
     <!--
@@ -8497,6 +8766,8 @@
     ========================================
     -->
     <frameClass name="CVersionNotificationFrame" parent="CFrame">
+        <!-- TODO: CVersionNotificationFrameEVersionResetType -->
+        <property name="ResetType" valueType="String"/>
         <property name="SettingName" valueType="String" readonly="false"/>
         <property name="Version" valueType="Int32" readonly="false"/>
     </frameClass>
@@ -8539,7 +8810,9 @@
     ========================================
     -->
     <frameClass name="CViewMapProfileButton" parent="CButton">
-        <property name="MapHandle" valueType="Uint32Pair" readonly="true"/>
+        <property name="HyperLinkIndex" valueType="Uint32"/>
+        <property name="MapHandle" valueType="Uint32Pair"/>
+        <property name="UseHyperLink" valueType="Boolean"/>
     </frameClass>
 
     <!--
@@ -8654,6 +8927,7 @@
     ========================================
     -->
     <frameClass name="CWarChestAdvertisementFrame" parent="CFrame">
+        <property name="CurrentSeasonId" valueType="DataLink.WarChestSeason"/>
         <property name="PurchaseEndTime" valueType="Uint32" readonly="true"/>
         <property name="PurchaseEndTimeRemaining" valueType="Uint32" readonly="true"/>
         <property name="WarChestFullyPurchased" valueType="Boolean" readonly="true"/>
@@ -8687,19 +8961,19 @@
     ========================================
     -->
     <frameClass name="CWarChestFrame" parent="CFrame">
-        <property name="Bundle" valueType="Identifier" readonly="true"/>
-        <property name="CurrentRound" valueType="Uint32" readonly="true"/>
-        <property name="CurrentSeason" valueType="Uint32" readonly="true"/>
-        <property name="CurrentSeasonId" valueType="GameDataLink.EGameCatalog.Artifact" readonly="true"/>
-        <property name="EarnedXP" valueType="Uint64" readonly="true"/>
-        <property name="EndPurchaseDate" valueType="Uint32" readonly="true"/>
-        <property name="EndTimeRemaining" valueType="Uint32" readonly="true"/>
-        <property name="IsCurrentSeasonActive" valueType="Boolean" readonly="true"/>
-        <property name="IsPurchaseAvailable" valueType="Boolean" readonly="true"/>
-        <property name="LastSeenChangedXP" valueType="Uint64" readonly="true"/>
-        <property name="LastSeenEarnedXP" valueType="Uint64" readonly="true"/>
-        <property name="LastSeenRound" valueType="Uint32" readonly="true"/>
-        <property name="StartPurchaseDate" valueType="Uint32" readonly="true"/>
+        <property name="Bundle" valueType="Identifier"/>
+        <property name="CurrentRound" valueType="Uint32"/>
+        <property name="CurrentSeason" valueType="Uint32"/>
+        <property name="CurrentSeasonId" valueType="DataLink.WarChestSeason"/>
+        <property name="EarnedXP" valueType="Uint64"/>
+        <property name="EndPurchaseDate" valueType="Uint32"/>
+        <property name="EndTimeRemaining" valueType="Uint32"/>
+        <property name="IsCurrentSeasonActive" valueType="Boolean"/>
+        <property name="IsPurchaseAvailable" valueType="Boolean"/>
+        <property name="LastSeenChangedXP" valueType="Uint64"/>
+        <property name="LastSeenEarnedXP" valueType="Uint64"/>
+        <property name="LastSeenRound" valueType="Uint32"/>
+        <property name="StartPurchaseDate" valueType="Uint32"/>
     </frameClass>
 
     <!--
@@ -8728,7 +9002,7 @@
     ========================================
     -->
     <frameClass name="CWarChestPurchaseTileListItem" parent="CPurchaseTileListItem">
-        <property name="WarChest" valueType="GameDataLink.EGameCatalog.Artifact" readonly="true"/>
+        <property name="WarChest" valueType="DataLink.WarChest"/>
     </frameClass>
 
     <!--
