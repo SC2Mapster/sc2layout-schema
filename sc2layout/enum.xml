@@ -380,9 +380,6 @@
         <enumeration value="RaceBannerPack"/>
     </simpleType>
 
-    <simpleType name="EHotkey" kind="enum">
-    </simpleType>
-
     <simpleType name="EImageShaderBlendMode" kind="enum">
         <enumeration value="Multiply"/>
         <enumeration value="Add"/>

@@ -2,6 +2,7 @@
 <map version="3">
     <include path="type.xml"/>
     <include path="enum.xml"/>
+    <include path="ehotkey.xml"/>
     <include path="field.xml"/>
     <include path="frame_class.xml"/>
     <include path="frame_type.xml"/>
