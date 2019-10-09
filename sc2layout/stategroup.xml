@@ -102,20 +102,24 @@
     <complexType name="CStateDesc">
         <attribute name="name" type="ElementName" use="required" default="Default"/>
         <element name="When" type="CFrameStateCondition">
-            <alternative test="Property" type="CFrameStateConditionProperty"/>
-            <alternative test="AnimationState" type="CFrameStateConditionAnimationState"/>
-            <alternative test="StateGroup" type="CFrameStateConditionStateGroup"/>
-            <alternative test="Option" type="CFrameStateConditionOption"/>
+            <alternative match="attrValue">
+                <statement test="Property" type="CFrameStateConditionProperty"/>
+                <statement test="AnimationState" type="CFrameStateConditionAnimationState"/>
+                <statement test="StateGroup" type="CFrameStateConditionStateGroup"/>
+                <statement test="Option" type="CFrameStateConditionOption"/>
+            </alternative>
         </element>
         <element name="Action" type="CFrameStateAction">
-            <alternative test="SetState" type="CFrameStateSetStateAction"/>
-            <alternative test="SetProperty" type="CFrameStateSetPropertyAction"/>
-            <alternative test="SetAnimationProperty" type="CFrameStateSetAnimationPropAction"/>
-            <alternative test="SetAnchor" type="CFrameStateSetAnchorAction"/>
-            <alternative test="SendEvent" type="CFrameStateSendEventAction"/>
-            <alternative test="PlaySound" type="CFrameStatePlaySoundAction"/>
-            <alternative test="ApplyTemplate" type="CFrameStateApplyTemplateAction"/>
-            <alternative test="CreateFromTemplate" type="CFrameStateCreateFromTemplateAction"/>
+            <alternative match="attrValue">
+                <statement test="SetState" type="CFrameStateSetStateAction"/>
+                <statement test="SetProperty" type="CFrameStateSetPropertyAction"/>
+                <statement test="SetAnimationProperty" type="CFrameStateSetAnimationPropAction"/>
+                <statement test="SetAnchor" type="CFrameStateSetAnchorAction"/>
+                <statement test="SendEvent" type="CFrameStateSendEventAction"/>
+                <statement test="PlaySound" type="CFrameStatePlaySoundAction"/>
+                <statement test="ApplyTemplate" type="CFrameStateApplyTemplateAction"/>
+                <statement test="CreateFromTemplate" type="CFrameStateCreateFromTemplateAction"/>
+            </alternative>
         </element>
     </complexType>
 

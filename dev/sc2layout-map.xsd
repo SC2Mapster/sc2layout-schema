@@ -56,7 +56,7 @@
     <xs:element name="element">
         <xs:complexType>
             <xs:sequence>
-                <xs:element minOccurs="0" maxOccurs="unbounded" ref="alternative"/>
+                <xs:element minOccurs="0" maxOccurs="1" ref="alternative"/>
             </xs:sequence>
             <xs:attribute name="ref" type="xs:NCName"/>
             <xs:attribute name="name" type="xs:NCName"/>
@@ -68,8 +68,27 @@
     </xs:element>
     <xs:element name="alternative">
         <xs:complexType>
-            <xs:attribute name="test" use="required" type="xs:NCName"/>
-            <xs:attribute name="type" use="required" type="xs:NCName"/>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" name="statement">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element minOccurs="0" maxOccurs="1" ref="alternative"/>
+                        </xs:sequence>
+                        <xs:attribute name="test" use="required" type="xs:NCName"/>
+                        <xs:attribute name="type" use="required" type="xs:NCName"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="match" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="attrValue"/>
+                        <xs:enumeration value="expression"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="attributeName" use="optional" type="xs:string"/>
+            <xs:attribute name="icase" use="optional" type="xs:boolean"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="simpleType">

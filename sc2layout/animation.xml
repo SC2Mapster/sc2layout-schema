@@ -384,42 +384,46 @@
         <element name="Event" type="AnimationEvent">
         </element>
         <element name="Driver" type="CFrameAnimationDriver">
-            <alternative test="Mouse" type="CFrameAnimationDriverMouse"/>
-            <alternative test="MousePos" type="CFrameAnimationDriverMousePosition"/>
+            <alternative match="attrValue">
+                <statement test="Mouse" type="CFrameAnimationDriverMouse"/>
+                <statement test="MousePos" type="CFrameAnimationDriverMousePosition"/>
+            </alternative>
         </element>
         <element name="Controller" type="CFrameController">
-            <alternative test="Visibility" type="CFrameControllerVisibility"/>
-            <alternative test="VSkew" type="CFrameControllerVSkew"/>
-            <alternative test="HSkew" type="CFrameControllerHSkew"/>
-            <alternative test="LayerUV" type="CFrameControllerUV"/>
-            <alternative test="Tooltip" type="CFrameControllerTooltip"/>
-            <alternative test="Texture" type="CFrameControllerTexture"/>
-            <alternative test="Text" type="CFrameControllerText"/>
-            <alternative test="State" type="CFrameControllerState"/>
-            <alternative test="StartingAngle" type="CFrameControllerStartingAngle"/>
-            <alternative test="Sound" type="CFrameControllerSound"/>
-            <alternative test="Property" type="CFrameControllerProperty"/>
-            <alternative test="LayerColor" type="CFrameControllerLayerColor"/>
-            <alternative test="Rotation" type="CFrameControllerImageRotation"/>
-            <alternative test="Style" type="CFrameControllerFontStyle"/>
-            <alternative test="Fade" type="CFrameControllerFade"/>
-            <alternative test="Event" type="CFrameControllerEvent"/>
-            <alternative test="EndAngleOffset" type="CFrameControllerEndAngleOffset"/>
-            <alternative test="Enabled" type="CFrameControllerEnabled"/>
-            <alternative test="Dimension" type="CFrameControllerDimension"/>
-            <alternative test="Desaturation" type="CFrameControllerDesaturation"/>
-            <alternative test="Cutscene" type="CFrameControllerCutscene"/>
-            <alternative test="CutsceneProperty" type="CFrameControllerCutsceneProperty"/>
-            <alternative test="CutscenePropertyReal" type="CFrameControllerCutscenePropertyReal"/>
-            <alternative test="Counter" type="CFrameControllerCounter"/>
-            <alternative test="Color" type="CFrameControllerColor"/>
-            <alternative test="Blur" type="CFrameControllerBlur"/>
-            <alternative test="Command" type="CFrameControllerCommand"/>
-            <alternative test="AnimationSpeed" type="CFrameControllerAnimationSpeed"/>
-            <alternative test="Animation" type="CFrameControllerAnimation"/>
-            <alternative test="Anchor" type="CFrameControllerAnchor"/>
-            <alternative test="AdjustmentColor" type="CFrameControllerAdjustmentColor"/>
-            <alternative test="ActorMsg" type="CFrameControllerActorMsg"/>
+            <alternative match="attrValue">
+                <statement test="Visibility" type="CFrameControllerVisibility"/>
+                <statement test="VSkew" type="CFrameControllerVSkew"/>
+                <statement test="HSkew" type="CFrameControllerHSkew"/>
+                <statement test="LayerUV" type="CFrameControllerUV"/>
+                <statement test="Tooltip" type="CFrameControllerTooltip"/>
+                <statement test="Texture" type="CFrameControllerTexture"/>
+                <statement test="Text" type="CFrameControllerText"/>
+                <statement test="State" type="CFrameControllerState"/>
+                <statement test="StartingAngle" type="CFrameControllerStartingAngle"/>
+                <statement test="Sound" type="CFrameControllerSound"/>
+                <statement test="Property" type="CFrameControllerProperty"/>
+                <statement test="LayerColor" type="CFrameControllerLayerColor"/>
+                <statement test="Rotation" type="CFrameControllerImageRotation"/>
+                <statement test="Style" type="CFrameControllerFontStyle"/>
+                <statement test="Fade" type="CFrameControllerFade"/>
+                <statement test="Event" type="CFrameControllerEvent"/>
+                <statement test="EndAngleOffset" type="CFrameControllerEndAngleOffset"/>
+                <statement test="Enabled" type="CFrameControllerEnabled"/>
+                <statement test="Dimension" type="CFrameControllerDimension"/>
+                <statement test="Desaturation" type="CFrameControllerDesaturation"/>
+                <statement test="Cutscene" type="CFrameControllerCutscene"/>
+                <statement test="CutsceneProperty" type="CFrameControllerCutsceneProperty"/>
+                <statement test="CutscenePropertyReal" type="CFrameControllerCutscenePropertyReal"/>
+                <statement test="Counter" type="CFrameControllerCounter"/>
+                <statement test="Color" type="CFrameControllerColor"/>
+                <statement test="Blur" type="CFrameControllerBlur"/>
+                <statement test="Command" type="CFrameControllerCommand"/>
+                <statement test="AnimationSpeed" type="CFrameControllerAnimationSpeed"/>
+                <statement test="Animation" type="CFrameControllerAnimation"/>
+                <statement test="Anchor" type="CFrameControllerAnchor"/>
+                <statement test="AdjustmentColor" type="CFrameControllerAdjustmentColor"/>
+                <statement test="ActorMsg" type="CFrameControllerActorMsg"/>
+            </alternative>
         </element>
     </complexType>
 </map>
