@@ -151,11 +151,54 @@
         <extend value="CFrameControllerKey"/>
         <attribute name="type" type="EAnimationControllerKeyType" use="required" default="Cutscene"/>
         <attribute name="action" type="ECutsceneAction" use="required"/>
-        <attribute name="file" type="String"/>
-        <attribute name="bookmark" type="String"/>
+
+        <!-- umm, where does that one go? and what does it do? -->
         <attribute name="order" type="String"/>
-        <attribute name="filter" type="String"/>
-        <attribute name="value" type="String"/>
+    </complexType>
+
+    <complexType name="CFrameControllerKeyCutsceneSetCutscene">
+        <extend value="CFrameControllerKeyCutscene"/>
+        <attribute name="action" type="ECutsceneAction" use="required" default="SetCutscene"/>
+        <attribute name="file" type="String" use="required"/>
+    </complexType>
+
+    <complexType name="CFrameControllerKeyCutscenePlay">
+        <extend value="CFrameControllerKeyCutscene"/>
+        <attribute name="action" type="ECutsceneAction" use="required" default="Play"/>
+    </complexType>
+
+    <complexType name="CFrameControllerKeyCutscenePause">
+        <extend value="CFrameControllerKeyCutscene"/>
+        <attribute name="action" type="ECutsceneAction" use="required" default="Pause"/>
+    </complexType>
+
+    <complexType name="CFrameControllerKeyCutsceneStop">
+        <extend value="CFrameControllerKeyCutscene"/>
+        <attribute name="action" type="ECutsceneAction" use="required" default="Stop"/>
+    </complexType>
+
+    <complexType name="CFrameControllerKeyCutsceneBookmark">
+        <extend value="CFrameControllerKeyCutscene"/>
+        <attribute name="action" type="ECutsceneAction" use="required" default="Bookmark"/>
+        <attribute name="bookmark" type="String" use="required"/>
+    </complexType>
+
+    <complexType name="CFrameControllerKeyCutsceneAddFilter">
+        <extend value="CFrameControllerKeyCutscene"/>
+        <attribute name="action" type="ECutsceneAction" use="required" default="AddFilter"/>
+        <attribute name="filter" type="String" use="required"/>
+    </complexType>
+
+    <complexType name="CFrameControllerKeyCutsceneRemoveFilter">
+        <extend value="CFrameControllerKeyCutscene"/>
+        <attribute name="action" type="ECutsceneAction" use="required" default="RemoveFilter"/>
+        <attribute name="filter" type="String" use="required"/>
+    </complexType>
+
+    <complexType name="CFrameControllerKeyCutsceneTimeScale">
+        <extend value="CFrameControllerKeyCutscene"/>
+        <attribute name="action" type="ECutsceneAction" use="required" default="TimeScale"/>
+        <attribute name="value" type="Real32" use="required" default="1.0"/>
     </complexType>
 
     <!--
@@ -298,7 +341,18 @@
 
     <complexType name="CFrameControllerCutscene">
         <extend value="CFrameController"/>
-        <element name="Key" type="CFrameControllerKeyCutscene"/>
+        <element name="Key" type="CFrameControllerKeyCutscene">
+            <alternative match="attrValue" attributeName="action">
+                <statement test="SetCutscene" type="CFrameControllerKeyCutsceneSetCutscene"/>
+                <statement test="Play" type="CFrameControllerKeyCutscenePlay"/>
+                <statement test="Pause" type="CFrameControllerKeyCutscenePause"/>
+                <statement test="Stop" type="CFrameControllerKeyCutsceneStop"/>
+                <statement test="Bookmark" type="CFrameControllerKeyCutsceneBookmark"/>
+                <statement test="AddFilter" type="CFrameControllerKeyCutsceneAddFilter"/>
+                <statement test="RemoveFilter" type="CFrameControllerKeyCutsceneRemoveFilter"/>
+                <statement test="TimeScale" type="CFrameControllerKeyCutsceneTimeScale"/>
+            </alternative>
+        </element>
     </complexType>
 
     <complexType name="CFrameControllerCutsceneProperty">
