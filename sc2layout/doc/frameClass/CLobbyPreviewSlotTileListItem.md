@@ -1,5 +1,9 @@
 ___
 
+## LobbyHost
+
+TBD
+
 ## LobbySlotPreviewState
 
 TBD

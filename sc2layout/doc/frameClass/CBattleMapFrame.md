@@ -1,6 +1,14 @@
 ___
 
+## AuthorName
+
+TBD
+
 ## AuthorPresenceId
+
+TBD
+
+## Categories
 
 TBD
 
@@ -12,7 +20,15 @@ TBD
 
 TBD
 
+## FullPremiumContent
+
+TBD
+
 ## Genre
+
+TBD
+
+## HasPremiumContent
 
 TBD
 
@@ -45,6 +61,10 @@ TBD
 TBD
 
 ## MapHandle
+
+TBD
+
+## MaxPlayerCount
 
 TBD
 

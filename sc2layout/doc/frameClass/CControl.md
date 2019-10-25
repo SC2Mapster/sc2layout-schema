@@ -16,6 +16,10 @@ TBD
 
 TBD
 
+## ClicksOn
+
+TBD
+
 ## DragConstraintFrame
 
 TBD
@@ -25,6 +29,10 @@ TBD
 TBD
 
 ## DragHoverCursor
+
+TBD
+
+## DragMoveSlop
 
 TBD
 

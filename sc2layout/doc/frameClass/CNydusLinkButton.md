@@ -1,5 +1,9 @@
 ___
 
+## BrowserPurpose
+
+TBD
+
 ## NydusLink
 
 TBD

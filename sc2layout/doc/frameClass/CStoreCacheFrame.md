@@ -4,6 +4,18 @@ ___
 
 TBD
 
+## CatalogCostText
+
+TBD
+
+## CatalogDiscountPercent
+
+TBD
+
+## CatalogRetailCostText
+
+TBD
+
 ## CostText
 
 TBD

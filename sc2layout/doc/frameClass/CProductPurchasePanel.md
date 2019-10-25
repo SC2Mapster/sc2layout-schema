@@ -12,11 +12,19 @@ TBD
 
 TBD
 
+## IsConsoleSkinInBundle
+
+TBD
+
 ## IsProductBundle
 
 TBD
 
 ## IsRealCurrency
+
+TBD
+
+## IsSkinPackInBundle
 
 TBD
 

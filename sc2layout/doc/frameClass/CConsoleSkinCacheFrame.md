@@ -8,6 +8,10 @@ TBD
 
 TBD
 
+## FeaturedImage
+
+TBD
+
 ## GameContent
 
 TBD
@@ -17,6 +21,10 @@ TBD
 TBD
 
 ## RequiredReward
+
+TBD
+
+## ThumbnailImage
 
 TBD
 

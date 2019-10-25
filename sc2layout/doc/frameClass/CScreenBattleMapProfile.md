@@ -4,6 +4,14 @@ ___
 
 TBD
 
+## SelectedTabIndex
+
+TBD
+
 ## TutorialHandle
+
+TBD
+
+## TutorialVariantIndex
 
 TBD

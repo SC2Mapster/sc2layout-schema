@@ -16,6 +16,10 @@ TBD
 
 TBD
 
+## SelectedIsPremium
+
+TBD
+
 ## SelectedLobbyName
 
 TBD

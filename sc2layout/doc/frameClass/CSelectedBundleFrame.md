@@ -12,6 +12,10 @@ TBD
 
 TBD
 
+## ConsoleSkin
+
+TBD
+
 ## DecalPack
 
 TBD
@@ -36,6 +40,10 @@ TBD
 
 TBD
 
+## RaceBannerPack
+
+TBD
+
 ## SelectedType
 
 TBD
@@ -57,6 +65,10 @@ TBD
 TBD
 
 ## SprayPack
+
+TBD
+
+## StimPack
 
 TBD
 

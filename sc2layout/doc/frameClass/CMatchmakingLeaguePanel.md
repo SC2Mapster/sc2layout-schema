@@ -1,6 +1,14 @@
 ___
 
+## AgentMatchPromptActive
+
+TBD
+
 ## HideLeagueTier
+
+TBD
+
+## PreventAgentMatch
 
 TBD
 

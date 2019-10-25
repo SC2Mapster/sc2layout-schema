@@ -1,5 +1,9 @@
 ___
 
+## CanScroll
+
+TBD
+
 ## ClearSelectionIfNotVisible
 
 TBD
@@ -29,5 +33,9 @@ TBD
 TBD
 
 ## SelectedIndex
+
+TBD
+
+## ShowScrollBarManually
 
 TBD

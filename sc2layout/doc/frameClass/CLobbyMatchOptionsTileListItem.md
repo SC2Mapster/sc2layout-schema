@@ -19,3 +19,7 @@ TBD
 ## OptionType
 
 TBD
+
+## VariantIsPremium
+
+TBD

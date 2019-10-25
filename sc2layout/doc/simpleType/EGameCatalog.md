@@ -250,7 +250,15 @@ TBD
 
 TBD
 
+## PremiumMap
+
+TBD
+
 ## Race
+
+TBD
+
+## RaceBannerPack
 
 TBD
 
@@ -403,5 +411,9 @@ TBD
 TBD
 
 ## Weapon
+
+TBD
+
+## StimPack
 
 TBD

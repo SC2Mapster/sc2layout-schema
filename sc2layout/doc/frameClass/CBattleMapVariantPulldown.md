@@ -7,3 +7,7 @@ TBD
 ## VariantIndex
 
 TBD
+
+## VariantIsPremium
+
+TBD

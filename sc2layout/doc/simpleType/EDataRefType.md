@@ -2,18 +2,26 @@ TBD
 
 ___
 
-## ref
+## Ref
 
 TBD
 
-## score
+## StringRef
 
 TBD
 
-## gamevalue
+## Score
 
 TBD
 
-## galaxyvar
+## GameValue
+
+TBD
+
+## GalaxyVar
+
+TBD
+
+## UnitCount
 
 TBD

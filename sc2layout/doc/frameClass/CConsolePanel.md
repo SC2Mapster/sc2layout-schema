@@ -1,10 +1,14 @@
 ___
 
-## MinimapPanelImage
+## CameraAngleDelay
 
 TBD
 
-## InfoPanelImage
+## CameraMoveAngle
+
+TBD
+
+## CameraMoving
 
 TBD
 
@@ -12,7 +16,7 @@ TBD
 
 TBD
 
-## UsesPanelImages
+## CurrentApm
 
 TBD
 
@@ -20,10 +24,22 @@ TBD
 
 TBD
 
+## InfoPanelImage
+
+TBD
+
+## MinimapPanelImage
+
+TBD
+
+## UseAngleCalculation
+
+TBD
+
 ## UseApm
 
 TBD
 
-## CurrentApm
+## UsesPanelImages
 
 TBD

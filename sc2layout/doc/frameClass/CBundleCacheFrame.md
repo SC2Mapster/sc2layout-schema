@@ -16,6 +16,14 @@ TBD
 
 TBD
 
+## IsConsoleSkinInBundle
+
+TBD
+
+## IsSkinPackInBundle
+
+TBD
+
 ## LargeIconFilePath
 
 TBD
@@ -33,5 +41,9 @@ TBD
 TBD
 
 ## ShowDynamicBundle
+
+TBD
+
+## SuppressDiscount
 
 TBD

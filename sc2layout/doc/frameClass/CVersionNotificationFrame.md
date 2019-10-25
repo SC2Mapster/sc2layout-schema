@@ -1,5 +1,9 @@
 ___
 
+## ResetType
+
+TBD
+
 ## SettingName
 
 TBD
