@@ -7817,7 +7817,7 @@
         <property name="StartHealth" valueType="Real32" readonly="true"/>
         <property name="StartShields" valueType="Real32" readonly="true"/>
         <property name="UnitLink" valueType="DataLink.Unit" readonly="true"/>
-        <property name="UnitTag" valueType="UnitTag" readonly="true"/>
+        <property name="UnitTag" valueType="UnitTag"/>
         <property name="UseSelectionLeader" valueType="Boolean"/>
     </frameClass>
 

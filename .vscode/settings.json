@@ -4,5 +4,6 @@
             "systemId": "dev/sc2layout-map.xsd",
             "pattern": "**/*.xml"
         }
-    ]
+    ],
+    "xml.format.spaceBeforeEmptyCloseTag": false,
 }

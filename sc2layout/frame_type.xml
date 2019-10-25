@@ -436,7 +436,7 @@
     </frameType>
 
     <frameType name="BehaviorIcon" classType="CBehaviorIcon" blizzOnly="false">
-        <hookup path="IconImage" class="CImage" required="true"/>
+        <hookup path="IconImage" class="CImage" required="false"/>
         <hookup path="ImageMaskContainer/IconImage" class="CImage" required="false"/>
         <hookup path="StackLabel" class="CLabel" required="false"/>
         <hookup path="MaxStackDisplay" class="CFrame" required="false"/>
@@ -4536,10 +4536,10 @@
     </frameType>
 
     <frameType name="UnitButton" classType="CUnitButton" blizzOnly="false">
-        <hookup path="CooldownImage" class="CImage" required="true"/>
-        <hookup path="IndicatorBackgroundImage" class="CImage" required="true"/>
-        <hookup path="IndicatorLineImage" class="CImage" required="true"/>
-        <hookup path="InfoLabel" class="CLabel" required="true"/>
+        <hookup path="CooldownImage" class="CImage" required="false"/>
+        <hookup path="IndicatorBackgroundImage" class="CImage" required="false"/>
+        <hookup path="IndicatorLineImage" class="CImage" required="false"/>
+        <hookup path="InfoLabel" class="CLabel" required="false"/>
     </frameType>
 
     <frameType name="UnitCacheFrame" classType="CUnitCacheFrame" blizzOnly="false">
@@ -4583,7 +4583,7 @@
     </frameType>
 
     <frameType name="UnitStatusAbilCharge" descType="CUnitStatusBehaviorDesc" classType="CUnitStatusAbilCharge" blizzOnly="false">
-        <hookup path="ChargeFillProgress" class="CProgressBar" required="true"/>
+        <hookup path="ChargeFillProgress" class="CProgressBar" required="false"/>
     </frameType>
 
     <frameType name="UnitStatusAbilIcon" descType="CUnitStatusElementDesc" classType="CUnitStatusAbilIcon" blizzOnly="false">
@@ -4612,7 +4612,7 @@
     </frameType>
 
     <frameType name="UnitStatusBehaviorCharge" descType="CUnitStatusBehaviorDesc" classType="CUnitStatusBehaviorCharge" blizzOnly="false">
-        <hookup path="ChargeFillProgress" class="CProgressBar" required="true"/>
+        <hookup path="ChargeFillProgress" class="CProgressBar" required="false"/>
     </frameType>
 
     <frameType name="UnitStatusBehaviorIcon" descType="CUnitStatusBehaviorDesc" classType="CUnitStatusBehaviorIcon" blizzOnly="false">
