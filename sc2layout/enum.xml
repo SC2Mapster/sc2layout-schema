@@ -850,10 +850,12 @@
     </simpleType>
 
     <simpleType name="EDataRefType" kind="enum">
-        <enumeration value="ref"/>
-        <enumeration value="score"/>
-        <enumeration value="gamevalue"/>
-        <enumeration value="galaxyvar"/>
+        <enumeration value="Ref"/>
+        <enumeration value="StringRef"/>
+        <enumeration value="Score"/>
+        <enumeration value="GameValue"/>
+        <enumeration value="GalaxyVar"/>
+        <enumeration value="UnitCount"/>
     </simpleType>
 
     <simpleType name="EProjection" kind="enum">
