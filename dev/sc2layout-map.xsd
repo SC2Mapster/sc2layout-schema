@@ -159,7 +159,15 @@
     </xs:element>
     <xs:element name="flag">
         <xs:complexType>
-            <xs:attribute name="name" use="required" type="xs:NCName"/>
+            <xs:attribute name="name" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Virtual"/>
+                        <xs:enumeration value="Nullable"/>
+                        <xs:enumeration value="AllowExtraAttrs"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
             <xs:attribute name="value" use="required" type="xs:boolean"/>
         </xs:complexType>
     </xs:element>
