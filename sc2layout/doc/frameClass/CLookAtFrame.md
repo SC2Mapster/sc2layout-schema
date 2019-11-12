@@ -1,17 +1,17 @@
 ___
 
-## Angle
+## SourceFrame
 
-TBD
+Path to the source frame.
 
 ## DestFrame
 
-TBD
+Path to the destination frame.
 
 ## Distance
 
-TBD
+Distance (expressed in design pixels) from center of `SourceFrame` to center of `TargetFrame`.
 
-## SourceFrame
+## Angle
 
-TBD
+Angle (expressed in degrees: `0-360`) from center of `SourceFrame` to center of `TargetFrame`

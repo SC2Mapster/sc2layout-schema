@@ -4327,10 +4327,10 @@
     ========================================
     -->
     <frameClass name="CLookAtFrame" parent="CFrame">
-        <property name="Angle" valueType="Real32" readonly="true"/>
-        <property name="DestFrame" valueType="Identifier" readonly="true"/>
+        <property name="SourceFrame" valueType="FrameReference"/>
+        <property name="DestFrame" valueType="FrameReference"/>
         <property name="Distance" valueType="Real32" readonly="true"/>
-        <property name="SourceFrame" valueType="Identifier" readonly="true"/>
+        <property name="Angle" valueType="Real32" readonly="true"/>
     </frameClass>
 
     <!--
