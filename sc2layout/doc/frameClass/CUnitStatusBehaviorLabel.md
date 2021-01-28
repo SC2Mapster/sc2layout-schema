@@ -2,4 +2,4 @@ ___
 
 ## StackFormatString
 
-TBD
+Available tokens: `%stack%`, `%max%`.
