@@ -9104,10 +9104,27 @@
     ========================================
     -->
     <frameClass name="CBrowser" parent="CLayer">
-        <property name="Address" valueType="String" readonly="false"/>
-        <property name="Error" valueType="Boolean" readonly="true"/>
+        <property name="Address" valueType="String"/>
+        <property name="Title" valueType="String" readonly="true"/>
+        <property name="StickyFocus" valueType="Boolean"/>
+        <property name="IMEStyle" valueType="String"/>
         <property name="Loading" valueType="Boolean" readonly="true"/>
         <property name="CanGoForward" valueType="Boolean" readonly="true"/>
         <property name="CanGoBackward" valueType="Boolean" readonly="true"/>
+        <property name="Error" valueType="Boolean" readonly="true"/>
+        <property name="Navigating" valueType="Boolean" readonly="true"/>
+        <property name="ExternalLinksUseOSBrowser" valueType="Boolean"/>
+        <property name="SmartStretch" valueType="Boolean"/>
+        <property name="TextureWidth" valueType="Int32"/>
+        <property name="TextureHeight" valueType="Int32"/>
+        <property name="Purpose" valueType="String"/>
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CSceneBrowser
+    ========================================
+    -->
+    <frameClass name="CSceneBrowser" parent="CBrowser">
     </frameClass>
 </map>

@@ -3732,7 +3732,7 @@
         <hookup path="QuitButton" class="CButton" required="true"/>
         <hookup path="BattleBoxAccountEditBox" class="CEditBox" required="true"/>
         <hookup path="BattleBoxLoginButton" class="CButton" required="true"/>
-        <hookup path="Browser" class="CBrowser" required="true"/>
+        <hookup path="SceneBrowser" class="CSceneBrowser" required="true"/>
     </frameType>
 
     <frameType name="ScreenMovie" classType="CScreenMovie" blizzOnly="true">
@@ -5143,4 +5143,12 @@
         <hookup path="AddressEditBox" class="CEditBox" required="true"/>
     </frameType>
 
+    <frameType name="SceneBrowser" classType="CSceneBrowser" blizzOnly="true">
+        <hookup path="BrowserImage" class="CImage" required="true"/>
+        <hookup path="ForwardButton" class="CButton" required="true"/>
+        <hookup path="BackButton" class="CButton" required="true"/>
+        <hookup path="GoButton" class="CButton" required="true"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="AddressEditBox" class="CEditBox" required="true"/>
+    </frameType>
 </map>
