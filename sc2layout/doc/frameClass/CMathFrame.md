@@ -26,20 +26,22 @@ If it's random, the result is a random value between A and B. This value will ch
 
 ## Result
 
-TBD
+The is the result value of a MathFrame given as a decimal value. This is a READ-ONLY value.
 
 ## ResultCeil
 
-TBD
+This is the value of Result rounded up.
 
 ## ResultInt
 
-TBD
+The is the result value of a MathFrame given as an integer value. This is a READ-ONLY value.
 
 ## ResultRound
 
-TBD
+This is the value of Result rounded to the nearest integer value.
 
 ## ResultValid
 
-TBD
+The ResultValid is given as a Boolean value.
+
+This will be true if you are not dividing by 0 or B < A for a random generator.
