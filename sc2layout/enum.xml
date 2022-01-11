@@ -44,8 +44,27 @@
         <enumeration value="Normal"/>
         <enumeration value="Pushed"/>
 
+        <!-- CControl -->
+        <enumeration value="ControlTakeFocusRequest"/>
+        <enumeration value="ControlLoseFocusRequest"/>
+        <enumeration value="ControlClickRequest"/>
+
         <!-- CEditbox -->
         <enumeration value="OnEnterPressed"/>
+
+        <!-- CTileList (?) -->
+        <enumeration value="OnUpdateData"/>
+        <enumeration value="OnClearData"/>
+
+        <!-- CTileListItem (?) -->
+        <enumeration value="Selected"/>
+        <enumeration value="Preselected"/>
+        <enumeration value="Hover"/>
+        <enumeration value="OnItemClicked"/>
+        <enumeration value="OnItemDoubleClicked"/>
+
+        <!-- CCountdownLabel -->
+        <enumeration value="CountdownLabelResetRequest"/>
     </simpleType>
 
     <simpleType name="EAnimationControllerType" kind="enum">
