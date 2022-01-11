@@ -30,7 +30,9 @@ TBD
 
 ## Insets
 
-TBD
+Padding of inner value/label.
+
+Order: Top,Left,Bottom,Right
 
 ## LoseFocusOnEnter
 
