@@ -34,7 +34,7 @@ VSC extension is setup to auto-download only tagged releases of matching `Major`
 
 There are no strict guidelines when to tag a new release - initial plan was to simply always pull recent `master`. But due to fact that schema model is not final, I've opted for tagged releases to avoid bricking VSC extension of users who may not be using most recent version.
 
-In short, contributors are welcome to increament `Minor` version and tag any commit they like. No changelogs required.
+In short, contributors are welcome to increment `Minor` version and tag any commit they like. No changelogs required.
 
 ### Recommended tools
 
