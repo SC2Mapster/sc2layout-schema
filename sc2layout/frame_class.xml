@@ -3651,6 +3651,7 @@
         <property name="HideUnusedInventoryButtons" valueType="Boolean" readonly="false"/>
         <property name="ShowAgentInventory" valueType="Boolean" readonly="false"/>
         <property name="ShowForAllPlayers" valueType="Boolean" readonly="false"/>
+        <property name="UseAlertIcon" valueType="Boolean" readonly="false"/>
     </frameClass>
 
     <!--
