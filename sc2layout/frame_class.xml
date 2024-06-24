@@ -3246,6 +3246,8 @@
     ========================================
     -->
     <frameClass name="CHeroFrame" parent="CFrame">
+        <property name="HeroTag" valueType="UnitTag" readonly="true"/>
+        <property name="SkillPoint" valueType="String" readonly="true"/>
     </frameClass>
 
     <!--
