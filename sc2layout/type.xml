@@ -23,7 +23,7 @@
 
     <simpleType name="FileDescName" data="string"/>
     <simpleType name="DescName" data="string">
-        <pattern value="^[\w_\-\/]+$"/>
+        <pattern value="^[\w!\x23-\x2F\x3A-\x40]+$"/>
     </simpleType>
     <simpleType name="DescTemplateName" data="string"/>
     <simpleType name="FrameReference" data="string"/>
