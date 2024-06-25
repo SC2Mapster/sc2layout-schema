@@ -494,6 +494,7 @@
         <property name="Categories" valueType="String"/>
         <property name="Description" valueType="String"/>
         <property name="ExpansionLevel" valueType="Uint32"/>
+        <property name="FirstPublicPublishTime" valueType="Uint32"/>
         <property name="FullPremiumContent" valueType="Boolean"/>
         <property name="Genre" valueType="String"/>
         <property name="HasPremiumContent" valueType="Boolean"/>
@@ -502,7 +503,11 @@
         <property name="IsBookmarked" valueType="Boolean"/>
         <property name="IsDescriptionMod" valueType="Boolean"/>
         <property name="IsExtensionMod" valueType="Boolean"/>
+        <property name="IsMapInPublishModeration" valueType="Boolean"/>
+        <property name="IsMapInUpdateModeration" valueType="Boolean"/>
+        <property name="IsMapMyPublished" valueType="Boolean"/>
         <property name="IsPrivatePublished" valueType="Boolean"/>
+        <property name="LatestVersionPublicTime" valueType="Uint32"/>
         <property name="MajorVersionNum" valueType="Uint32"/>
         <property name="MapHandle" valueType="Uint32Pair"/>
         <property name="MaxPlayerCount" valueType="Uint32"/>
@@ -1652,6 +1657,7 @@
     ========================================
     -->
     <frameClass name="CCommandButton" parent="CGameButton">
+        <property name="ButtonOtherUnit" valueType="UnitTag" readonly="true"/>
         <property name="HotkeyUse" valueType="EHotkey" readonly="false"/>
         <property name="Suggested" valueType="Boolean" readonly="true"/>
     </frameClass>
@@ -3240,6 +3246,8 @@
     ========================================
     -->
     <frameClass name="CHeroFrame" parent="CFrame">
+        <property name="HeroTag" valueType="UnitTag" readonly="true"/>
+        <property name="SkillPoint" valueType="String" readonly="true"/>
     </frameClass>
 
     <!--
@@ -3641,6 +3649,9 @@
     -->
     <frameClass name="CInventoryPanel" parent="CFrame">
         <property name="HideUnusedInventoryButtons" valueType="Boolean" readonly="false"/>
+        <property name="ShowAgentInventory" valueType="Boolean" readonly="false"/>
+        <property name="ShowForAllPlayers" valueType="Boolean" readonly="false"/>
+        <property name="UseAlertIcon" valueType="Boolean" readonly="false"/>
     </frameClass>
 
     <!--
