@@ -1,3 +1,7 @@
+Representation of a [data button](https://sc2mapster.gamepedia.com/wiki/Data/Buttons).
+
+### Usage example of `ButtonOtherUnit`
+
 How to use `ButtonOtherUnit`. This property contains the UnitTag of the item unit.
 
 ```xml
