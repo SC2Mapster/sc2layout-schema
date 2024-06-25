@@ -94,6 +94,50 @@ When the target frame's `Toggled` property enters the `False` state. Can only ta
 
 When the target frame's `Pushed` property enters the `True` state. Can only target frames with the `Pushed` property such as `Button`.
 
+## ControlTakeFocusRequest
+
+TBD
+
+## ControlLoseFocusRequest
+
+TBD
+
+## ControlClickRequest
+
+TBD
+
 ## OnEnterPressed
 
 `CEditBox` only
+
+## OnUpdateData
+
+TBD
+
+## OnClearData
+
+TBD
+
+## Selected
+
+TBD
+
+## Preselected
+
+TBD
+
+## Hover
+
+TBD
+
+## OnItemClicked
+
+TBD
+
+## OnItemDoubleClicked
+
+TBD
+
+## CountdownLabelResetRequest
+
+TBD
