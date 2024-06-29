@@ -3147,6 +3147,9 @@
         <hookup path="Portrait" class="CPortraitFrame" required="true"/>
     </frameType>
 
+    <frameType name="PortraitTimeOfDay" descType="CPortraitFrameDesc" classType="CPortraitFrame" blizzOnly="false">
+    </frameType>
+
     <frameType name="PremiumMapCacheFrame" classType="CPremiumMapCacheFrame" blizzOnly="true">
     </frameType>
 

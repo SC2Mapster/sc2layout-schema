@@ -1659,6 +1659,7 @@
     <frameClass name="CCommandButton" parent="CGameButton">
         <property name="ButtonOtherUnit" valueType="UnitTag" readonly="true"/>
         <property name="HotkeyUse" valueType="EHotkey" readonly="false"/>
+        <property name="Ignored" valueType="Boolean" readonly="false"/>
         <property name="Suggested" valueType="Boolean" readonly="true"/>
     </frameClass>
 
@@ -5343,6 +5344,15 @@
 
     <!--
     ========================================
+    :: CPortraitTimeOfDay
+    ========================================
+    -->
+    <frameClass name="CPortraitTimeOfDay" parent="CPortraitFrame">
+        <property name="AnimNameKey" valueType="String" readonly="true"/>
+    </frameClass>
+
+    <!--
+    ========================================
     :: CPremiumMapCacheFrame
     ========================================
     -->
@@ -7768,6 +7778,7 @@
     -->
     <frameClass name="CUnitButton" parent="CButton">
         <property name="UnitTag" valueType="UnitTag" readonly="false"/>
+        <property name="WireFrameUpdateColor" valueType="Boolean" readonly="false"/>
     </frameClass>
 
     <!--
