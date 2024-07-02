@@ -234,14 +234,10 @@
         <enumeration value="RUB"/>
         <enumeration value="NT"/>
         <enumeration value="BRL"/>
-        <enumeration value="EUR"/>
-        <enumeration value="RUB"/>
-        <enumeration value="GBP"/>
         <enumeration value="ARS"/>
         <enumeration value="CLP"/>
         <enumeration value="MXN"/>
         <enumeration value="USD"/>
-        <enumeration value="BRL"/>
     </simpleType>
 
     <simpleType name="BattlenetClubClubCategoryEnum" kind="enum">

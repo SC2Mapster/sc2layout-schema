@@ -1145,7 +1145,6 @@
         <hookup path="GameResultLabel" class="CLabel" required="true"/>
         <hookup path="MessageLabel" class="CLabel" required="true"/>
         <hookup path="SummaryButton" class="CButton" required="true"/>
-        <hookup path="SummaryButton" class="CButton" required="true"/>
         <hookup path="StatsButton" class="CButton" required="true"/>
         <hookup path="PlayAgainButton" class="CGlueButton" required="true"/>
         <hookup path="PartyInviteButton" class="CPartyInviteButton" required="true"/>

@@ -1795,7 +1795,7 @@
     :: CCommanderPrestigeFrame
     ========================================
     -->
-    <frameClass name="CCommanderPrestigeFrame " parent="CFrame">
+    <frameClass name="CCommanderPrestigeFrame" parent="CFrame">
         <property name="Commander" valueType="DataLink.Commander"/>
         <property name="IsPrestigeLevelUnlocked" valueType="Boolean"/>
         <property name="MaxCommanderPrestigeLevelUnlocked" valueType="Uint32"/>
@@ -1822,7 +1822,7 @@
     :: CCommanderPrestigeTileListItem
     ========================================
     -->
-    <frameClass name="CCommanderPrestigeTileListItem " parent="CTileListItem">
+    <frameClass name="CCommanderPrestigeTileListItem" parent="CTileListItem">
         <property name="Commander" valueType="DataLink.Commander"/>
         <property name="MaxCommanderPrestigeLevelUnlocked" valueType="Uint32"/>
         <property name="PrestigeLevel" valueType="Uint32"/>
