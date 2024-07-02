@@ -1792,6 +1792,44 @@
 
     <!--
     ========================================
+    :: CCommanderPrestigeFrame
+    ========================================
+    -->
+    <frameClass name="CCommanderPrestigeFrame " parent="CFrame">
+        <property name="Commander" valueType="DataLink.Commander"/>
+        <property name="IsPrestigeLevelUnlocked" valueType="Boolean"/>
+        <property name="MaxCommanderPrestigeLevelUnlocked" valueType="Uint32"/>
+        <property name="PrestigeLevel" valueType="Uint32"/>
+        <property name="PrestigeTitle" valueType="String"/>
+        <property name="PrestigeTooltip" valueType="String"/>
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CCommanderPrestigeSelectionPanel
+    ========================================
+    -->
+    <frameClass name="CCommanderPrestigeSelectionPanel" parent="CFrame">
+        <property name="ActivationInProgress" valueType="Boolean"/>
+        <property name="CanPrestige" valueType="Boolean"/>
+        <property name="Commander" valueType="DataLink.Commander"/>
+        <property name="CommanderPrestigeLevel" valueType="Uint32"/>
+        <property name="MaxCommanderPrestigeLevelUnlocked" valueType="Uint32"/>
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CCommanderPrestigeTileListItem
+    ========================================
+    -->
+    <frameClass name="CCommanderPrestigeTileListItem " parent="CTileListItem">
+        <property name="Commander" valueType="DataLink.Commander"/>
+        <property name="MaxCommanderPrestigeLevelUnlocked" valueType="Uint32"/>
+        <property name="PrestigeLevel" valueType="Uint32"/>
+    </frameClass>
+
+    <!--
+    ========================================
     :: CCommanderPurchaseDialog
     ========================================
     -->
@@ -1813,15 +1851,20 @@
     -->
     <frameClass name="CCommanderSelectionPanel" parent="CFrame">
         <property name="Commander" valueType="DataLink.Commander"/>
+        <property name="CommanderPrestigeLevel" valueType="Uint32"/>
+        <property name="CommanderPrestigeTitleName" valueType="String"/>
         <property name="CurrentXP" valueType="Real32"/>
         <property name="DifficultyBonus" valueType="Uint32"/>
+        <property name="HasCommanderPrestigeTitle" valueType="Boolean"/>
         <property name="IsPartyCommanderRandom" valueType="Boolean"/>
         <property name="IsRandomCommanderSelected" valueType="Boolean"/>
         <property name="Level" valueType="Uint32"/>
+        <property name="MaxPrestigeLevel" valueType="Uint32"/>
         <property name="PartyCommander" valueType="DataLink.Commander"/>
         <property name="PartyLevel" valueType="Uint32"/>
         <property name="PartyPlayerName" valueType="String"/>
         <property name="PlayerName" valueType="String"/>
+        <property name="PrestigeCommanderPrestigeTitle" valueType="String"/>
         <property name="SelectedCommanderIsTrial" valueType="Boolean"/>
         <property name="TotalXP" valueType="Real32"/>
     </frameClass>

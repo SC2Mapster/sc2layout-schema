@@ -976,6 +976,15 @@
         <hookup path="DecrementButton" class="CButton" required="false"/>
     </frameType>
 
+    <frameType name="CommanderPrestigeFrame" classType="CCommanderPrestigeFrame" blizzOnly="true">
+    </frameType>
+
+    <frameType name="CommanderPrestigeSelectionPanel" classType="CCommanderPrestigeSelectionPanel" blizzOnly="true">
+    </frameType>
+
+    <frameType name="CommanderPrestigeTileListItem" classType="CCommanderPrestigeTileListItem" blizzOnly="true">
+    </frameType>
+
     <frameType name="CommanderPurchaseDialog" classType="CCommanderPurchaseDialog" blizzOnly="true">
         <hookup path="CommanderTitleLabel" class="CLabel" required="true"/>
         <hookup path="DescriptionLabel" class="CLabel" required="true"/>
