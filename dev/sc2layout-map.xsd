@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:simpleType name="typeName">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[\w!\.x23-x2Fx3A-x40]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="identifierName">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[\w!\.x23-x2Fx3A-x40]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="attributeUse">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="required"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:element name="map">
         <xs:complexType>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
@@ -12,6 +27,10 @@
             </xs:choice>
             <xs:attribute name="version" use="optional" type="xs:string"/>
         </xs:complexType>
+        <xs:unique name="uniqueTypeName">
+            <xs:selector xpath="simpleType|complexType|frameClass|frameType"/>
+            <xs:field xpath="@name"/>
+        </xs:unique>
     </xs:element>
 
     <xs:element name="include">
@@ -31,26 +50,26 @@
                     <xs:element ref="element"/>
                 </xs:choice>
             </xs:sequence>
-            <xs:attribute name="name" use="required" type="xs:NMTOKEN"/>
+            <xs:attribute name="name" use="required" type="typeName"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="attribute">
         <xs:complexType>
             <xs:attribute name="default"/>
-            <xs:attribute name="name" use="required" type="xs:NCName"/>
-            <xs:attribute name="type" use="required" type="xs:NCName"/>
-            <xs:attribute name="use" type="xs:NCName"/>
+            <xs:attribute name="name" use="required" type="typeName"/>
+            <xs:attribute name="type" use="required" type="typeName"/>
+            <xs:attribute name="use" type="attributeUse"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="extend">
         <xs:complexType>
-            <xs:attribute name="value" use="required" type="xs:NMTOKEN"/>
+            <xs:attribute name="value" use="required" type="typeName"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="indeterminateAttribute">
         <xs:complexType>
-            <xs:attribute name="key" use="required" type="xs:NCName"/>
-            <xs:attribute name="value" use="required" type="xs:NCName"/>
+            <xs:attribute name="key" use="required" type="typeName"/>
+            <xs:attribute name="value" use="required" type="typeName"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="element">
@@ -58,11 +77,12 @@
             <xs:sequence>
                 <xs:element minOccurs="0" maxOccurs="1" ref="alternative"/>
             </xs:sequence>
-            <xs:attribute name="ref" type="xs:NCName"/>
-            <xs:attribute name="name" type="xs:NCName"/>
-            <xs:attribute name="simpleType" type="xs:NMTOKEN"/>
+            <!-- TODO: check if there's support for that, and remove if there isn't -->
+            <!-- <xs:attribute name="ref" type="xs:NCName"/> -->
+            <xs:attribute name="name" type="typeName"/>
+            <xs:attribute name="simpleType" type="typeName"/>
             <xs:attribute name="table" type="xs:boolean"/>
-            <xs:attribute name="type" type="xs:NMTOKEN"/>
+            <xs:attribute name="type" type="typeName"/>
             <xs:attribute name="default"/>
         </xs:complexType>
     </xs:element>
@@ -74,8 +94,8 @@
                         <xs:sequence>
                             <xs:element minOccurs="0" maxOccurs="1" ref="alternative"/>
                         </xs:sequence>
-                        <xs:attribute name="test" use="required" type="xs:NCName"/>
-                        <xs:attribute name="type" use="required" type="xs:NCName"/>
+                        <xs:attribute name="test" use="required" type="typeName"/>
+                        <xs:attribute name="type" use="required" type="typeName"/>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
@@ -90,6 +110,10 @@
             <xs:attribute name="attributeName" use="optional" type="xs:string"/>
             <xs:attribute name="icase" use="optional" type="xs:boolean"/>
         </xs:complexType>
+        <xs:unique name="uniqueTestStatement">
+            <xs:selector xpath="statement"/>
+            <xs:field xpath="@test"/>
+        </xs:unique>
     </xs:element>
     <xs:element name="simpleType">
         <xs:complexType mixed="true">
@@ -99,15 +123,23 @@
                 <xs:element ref="pattern"/>
                 <xs:element ref="union"/>
             </xs:choice>
-            <xs:attribute name="data" type="xs:NCName"/>
-            <xs:attribute name="internalType" type="xs:NCName"/>
-            <xs:attribute name="kind" type="xs:NCName"/>
-            <xs:attribute name="name" use="required" type="xs:NMTOKEN"/>
+            <xs:attribute name="data" type="identifierName"/>
+            <xs:attribute name="internalType" type="typeName"/>
+            <xs:attribute name="kind" type="identifierName"/>
+            <xs:attribute name="name" use="required" type="typeName"/>
         </xs:complexType>
+        <xs:unique name="uniqueEnumerationValue">
+            <xs:selector xpath="enumeration"/>
+            <xs:field xpath="@value"/>
+        </xs:unique>
+        <xs:unique name="uniqueUnionValue">
+            <xs:selector xpath="union"/>
+            <xs:field xpath="@value"/>
+        </xs:unique>
     </xs:element>
     <xs:element name="enumeration">
         <xs:complexType>
-            <xs:attribute name="value" use="required" type="xs:NCName"/>
+            <xs:attribute name="value" use="required" type="identifierName"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="pattern">
@@ -117,7 +149,7 @@
     </xs:element>
     <xs:element name="union">
         <xs:complexType>
-            <xs:attribute name="value" use="required" type="xs:NCName"/>
+            <xs:attribute name="value" use="required" type="typeName"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="frameClass">
@@ -125,18 +157,23 @@
             <xs:sequence>
                 <xs:element minOccurs="0" maxOccurs="unbounded" ref="property"/>
             </xs:sequence>
-            <xs:attribute name="name" use="required" type="xs:NCName"/>
-            <xs:attribute name="parent" type="xs:NCName"/>
+            <xs:attribute name="name" use="required" type="typeName"/>
+            <xs:attribute name="parent" type="typeName"/>
         </xs:complexType>
+
+        <xs:unique name="uniquePropertyName">
+            <xs:selector xpath="property"/>
+            <xs:field xpath="@name"/>
+        </xs:unique>
     </xs:element>
     <xs:element name="property">
         <xs:complexType>
-            <xs:attribute name="elementType" type="xs:NMTOKEN"/>
-            <xs:attribute name="name" use="required" type="xs:NCName"/>
+            <xs:attribute name="elementType" type="typeName"/>
+            <xs:attribute name="name" use="required" type="typeName"/>
             <xs:attribute name="readonly" use="optional" type="xs:boolean"/>
             <xs:attribute name="table" type="xs:boolean"/>
-            <xs:attribute name="tableKey" type="xs:NCName"/>
-            <xs:attribute name="valueType" type="xs:NMTOKEN"/>
+            <xs:attribute name="tableKey" type="typeName"/>
+            <xs:attribute name="valueType" type="typeName"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="frameType">
@@ -145,15 +182,19 @@
                 <xs:element minOccurs="0" maxOccurs="unbounded" ref="hookup"/>
             </xs:sequence>
             <xs:attribute name="blizzOnly" use="required" type="xs:boolean"/>
-            <xs:attribute name="classType" use="required" type="xs:NCName"/>
-            <xs:attribute name="descType" use="optional" type="xs:NCName"/>
-            <xs:attribute name="name" use="required" type="xs:NMTOKEN"/>
+            <xs:attribute name="classType" use="required" type="typeName"/>
+            <xs:attribute name="descType" use="optional" type="typeName"/>
+            <xs:attribute name="name" use="required" type="typeName"/>
         </xs:complexType>
+        <xs:unique name="uniqueHookupPath">
+            <xs:selector xpath="hookup"/>
+            <xs:field xpath="@path"/>
+        </xs:unique>
     </xs:element>
     <xs:element name="hookup">
         <xs:complexType>
             <xs:attribute name="path" use="required" type="xs:string"/>
-            <xs:attribute name="class" use="required" type="xs:NCName"/>
+            <xs:attribute name="class" use="required" type="typeName"/>
             <xs:attribute name="required" use="required" type="xs:boolean"/>
         </xs:complexType>
     </xs:element>
