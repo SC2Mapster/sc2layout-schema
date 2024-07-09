@@ -1360,6 +1360,23 @@
 
     <!--
     ========================================
+    :: CCheckOutBrowser
+    ========================================
+    -->
+    <frameClass name="CCheckOutBrowser" parent="CBrowser">
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CCheckOutBrowserDialog
+    ========================================
+    -->
+    <frameClass name="CCheckOutBrowserDialog" parent="CStandardDialog">
+        <property name="State" valueType="String" readonly="false"/>
+    </frameClass>
+
+    <!--
+    ========================================
     :: CCinematicTextPanel
     ========================================
     -->
@@ -1735,6 +1752,15 @@
     ========================================
     -->
     <frameClass name="CCommanderDifficultyTileList" parent="CTileList">
+        <property name="CurrentBonus" valueType="Uint32"/>
+        <property name="CurrentDifficultyBonus" valueType="Uint32"/>
+        <property name="RetryDifficultyBonus" valueType="Uint32"/>
+        <property name="RetryDifficultyLevel" valueType="Uint32"/>
+        <property name="RetryEnemyRace" valueType="String"/>
+        <property name="RetryEnemyWaveType" valueType="Uint32"/>
+        <property name="RetryIsAvailable" valueType="Boolean"/>
+        <property name="RetryIsSelected" valueType="Boolean"/>
+        <property name="RetryMapId" valueType="Uint32"/>
     </frameClass>
 
     <!--
@@ -2278,6 +2304,14 @@
     -->
     <frameClass name="CCreditsPanel" parent="CFrame">
         <property name="File" valueType="String" readonly="false"/>
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CCustomGamesBrowseListPanel
+    ========================================
+    -->
+    <frameClass name="CCustomGamesBrowseListPanel" parent="CBattleGameListPanel">
     </frameClass>
 
     <!--
@@ -6387,6 +6421,15 @@
         <property name="MyAddress" valueType="Identifier"/>
         <property name="Region" valueType="Identifier"/>
         <property name="SuppressBrowserErrors" valueType="Boolean"/>
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CScreenMapToMapTransition
+    ========================================
+    -->
+    <frameClass name="CScreenMapToMapTransition" parent="CGlueScreen">
+        <property name="MapToMapTransitionState" valueType="String"/>
     </frameClass>
 
     <!--

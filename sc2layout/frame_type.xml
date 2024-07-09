@@ -234,6 +234,12 @@
     <frameType name="BattleClubFrame" classType="CBattleClubFrame" blizzOnly="true">
     </frameType>
 
+    <frameType name="BattleGameListPanel" classType="CBattleGameListPanel" blizzOnly="true">
+    </frameType>
+
+    <frameType name="BattleGameTileListItem" classType="CBattleGameTileListItem" blizzOnly="true">
+    </frameType>
+
     <frameType name="BattleLobbyContextMenu" classType="CBattleLobbyContextMenu" blizzOnly="true">
         <hookup path="Menu" class="CListBox" required="true"/>
         <hookup path="TitleLabel" class="CLabel" required="false"/>
@@ -749,6 +755,12 @@
         <hookup path="CheckImage" class="CImage" required="false"/>
     </frameType>
 
+    <frameType name="CheckOutBrowser" classType="CCheckOutBrowser" blizzOnly="true">
+    </frameType>
+
+    <frameType name="CheckOutBrowserDialog" classType="CCheckOutBrowserDialog" blizzOnly="true">
+    </frameType>
+
     <frameType name="CinematicTextPanel" classType="CCinematicTextPanel" blizzOnly="false">
         <hookup path="TextLabel" class="CLabel" required="true"/>
     </frameType>
@@ -1216,6 +1228,11 @@
         <hookup path="IncreaseSpeedButton" class="CButton" required="true"/>
         <hookup path="DecreaseSpeedButton" class="CButton" required="true"/>
         <hookup path="BackgroundImage" class="CImage" required="true"/>
+    </frameType>
+
+    <frameType name="CustomGamesBrowseListPanel" classType="CCustomGamesBrowseListPanel" blizzOnly="true">
+        <hookup path="FilterPulldown" class="CPulldown" required="true"/>
+        <hookup path="GenrePulldown" class="CPulldown" required="true"/>
     </frameType>
 
     <frameType name="CustomGameInvitePanel" classType="CCustomGameInvitePanel" blizzOnly="true">
@@ -3744,6 +3761,9 @@
         <hookup path="BattleBoxAccountEditBox" class="CEditBox" required="true"/>
         <hookup path="BattleBoxLoginButton" class="CButton" required="true"/>
         <hookup path="SceneBrowser" class="CSceneBrowser" required="true"/>
+    </frameType>
+
+    <frameType name="ScreenMapToMapTransition" classType="CScreenMapToMapTransition" blizzOnly="true">
     </frameType>
 
     <frameType name="ScreenMovie" classType="CScreenMovie" blizzOnly="true">
