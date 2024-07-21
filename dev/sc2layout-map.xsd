@@ -25,7 +25,6 @@
                 <xs:element ref="frameClass"/>
                 <xs:element ref="frameType"/>
             </xs:choice>
-            <xs:attribute name="version" use="optional" type="xs:string"/>
         </xs:complexType>
         <xs:unique name="uniqueTypeName">
             <xs:selector xpath="simpleType|complexType|frameClass|frameType"/>
