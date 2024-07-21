@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <map>
-    <simpleType name="AnimationEventType" data="string">
-        <union value="EAnimationEventNative"/>
-        <union value="EventName"/>
-        <pattern value="^\S+$"/>
-    </simpleType>
-
     <simpleType name="AnimationEventActionList" kind="enum">
         <pattern value="^([\w]+)(\s*,\s*[\w]+)*$"/>
     </simpleType>
@@ -126,7 +120,7 @@
     <complexType name="CFrameControllerKeyEvent">
         <extend value="CFrameControllerKey"/>
         <attribute name="type" type="EAnimationControllerKeyType" use="required" default="Event"/>
-        <attribute name="event" type="EventName" use="required"/>
+        <attribute name="event" type="AnimationEventType" use="required"/>
     </complexType>
 
     <complexType name="CFrameControllerKeyImage">

@@ -5,6 +5,12 @@
         <flag name="Nullable" value="true"/>
     </simpleType>
 
+    <simpleType name="AnimationStateName" data="string">
+    </simpleType>
+
+    <simpleType name="AnimationStateEvent" data="string">
+    </simpleType>
+
     <!--
      - CFrameStateCondition
     -->
@@ -23,7 +29,7 @@
 
     <complexType name="CFrameStateConditionAnimationState">
         <extend value="CFrameStateCondition"/>
-        <indeterminateAttribute key="AnimationName" value="EventName"/>
+        <indeterminateAttribute key="AnimationStateName" value="AnimationStateEvent"/>
     </complexType>
 
     <complexType name="CFrameStateConditionStateGroup">
@@ -33,6 +39,7 @@
 
     <complexType name="CFrameStateConditionOption">
         <extend value="CFrameStateCondition"/>
+        <!-- TODO: add standard/common variables -->
         <indeterminateAttribute key="String" value="String"/>
     </complexType>
 
@@ -77,7 +84,7 @@
 
     <complexType name="CFrameStateSendEventAction">
         <extend value="CFrameStateAction"/>
-        <attribute name="event" type="EventName" use="required"/>
+        <attribute name="event" type="AnimationEventType" use="required"/>
     </complexType>
 
     <complexType name="CFrameStatePlaySoundAction">
