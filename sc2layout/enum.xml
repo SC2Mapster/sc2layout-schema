@@ -279,7 +279,7 @@
         <enumeration value="CLOSED"/>
         <enumeration value="COMPUTER"/>
         <enumeration value="OPEN"/>
-        <enumeration value="OCCUPIED"/>>
+        <enumeration value="OCCUPIED"/>
     </simpleType>
 
     <simpleType name="CCountdownLabelEIntegerBias" kind="enum">
