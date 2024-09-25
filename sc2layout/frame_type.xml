@@ -6,9 +6,6 @@
     ========================================
     -->
 
-    <frameType name="Frame" classType="CFrame" blizzOnly="false">
-    </frameType>
-
     <frameType name="ABChoiceFrame" classType="CABChoiceFrame" blizzOnly="true">
     </frameType>
 
@@ -490,6 +487,15 @@
         <hookup path="HoverImage" class="CImage" required="false"/>
         <hookup path="EmptyImage" class="CImage" required="false"/>
         <hookup path="HitTestFrame" class="CFrame" required="false"/>
+    </frameType>
+
+    <frameType name="Browser" classType="CBrowser" blizzOnly="true">
+        <hookup path="BrowserImage" class="CImage" required="true"/>
+        <hookup path="ForwardButton" class="CButton" required="true"/>
+        <hookup path="BackButton" class="CButton" required="true"/>
+        <hookup path="GoButton" class="CButton" required="true"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="AddressEditBox" class="CEditBox" required="true"/>
     </frameType>
 
     <frameType name="BrowserDialog" classType="CBrowserDialog" blizzOnly="true">
@@ -1462,6 +1468,9 @@
     </frameType>
 
     <frameType name="FlashFrame" classType="CFlashFrame" blizzOnly="true">
+    </frameType>
+
+    <frameType name="Frame" classType="CFrame" blizzOnly="false">
     </frameType>
 
     <frameType name="FramePropertiesPanel" classType="CFramePropertiesPanel" blizzOnly="true">
@@ -3535,6 +3544,15 @@
         <hookup path="ReplayPanel" class="CReplayFilePanel" required="true"/>
     </frameType>
 
+    <frameType name="SceneBrowser" classType="CSceneBrowser" blizzOnly="true">
+        <hookup path="BrowserImage" class="CImage" required="true"/>
+        <hookup path="ForwardButton" class="CButton" required="true"/>
+        <hookup path="BackButton" class="CButton" required="true"/>
+        <hookup path="GoButton" class="CButton" required="true"/>
+        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
+        <hookup path="AddressEditBox" class="CEditBox" required="true"/>
+    </frameType>
+
     <frameType name="ScoreRewardItem" classType="CScoreRewardItem" blizzOnly="true">
         <hookup path="AmountLabel" class="CCountdownLabel" required="true"/>
         <hookup path="SourceLabel" class="CLabel" required="true"/>
@@ -5163,23 +5181,5 @@
     <frameType name="WorldTooltip" classType="CWorldTooltip" blizzOnly="true">
         <hookup path="TipLabel" class="CLabel" required="true"/>
         <hookup path="SubTipLabel" class="CLabel" required="true"/>
-    </frameType>
-
-    <frameType name="Browser" classType="CBrowser" blizzOnly="true">
-        <hookup path="BrowserImage" class="CImage" required="true"/>
-        <hookup path="ForwardButton" class="CButton" required="true"/>
-        <hookup path="BackButton" class="CButton" required="true"/>
-        <hookup path="GoButton" class="CButton" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="AddressEditBox" class="CEditBox" required="true"/>
-    </frameType>
-
-    <frameType name="SceneBrowser" classType="CSceneBrowser" blizzOnly="true">
-        <hookup path="BrowserImage" class="CImage" required="true"/>
-        <hookup path="ForwardButton" class="CButton" required="true"/>
-        <hookup path="BackButton" class="CButton" required="true"/>
-        <hookup path="GoButton" class="CButton" required="true"/>
-        <hookup path="ScrollBar" class="CScrollBar" required="true"/>
-        <hookup path="AddressEditBox" class="CEditBox" required="true"/>
     </frameType>
 </map>

@@ -955,6 +955,28 @@
 
     <!--
     ========================================
+    :: CBrowser
+    ========================================
+    -->
+    <frameClass name="CBrowser" parent="CLayer">
+        <property name="Address" valueType="String"/>
+        <property name="Title" valueType="String" readonly="true"/>
+        <property name="StickyFocus" valueType="Boolean"/>
+        <property name="IMEStyle" valueType="String"/>
+        <property name="Loading" valueType="Boolean" readonly="true"/>
+        <property name="CanGoForward" valueType="Boolean" readonly="true"/>
+        <property name="CanGoBackward" valueType="Boolean" readonly="true"/>
+        <property name="Error" valueType="Boolean" readonly="true"/>
+        <property name="Navigating" valueType="Boolean" readonly="true"/>
+        <property name="ExternalLinksUseOSBrowser" valueType="Boolean"/>
+        <property name="SmartStretch" valueType="Boolean"/>
+        <property name="TextureWidth" valueType="Int32"/>
+        <property name="TextureHeight" valueType="Int32"/>
+        <property name="Purpose" valueType="String"/>
+    </frameClass>
+
+    <!--
+    ========================================
     :: CBrowserDialog
     ========================================
     -->
@@ -3055,8 +3077,11 @@
     ========================================
     -->
     <frameClass name="CGlueUI" parent="CControl">
+        <property name="AccountCountry" valueType="String" readonly="true"/>
         <property name="CustomSoundtrack" valueType="String" readonly="false"/>
+        <property name="DebugMode" valueType="Boolean" readonly="true"/>
         <property name="IsOsVersionAllowed" valueType="Boolean" readonly="true"/>
+        <property name="PTRMode" valueType="Boolean" readonly="true"/>
     </frameClass>
 
     <!--
@@ -6030,6 +6055,14 @@
     ========================================
     -->
     <frameClass name="CSaveReplayDialog" parent="CDialog">
+    </frameClass>
+
+    <!--
+    ========================================
+    :: CSceneBrowser
+    ========================================
+    -->
+    <frameClass name="CSceneBrowser" parent="CBrowser">
     </frameClass>
 
     <!--
@@ -9204,35 +9237,5 @@
     ========================================
     -->
     <frameClass name="CWorldTooltip" parent="CTooltip">
-    </frameClass>
-
-    <!--
-    ========================================
-    :: CBrowser
-    ========================================
-    -->
-    <frameClass name="CBrowser" parent="CLayer">
-        <property name="Address" valueType="String"/>
-        <property name="Title" valueType="String" readonly="true"/>
-        <property name="StickyFocus" valueType="Boolean"/>
-        <property name="IMEStyle" valueType="String"/>
-        <property name="Loading" valueType="Boolean" readonly="true"/>
-        <property name="CanGoForward" valueType="Boolean" readonly="true"/>
-        <property name="CanGoBackward" valueType="Boolean" readonly="true"/>
-        <property name="Error" valueType="Boolean" readonly="true"/>
-        <property name="Navigating" valueType="Boolean" readonly="true"/>
-        <property name="ExternalLinksUseOSBrowser" valueType="Boolean"/>
-        <property name="SmartStretch" valueType="Boolean"/>
-        <property name="TextureWidth" valueType="Int32"/>
-        <property name="TextureHeight" valueType="Int32"/>
-        <property name="Purpose" valueType="String"/>
-    </frameClass>
-
-    <!--
-    ========================================
-    :: CSceneBrowser
-    ========================================
-    -->
-    <frameClass name="CSceneBrowser" parent="CBrowser">
     </frameClass>
 </map>
