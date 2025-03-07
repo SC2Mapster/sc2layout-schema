@@ -180,14 +180,15 @@ TBD
 
 When a texture is used as a border or filling of a progressbar for example, then the texture is broken up into pieces (Edges, Corners and Middle section).
 
-This makes seamless scaling along the horizontal or veritcal direction possible. If the image should just show the texture as it is then this value does not need to be set.
-            
-example:
+This makes seamless scaling along the horizontal or vertical direction possible. If the image should just show the texture as it is then this value does not need to be set.
+
+See example:
+
 ```xml
 <TextureType val="Border"/>
 ```
 
-https://sc2mapster.wiki.gg/UI/Frame_Properties/TextureType
+See [detailed explanation of **TextureType**'s](https://sc2mapster.wiki.gg/UI/Frame_Properties/TextureType).
 
 ## Tiled
 
