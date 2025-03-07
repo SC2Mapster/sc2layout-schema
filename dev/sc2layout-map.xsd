@@ -21,7 +21,6 @@
                 <xs:element ref="include"/>
                 <xs:element ref="complexType"/>
                 <xs:element ref="simpleType"/>
-                <xs:element ref="element"/>
                 <xs:element ref="frameClass"/>
                 <xs:element ref="frameType"/>
             </xs:choice>
@@ -76,7 +75,13 @@
             <xs:sequence>
                 <xs:element minOccurs="0" maxOccurs="1" ref="alternative"/>
             </xs:sequence>
-            <!-- TODO: check if there's support for that, and remove if there isn't -->
+            <!--
+                TODO: remove support for refering to existing type in new version (via "ref")
+                even though it has been implemented:
+                - it's not really used thus far
+                - it's not esssential at all
+                - let's get of rid while so long there's a chance
+            -->
             <!-- <xs:attribute name="ref" type="xs:NCName"/> -->
             <xs:attribute name="name" type="typeName"/>
             <xs:attribute name="simpleType" type="typeName"/>
@@ -102,12 +107,29 @@
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
                         <xs:enumeration value="attrValue"/>
-                        <xs:enumeration value="expression"/>
+                        <!-- TODO: not yet implemented -->
+                        <!-- <xs:enumeration value="expression"/> -->
                     </xs:restriction>
                 </xs:simpleType>
             </xs:attribute>
-            <xs:attribute name="attributeName" use="optional" type="xs:string"/>
-            <xs:attribute name="icase" use="optional" type="xs:boolean"/>
+            <xs:attribute name="attributeName" use="optional" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>
+                        <![CDATA[
+                            Defaults to `type` internally.
+                        ]]>
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="icase" use="optional" type="xs:boolean">
+                <xs:annotation>
+                    <xs:documentation>
+                        <![CDATA[
+                            Case insensitive matching by value (defaults to `false`).
+                        ]]>
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
         </xs:complexType>
         <xs:unique name="uniqueTestStatement">
             <xs:selector xpath="statement"/>
