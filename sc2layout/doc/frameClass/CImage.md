@@ -187,7 +187,7 @@ example:
 <TextureType val="Border"/>
 ```
 
-https://sc2mapster.gamepedia.com/UI/Frame_Properties/TextureType
+https://sc2mapster.wiki.gg/UI/Frame_Properties/TextureType
 
 ## Tiled
 

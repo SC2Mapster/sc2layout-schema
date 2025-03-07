@@ -1,4 +1,4 @@
-Representation of a [data button](https://sc2mapster.gamepedia.com/wiki/Data/Buttons).
+Representation of a [data button](https://sc2mapster.wiki.gg/wiki/Data/Buttons).
 
 ### Usage example of `ButtonOtherUnit`
 
