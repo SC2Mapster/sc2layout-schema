@@ -1,4 +1,4 @@
-*⚠️ THIS REPOSITORY IS OUT OF DATE AND NO LONGER MAINTAINED ⚠️**
+**⚠️ THIS REPOSITORY IS OUT OF DATE AND NO LONGER MAINTAINED ⚠️**
 
 MOVED TO **[sc2-galaxy-toolkit](https://github.com/sc2-arcade-watcher/sc2-galaxy-toolkit)**
 
